@@ -73,5 +73,3 @@ _[Ss]cripts
 *.nupkg
 *.ncrunchsolution
 *.dot[Cc]over
-/BookBarn.API/BookBarn.API/.vs
-/BookBarn.API/.vs/BookBarn.API/config/applicationhost.config
