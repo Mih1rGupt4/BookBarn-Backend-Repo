@@ -14,7 +14,6 @@ namespace BookBarn.API.Controllers
 
         List<Order> orderList = new List<Order>();
 
-
         // get
         // api/order/
         // get all orders (only for the admin) 

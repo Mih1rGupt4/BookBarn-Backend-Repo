@@ -446,7 +446,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BookBarn.Domain\BookBarn.Domain.csproj">
-      <Project>{FACDE463-2F4E-4E7C-AA9C-7BC134CD8B40}</Project>
+      <Project>{facde463-2f4e-4e7c-aa9c-7bc134cd8b40}</Project>
       <Name>BookBarn.Domain</Name>
     </ProjectReference>
   </ItemGroup>
