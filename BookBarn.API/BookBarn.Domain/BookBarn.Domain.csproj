@@ -53,6 +53,7 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="Dto\Class1.cs" />
+    <Compile Include="Entities\Book.cs" />
     <Compile Include="Entities\Class1.cs" />
     <Compile Include="Exceptions\Class1.cs" />
     <Compile Include="Interfaces\Class1.cs" />
