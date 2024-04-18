@@ -57,12 +57,6 @@
     <Compile Include="Repositories\deleteme.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BookBarn.Domain\BookBarn.Domain.csproj">
-      <Project>{facde463-2f4e-4e7c-aa9c-7bc134cd8b40}</Project>
-      <Name>BookBarn.Domain</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="App.config" />
     <None Include="CSV Files\BX-Books.csv" />
     <None Include="packages.config" />
