@@ -13,6 +13,8 @@ namespace BookBarn.Domain.Entities
         public string Title { get; set; }
         public string Author { get; set; }
         public string Publisher { get; set; }
+        public double Price {  get; set; }
+        public int Stock {  get; set; }
         public string YearOfPublication { get; set; }
         public string ImageUrlSmall { get; set; }
         public string ImageUrlMedium { get; set; }
