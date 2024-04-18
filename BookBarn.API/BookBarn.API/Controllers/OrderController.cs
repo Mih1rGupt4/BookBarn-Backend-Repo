@@ -5,11 +5,15 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.OData;
 
 namespace BookBarn.API.Controllers
 {
     public class OrderController : ApiController
     {
+
+
+
         // get
         // api/order/
         // get all orders (only for the admin) 
@@ -54,8 +58,21 @@ namespace BookBarn.API.Controllers
         // api/order/{id}
         // edit the status for admin to change the status
         [HttpPatch]
-        public IHttpActionResult PatchEditStatus(int id)
+        public IHttpActionResult PatchEditStatus(int id, [FromBody] Delta<Order>order)
         {
+
+
+            if(order == null)
+            {
+                return BadRequest("Missing data to patch");
+            }
+
+            var existingOrder = new Order();
+            order.Patch(existingOrder);
+            
+            //DB.save changes
+
+
             return Ok();
         }
     }
