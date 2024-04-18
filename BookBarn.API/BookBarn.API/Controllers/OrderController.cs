@@ -1,11 +1,11 @@
 ﻿using BookBarn.Domain.Entities;
+using Microsoft.AspNet.OData;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-using System.Web.Http.OData;
 
 namespace BookBarn.API.Controllers
 {
@@ -17,9 +17,9 @@ namespace BookBarn.API.Controllers
         // get
         // api/order/
         // get all orders (only for the admin) 
-        public IHttpActionResult GetProductById()
+        public IHttpActionResult GetOrders()
         {
-            var orders = new List<Order>();
+            var orders = "new List<Order>();";
             if (orders == null)
             {
                 // not found
@@ -34,9 +34,9 @@ namespace BookBarn.API.Controllers
         // get
         // api/order/{id}
         // get all orders by user
-        public IHttpActionResult GetProductById(int id)
+        public IHttpActionResult GetOrderByUserId(int id)
         {
-            var order = new Order();
+            var order = "new Order();";
             if (order == null)
             {
                 // not found
@@ -58,18 +58,18 @@ namespace BookBarn.API.Controllers
         // api/order/{id}
         // edit the status for admin to change the status
         [HttpPatch]
-        public IHttpActionResult PatchEditStatus(int id, [FromBody] Delta<Order>order)
+        public IHttpActionResult PatchEditStatus(int id, [FromBody] Delta<Order> order)
         {
 
 
-            if(order == null)
+            if (order == null)
             {
                 return BadRequest("Missing data to patch");
             }
 
             var existingOrder = new Order();
             order.Patch(existingOrder);
-            
+
             //DB.save changes
 
 
