@@ -74,4 +74,6 @@ _[Ss]cripts
 *.ncrunchsolution
 *.dot[Cc]over
 
-*/v17/
+BookBarn.API/.vs/BookBarn.API/config/applicationhost.config
+BookBarn.API/.vs/BookBarn.API/v17/DocumentLayout.json
+BookBarn.API/.vs/BookBarn.API/FileContentIndex/
