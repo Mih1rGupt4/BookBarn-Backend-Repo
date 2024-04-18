@@ -168,6 +168,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "PaymentDetails.cs",
+              "DocumentMoniker": "C:\\Users\\Sudeep A\\Desktop\\GT\\Book Barn\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Domain\\Entities\\PaymentDetails.cs",
+              "RelativeDocumentMoniker": "BookBarn.Domain\\Entities\\PaymentDetails.cs",
+              "ToolTip": "C:\\Users\\Sudeep A\\Desktop\\GT\\Book Barn\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Domain\\Entities\\PaymentDetails.cs",
+              "RelativeToolTip": "BookBarn.Domain\\Entities\\PaymentDetails.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T11:18:05.933Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PaymentDetails.cs",
+              "DocumentMoniker": "C:\\Users\\Sudeep A\\Desktop\\GT\\Book Barn\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Domain\\Entities\\PaymentDetails.cs",
+              "RelativeDocumentMoniker": "BookBarn.Domain\\Entities\\PaymentDetails.cs",
+              "ToolTip": "C:\\Users\\Sudeep A\\Desktop\\GT\\Book Barn\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Domain\\Entities\\PaymentDetails.cs",
+              "RelativeToolTip": "BookBarn.Domain\\Entities\\PaymentDetails.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T11:18:05.933Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "OrderStatus.cs",
               "DocumentMoniker": "C:\\Users\\Sudeep A\\Desktop\\GT\\Book Barn\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Domain\\Entities\\OrderStatus.cs",
               "RelativeDocumentMoniker": "BookBarn.Domain\\Entities\\OrderStatus.cs",

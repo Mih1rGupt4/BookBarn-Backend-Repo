@@ -19,7 +19,7 @@ namespace BookBarn.API.Controllers
         // get
         // api/order/
         // get all orders (only for the admin) 
-        public IHttpActionResult GetProductById()
+        public IHttpActionResult GetAllOrders()
         {
             var orders = new List<Order>();
             if (orders == null)
@@ -36,7 +36,7 @@ namespace BookBarn.API.Controllers
         // get
         // api/order/{id}
         // get all orders by user
-        public IHttpActionResult GetProductById(int id)
+        public IHttpActionResult GetOrdersById(int id)
         {
             var order = new Order();
             if (order == null)
@@ -59,7 +59,7 @@ namespace BookBarn.API.Controllers
         // patch
         // api/order/{id}
         // edit the status for admin to change the status
-        [HttpPatch]
+        //[HttpPatch]
         public IHttpActionResult PatchEditStatus(int id, [FromBody] Delta<Order>order)
         {
 
