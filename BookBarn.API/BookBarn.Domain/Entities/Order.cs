@@ -20,7 +20,8 @@ namespace BookBarn.Domain.Entities
        
         public Address ShippingAddress { get; set; }
 
-        public string PaymentMethod {  get; set; }
+        public PaymentDetails PaymentMethod {  get; set; }
+        public OrderStatus Status { get; set; }
 
     }
 }
