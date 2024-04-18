@@ -1,10 +1,54 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\AMOGH PATIL\\source\\repos\\BookBarn-Backend-Repo\\BookBarn.API\\",
+  "WorkspaceRootPath": "C:\\Users\\PANDURANGA\\source\\repos\\BookBarn-Backend-Repo\\BookBarn.API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FACDE463-2F4E-4E7C-AA9C-7BC134CD8B40}|BookBarn.Domain\\BookBarn.Domain.csproj|c:\\users\\amogh patil\\source\\repos\\bookbarn-backend-repo\\bookbarn.api\\bookbarn.domain\\entities\\reviewcumrating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|c:\\users\\panduranga\\source\\repos\\bookbarn-backend-repo\\bookbarn.api\\bookbarn.api\\controllers\\reviewcumratingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|solutionrelative:bookbarn.api\\controllers\\reviewcumratingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FACDE463-2F4E-4E7C-AA9C-7BC134CD8B40}|BookBarn.Domain\\BookBarn.Domain.csproj|c:\\users\\panduranga\\source\\repos\\bookbarn-backend-repo\\bookbarn.api\\bookbarn.domain\\entities\\reviewcumrating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FACDE463-2F4E-4E7C-AA9C-7BC134CD8B40}|BookBarn.Domain\\BookBarn.Domain.csproj|solutionrelative:bookbarn.domain\\entities\\reviewcumrating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|c:\\users\\panduranga\\source\\repos\\bookbarn-backend-repo\\bookbarn.api\\bookbarn.api\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|solutionrelative:bookbarn.api\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|c:\\users\\panduranga\\source\\repos\\bookbarn-backend-repo\\bookbarn.api\\bookbarn.api\\app_start\\swaggerconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|solutionrelative:bookbarn.api\\app_start\\swaggerconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FACDE463-2F4E-4E7C-AA9C-7BC134CD8B40}|BookBarn.Domain\\BookBarn.Domain.csproj|c:\\users\\panduranga\\source\\repos\\bookbarn-backend-repo\\bookbarn.api\\bookbarn.domain\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{FACDE463-2F4E-4E7C-AA9C-7BC134CD8B40}|BookBarn.Domain\\BookBarn.Domain.csproj|solutionrelative:bookbarn.domain\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54B19926-0662-4392-9A68-4A3D05B9607B}|BookBarn.Data\\BookBarn.Data.csproj|c:\\users\\panduranga\\source\\repos\\bookbarn-backend-repo\\bookbarn.api\\bookbarn.data\\bookbarndbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54B19926-0662-4392-9A68-4A3D05B9607B}|BookBarn.Data\\BookBarn.Data.csproj|solutionrelative:bookbarn.data\\bookbarndbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54B19926-0662-4392-9A68-4A3D05B9607B}|BookBarn.Data\\BookBarn.Data.csproj|c:\\users\\panduranga\\source\\repos\\bookbarn-backend-repo\\bookbarn.api\\bookbarn.data\\migrations\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54B19926-0662-4392-9A68-4A3D05B9607B}|BookBarn.Data\\BookBarn.Data.csproj|solutionrelative:bookbarn.data\\migrations\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54B19926-0662-4392-9A68-4A3D05B9607B}|BookBarn.Data\\BookBarn.Data.csproj|c:\\users\\panduranga\\source\\repos\\bookbarn-backend-repo\\bookbarn.api\\bookbarn.data\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{54B19926-0662-4392-9A68-4A3D05B9607B}|BookBarn.Data\\BookBarn.Data.csproj|solutionrelative:bookbarn.data\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|c:\\users\\panduranga\\source\\repos\\bookbarn-backend-repo\\bookbarn.api\\bookbarn.api\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|solutionrelative:bookbarn.api\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54B19926-0662-4392-9A68-4A3D05B9607B}|BookBarn.Data\\BookBarn.Data.csproj|c:\\users\\panduranga\\source\\repos\\bookbarn-backend-repo\\bookbarn.api\\bookbarn.data\\repositories\\deleteme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54B19926-0662-4392-9A68-4A3D05B9607B}|BookBarn.Data\\BookBarn.Data.csproj|solutionrelative:bookbarn.data\\repositories\\deleteme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FACDE463-2F4E-4E7C-AA9C-7BC134CD8B40}|BookBarn.Domain\\BookBarn.Domain.csproj|c:\\users\\panduranga\\source\\repos\\bookbarn-backend-repo\\bookbarn.api\\bookbarn.domain\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{FACDE463-2F4E-4E7C-AA9C-7BC134CD8B40}|BookBarn.Domain\\BookBarn.Domain.csproj|solutionrelative:bookbarn.domain\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FACDE463-2F4E-4E7C-AA9C-7BC134CD8B40}|BookBarn.Domain\\BookBarn.Domain.csproj|C:\\Users\\PANDURANGA\\source\\repos\\BookBarn-Backend-Repo\\BookBarn.API\\bookbarn.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FACDE463-2F4E-4E7C-AA9C-7BC134CD8B40}|BookBarn.Domain\\BookBarn.Domain.csproj|solutionrelative:bookbarn.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,42 +58,179 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 6,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ReviewCumRating.cs",
+              "DocumentMoniker": "C:\\Users\\PANDURANGA\\source\\repos\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Domain\\Entities\\ReviewCumRating.cs",
+              "RelativeDocumentMoniker": "BookBarn.Domain\\Entities\\ReviewCumRating.cs",
+              "ToolTip": "C:\\Users\\PANDURANGA\\source\\repos\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Domain\\Entities\\ReviewCumRating.cs",
+              "RelativeToolTip": "BookBarn.Domain\\Entities\\ReviewCumRating.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T14:54:14.076Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\PANDURANGA\\source\\repos\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.API\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "BookBarn.API\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\PANDURANGA\\source\\repos\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.API\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "BookBarn.API\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAYwA4AAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T16:31:45.975Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ReviewCumRating.cs",
-              "DocumentMoniker": "C:\\Users\\AMOGH PATIL\\source\\repos\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Domain\\Entities\\ReviewCumRating.cs",
-              "RelativeDocumentMoniker": "BookBarn.Domain\\Entities\\ReviewCumRating.cs",
-              "ToolTip": "C:\\Users\\AMOGH PATIL\\source\\repos\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Domain\\Entities\\ReviewCumRating.cs",
-              "RelativeToolTip": "BookBarn.Domain\\Entities\\ReviewCumRating.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAgAAAA",
+              "Title": "ReviewCumRatingsController.cs",
+              "DocumentMoniker": "C:\\Users\\PANDURANGA\\source\\repos\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.API\\Controllers\\ReviewCumRatingsController.cs",
+              "RelativeDocumentMoniker": "BookBarn.API\\Controllers\\ReviewCumRatingsController.cs",
+              "ToolTip": "C:\\Users\\PANDURANGA\\source\\repos\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.API\\Controllers\\ReviewCumRatingsController.cs",
+              "RelativeToolTip": "BookBarn.API\\Controllers\\ReviewCumRatingsController.cs",
+              "ViewState": "AQIAAGYAAAAAAAAAAAAgwHUAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T12:43:04.046Z",
+              "WhenOpened": "2024-04-18T16:54:49.737Z",
               "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 961,
-          "SelectedChildIndex": -1,
-          "Children": [
+            },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SwaggerConfig.cs",
+              "DocumentMoniker": "C:\\Users\\PANDURANGA\\source\\repos\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.API\\App_Start\\SwaggerConfig.cs",
+              "RelativeDocumentMoniker": "BookBarn.API\\App_Start\\SwaggerConfig.cs",
+              "ToolTip": "C:\\Users\\PANDURANGA\\source\\repos\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.API\\App_Start\\SwaggerConfig.cs",
+              "RelativeToolTip": "BookBarn.API\\App_Start\\SwaggerConfig.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T17:00:30.593Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "packages.config",
+              "DocumentMoniker": "C:\\Users\\PANDURANGA\\source\\repos\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Domain\\packages.config",
+              "RelativeDocumentMoniker": "BookBarn.Domain\\packages.config",
+              "ToolTip": "C:\\Users\\PANDURANGA\\source\\repos\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Domain\\packages.config",
+              "RelativeToolTip": "BookBarn.Domain\\packages.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-04-18T15:29:43.923Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\PANDURANGA\\source\\repos\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.API\\Web.config",
+              "RelativeDocumentMoniker": "BookBarn.API\\Web.config",
+              "ToolTip": "C:\\Users\\PANDURANGA\\source\\repos\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.API\\Web.config",
+              "RelativeToolTip": "BookBarn.API\\Web.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-04-18T16:33:38.439Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BookBarnDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\PANDURANGA\\source\\repos\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Data\\BookBarnDbContext.cs",
+              "RelativeDocumentMoniker": "BookBarn.Data\\BookBarnDbContext.cs",
+              "ToolTip": "C:\\Users\\PANDURANGA\\source\\repos\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Data\\BookBarnDbContext.cs",
+              "RelativeToolTip": "BookBarn.Data\\BookBarnDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T15:23:10.046Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\PANDURANGA\\source\\repos\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Data\\App.config",
+              "RelativeDocumentMoniker": "BookBarn.Data\\App.config",
+              "ToolTip": "C:\\Users\\PANDURANGA\\source\\repos\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Data\\App.config",
+              "RelativeToolTip": "BookBarn.Data\\App.config",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAmwAgAAACCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-04-18T15:29:53.736Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Configuration.cs",
+              "DocumentMoniker": "C:\\Users\\PANDURANGA\\source\\repos\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Data\\Migrations\\Configuration.cs",
+              "RelativeDocumentMoniker": "BookBarn.Data\\Migrations\\Configuration.cs",
+              "ToolTip": "C:\\Users\\PANDURANGA\\source\\repos\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Data\\Migrations\\Configuration.cs",
+              "RelativeToolTip": "BookBarn.Data\\Migrations\\Configuration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T15:40:12.311Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "deleteme.cs",
+              "DocumentMoniker": "C:\\Users\\PANDURANGA\\source\\repos\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Data\\Repositories\\deleteme.cs",
+              "RelativeDocumentMoniker": "BookBarn.Data\\Repositories\\deleteme.cs",
+              "ToolTip": "C:\\Users\\PANDURANGA\\source\\repos\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Data\\Repositories\\deleteme.cs",
+              "RelativeToolTip": "BookBarn.Data\\Repositories\\deleteme.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T16:29:09.185Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\PANDURANGA\\source\\repos\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Domain\\App.config",
+              "RelativeDocumentMoniker": "BookBarn.Domain\\App.config",
+              "ToolTip": "C:\\Users\\PANDURANGA\\source\\repos\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Domain\\App.config",
+              "RelativeToolTip": "BookBarn.Domain\\App.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-04-18T15:29:23.88Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\PANDURANGA\\source\\repos\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Domain\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "BookBarn.Domain\\Entities\\User.cs",
+              "ToolTip": "C:\\Users\\PANDURANGA\\source\\repos\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Domain\\Entities\\User.cs",
+              "RelativeToolTip": "BookBarn.Domain\\Entities\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T12:58:25.775Z",
+              "EditorCaption": ""
             }
           ]
         }
