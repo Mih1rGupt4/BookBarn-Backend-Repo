@@ -19,11 +19,35 @@ namespace BookBarn.API.Controllers
         // get
         // api/order/
         // get all orders (only for the admin) 
+        public IHttpActionResult GetProductById()
+        {
+            var orders = new List<Order>();
+            if (orders == null)
+            {
+                // not found
+                // return http status code 404
+                return NotFound();
+            }
+
+            return Ok(orders); // if found then return 200 with data
+        }
 
 
         // get
         // api/order/{id}
         // get all orders by user
+        public IHttpActionResult GetProductById(int id)
+        {
+            var order = new Order();
+            if (order == null)
+            {
+                // not found
+                // return http status code 404
+                return NotFound();
+            }
+
+            return Ok(order); // if found then return 200 with data
+        }
 
 
         // post
