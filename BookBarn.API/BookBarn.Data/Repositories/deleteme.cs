@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace BookBarn.Data.Repositories
 {
-    internal class deleteme
+    public class ReviewsCumRatingsRepo 
     {
+
     }
 }

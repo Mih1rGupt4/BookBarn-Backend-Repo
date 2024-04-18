@@ -29,5 +29,7 @@ namespace BookBarn.API.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<BookBarn.Domain.Entities.ReviewCumRating> ReviewCumRatings { get; set; }
     }
 }

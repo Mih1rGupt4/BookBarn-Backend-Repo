@@ -15,6 +15,7 @@ namespace BookBarn.Data
         }
 
         public DbSet<Book> Books { get; set; }
+       public DbSet<ReviewCumRating> ReviewCumRatings { get; set; }
 
 
     }
