@@ -18,6 +18,19 @@
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\Sudeep A\\Desktop\\GT\\Book Barn\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Domain\\Entities\\Order.cs",
+              "RelativeDocumentMoniker": "BookBarn.Domain\\Entities\\Order.cs",
+              "ToolTip": "C:\\Users\\Sudeep A\\Desktop\\GT\\Book Barn\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Domain\\Entities\\Order.cs",
+              "RelativeToolTip": "BookBarn.Domain\\Entities\\Order.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAUwBkAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T10:58:08.659Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\PANDURANGA\\source\\repos\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Domain\\Entities\\User.cs",
