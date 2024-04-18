@@ -76,3 +76,5 @@ _[Ss]cripts
 
 */.vs/
 **/Migrations/
+/BookBarn.API/.vs/BookBarn.API/config/applicationhost.config
+/BookBarn.API/.vs/BookBarn.API/v17/DocumentLayout.json
