@@ -26,12 +26,14 @@ namespace BookBarn.Data.Repositories
 
         public List<Book> GetBooksByCategory(string category)
         {
-            throw new NotImplementedException();
+            var booksByCategory = db.Books.Where(b => b.Category.Contains(category)).ToList();
+            return booksByCategory;
         }
 
         public List<Book> GetBooksByTitle(string title)
         {
-            throw new NotImplementedException();
+            var booksByTitle = db.Books.Where(b => b.Title.Contains(title)).ToList();
+            return booksByTitle;
         }
     }
 }
