@@ -55,9 +55,13 @@
     <Compile Include="Dto\Class1.cs" />
     <Compile Include="Entities\Address.cs" />
     <Compile Include="Entities\Book.cs" />
+    <Compile Include="Entities\CartItem.cs" />
     <Compile Include="Entities\Class1.cs" />
+    <Compile Include="Entities\Order.cs" />
+    <Compile Include="Entities\OrderItem.cs" />
     <Compile Include="Entities\OrderStatus.cs" />
     <Compile Include="Entities\PaymentDetails.cs" />
+    <Compile Include="Entities\ShoppingCart.cs" />
     <Compile Include="Exceptions\Class1.cs" />
     <Compile Include="Interfaces\Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
