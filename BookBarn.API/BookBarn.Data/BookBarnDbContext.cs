@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BookBarn.Domain.Entities;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -9,10 +10,11 @@ namespace BookBarn.Data
 {
     public class BookBarnDbContext : DbContext
     {
-        public BookBarnDbContext() : base("")
+        public BookBarnDbContext() : base("DefaultConnection")
         {
-            
         }
+
+        DbSet<Book> Books { get; set; }
 
 
     }
