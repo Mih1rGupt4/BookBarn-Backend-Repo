@@ -70,6 +70,7 @@ namespace BookBarn.API.Controllers
             };
             orders.Add(order2);
 
+        List<Order> orderList = new List<Order>();
 
 
             // Order 3
