@@ -10,18 +10,31 @@ using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Description;
 using BookBarn.Data;
+using BookBarn.Domain.Interfaces;
 
 namespace BookBarn.API.Controllers
 {
     public class ReviewCumRatingsController : ApiController
     {
-        private BookBarnDbContext db = new BookBarnDbContext();
+       // private BookBarnDbContext db = new BookBarnDbContext();
+        IReviewCumRatingRepo db = null;
+        public ReviewCumRatingsController(IReviewCumRatingRepo repo)
+        {
+            db = repo;   
+        }
 
-        // GET: api/ReviewCumRatings
 
-        // sample url format ...
-        // https://localhost:44348/api/ReviewCumRatings?type=positive
-        public IQueryable<ReviewCumRating> GetReviewCumRatings(string type)
+
+
+        public IQueryable<ReviewCumRating> GetReviewCumRatings()
+        {
+           return db.getAllReview() as IQueryable<ReviewCumRating>;
+        }
+            // GET: api/ReviewCumRatings
+
+            // sample url format ...
+            // https://localhost:44348/api/ReviewCumRatings?type=positive
+      /*      public IQueryable<ReviewCumRating> GetReviewCumRatings(string type)
         {
             if (type == "positive")
             {
@@ -57,7 +70,7 @@ namespace BookBarn.API.Controllers
             }
         
         
-            /*return db.ReviewCumRatings;*/
+            *//*return db.ReviewCumRatings;*//*
         }
 
         // GET: api/ReviewCumRatings/5
@@ -151,6 +164,6 @@ namespace BookBarn.API.Controllers
         private bool ReviewCumRatingExists(int id)
         {
             return db.ReviewCumRatings.Count(e => e.ReviewCumRatingId == id) > 0;
-        }
+        }*/
     }
 }
