@@ -22,6 +22,6 @@ namespace BookBarn.Domain.Entities
 
         public PaymentDetails PaymentMethod {  get; set; }
         public OrderStatus Status { get; set; }
-
+        public PaymentDetails PaymentDetails { get; set; }
     }
 }
