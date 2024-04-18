@@ -55,6 +55,7 @@
     <Compile Include="Class1.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\BooksRepository.cs" />
     <Compile Include="Repositories\deleteme.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -62,7 +63,12 @@
     <None Include="CSV Files\BX-Books.csv" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\BookBarn.Domain\BookBarn.Domain.csproj">
+      <Project>{facde463-2f4e-4e7c-aa9c-7bc134cd8b40}</Project>
+      <Name>BookBarn.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
