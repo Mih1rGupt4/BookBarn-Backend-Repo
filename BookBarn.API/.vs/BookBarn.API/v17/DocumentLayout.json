@@ -11,7 +11,7 @@
       "RelativeMoniker": "D:0:0:{FACDE463-2F4E-4E7C-AA9C-7BC134CD8B40}|BookBarn.Domain\\BookBarn.Domain.csproj|solutionrelative:bookbarn.domain\\entities\\orderstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FACDE463-2F4E-4E7C-AA9C-7BC134CD8B40}|BookBarn.Domain\\BookBarn.Domain.csproj|c:\\users\\sudeep a\\desktop\\gt\\book barn\\bookbarn-backend-repo\\bookbarn.api\\bookbarn.domain\\entities\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FACDE463-2F4E-4E7C-AA9C-7BC134CD8B40}|BookBarn.Domain\\BookBarn.Domain.csproj|C:\\Users\\Sudeep A\\Desktop\\GT\\Book Barn\\BookBarn-Backend-Repo\\BookBarn.API\\bookbarn.domain\\entities\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FACDE463-2F4E-4E7C-AA9C-7BC134CD8B40}|BookBarn.Domain\\BookBarn.Domain.csproj|solutionrelative:bookbarn.domain\\entities\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -78,8 +78,7 @@
               "RelativeToolTip": "BookBarn.Domain\\Entities\\OrderItem.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAABUAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T10:58:26.302Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-18T10:58:26.302Z"
             },
             {
               "$type": "Document",
@@ -91,8 +90,7 @@
               "RelativeToolTip": "BookBarn.Domain\\Entities\\User.cs",
               "ViewState": "AQIAAAgAAAAAAAAAAAAxwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T11:28:31.266Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-18T11:28:31.266Z"
             },
             {
               "$type": "Document",
@@ -128,8 +126,7 @@
               "RelativeToolTip": "BookBarn.Domain\\Entities\\Address.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T09:45:49.326Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-18T09:45:49.326Z"
             },
             {
               "$type": "Document",
@@ -153,8 +150,7 @@
               "RelativeToolTip": "BookBarn.Domain\\Entities\\Order.cs",
               "ViewState": "AQIAAAgAAAAAAAAAAAA0wBgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T10:58:08.659Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-18T10:58:08.659Z"
             },
             {
               "$type": "Document",
@@ -164,7 +160,7 @@
               "RelativeDocumentMoniker": "BookBarn.Domain\\Entities\\PaymentDetails.cs",
               "ToolTip": "C:\\Users\\Sudeep A\\Desktop\\GT\\Book Barn\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Domain\\Entities\\PaymentDetails.cs",
               "RelativeToolTip": "BookBarn.Domain\\Entities\\PaymentDetails.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-18T11:18:05.933Z",
               "EditorCaption": ""
@@ -179,8 +175,7 @@
               "RelativeToolTip": "BookBarn.Domain\\Entities\\OrderStatus.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T10:07:54.62Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-18T10:07:54.62Z"
             },
             {
               "$type": "Document",
