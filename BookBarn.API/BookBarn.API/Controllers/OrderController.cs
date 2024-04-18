@@ -24,21 +24,12 @@ namespace BookBarn.API.Controllers
         // to post the order
 
 
-        // patch
-        // api/order/cancel/{id}
-        // edit the status for user to cancel
-        [HttpPatch]
-        public IHttpActionResult PatchCancel()
-        {
-            return Ok();
-        }
-
 
         // patch
         // api/order/{id}
         // edit the status for admin to change the status
         [HttpPatch]
-        public IHttpActionResult PatchEditStatus()
+        public IHttpActionResult PatchEditStatus(int id, [])
         {
             return Ok();
         }
