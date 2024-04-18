@@ -12,8 +12,7 @@ namespace BookBarn.API.Controllers
     public class OrderController : ApiController
     {
 
-
-
+        List<Order> orderList = new List<Order>();
 
 
         // get
@@ -21,7 +20,7 @@ namespace BookBarn.API.Controllers
         // get all orders (only for the admin) 
         public IHttpActionResult GetAllOrders()
         {
-            var orders = "new List<Order>();";
+            var orders = orderList;
             if (orders == null)
             {
                 // not found
@@ -38,7 +37,7 @@ namespace BookBarn.API.Controllers
         // get all orders by user
         public IHttpActionResult GetOrdersById(int id)
         {
-            var order = "new Order();";
+            var order = new Order();
             if (order == null)
             {
                 // not found
@@ -53,6 +52,45 @@ namespace BookBarn.API.Controllers
         // post
         // api/order
         // to post the order
+
+
+
+        /*  empty json body structure for posting order data
+         * 
+        {
+        "OrderID": 0,
+        "UserID": null,
+        "OrderItems": [
+            {
+                "OrderItemID": 0,
+                "BookID": 0,
+                "Quantity": 0,
+                "Price": 0.0,
+                "OrderID": 0,
+                "Order": null
+            }
+        ],
+        "TotalPrice": 0.0,
+        "OrderDate": "0001-01-01T00:00:00",
+        "ShippingAddress": {
+            "AddressID": 0,
+            "AddressLine1": null,
+            "AddressLine2": null,
+            "Street": null,
+            "City": null,
+            "State": null,
+            "PostalCode": null,
+            "Country": null
+        },
+        "PaymentDetails": {
+            "PaymentDetailsID": 0,
+            "Amount": 0.0,
+            "TransactionId": null,
+            "PaymentSource": null
+        },
+        "Status": 0
+    }
+        */
 
 
 
