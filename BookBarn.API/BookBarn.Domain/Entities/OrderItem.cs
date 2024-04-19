@@ -9,6 +9,7 @@ namespace BookBarn.Domain.Entities
     public class OrderItem
     {
         public int OrderItemID { get; set; }
+        public int BookID { get; set; }
 
         public virtual Book Book { get; set; }
 
