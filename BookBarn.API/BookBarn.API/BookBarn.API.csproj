@@ -291,6 +291,11 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202404190551352_init.cs" />
+    <Compile Include="Migrations\202404190551352_init.Designer.cs">
+      <DependentUpon>202404190551352_init.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -453,6 +458,11 @@
       <Project>{facde463-2f4e-4e7c-aa9c-7bc134cd8b40}</Project>
       <Name>BookBarn.Domain</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202404190551352_init.resx">
+      <DependentUpon>202404190551352_init.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
