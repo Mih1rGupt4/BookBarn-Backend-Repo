@@ -44,6 +44,7 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -62,11 +63,13 @@
     <Compile Include="Entities\OrderItem.cs" />
     <Compile Include="Entities\OrderStatus.cs" />
     <Compile Include="Entities\PaymentDetails.cs" />
+    <Compile Include="Entities\ReviewCumRating.cs" />
     <Compile Include="Entities\ShoppingCart.cs" />
     <Compile Include="Entities\User.cs" />
     <Compile Include="Exceptions\Class1.cs" />
     <Compile Include="Interfaces\Class1.cs" />
     <Compile Include="Interfaces\IBooksRepository.cs" />
+    <Compile Include="Interfaces\IShoppingCartRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\Class1.cs" />
   </ItemGroup>
