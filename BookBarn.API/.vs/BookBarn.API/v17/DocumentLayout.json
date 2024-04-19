@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Sudhanva B\\source\\repos\\BookBarn-Backend-Repo-UserAuthentication-Sudh\\BookBarn.API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{54B19926-0662-4392-9A68-4A3D05B9607B}|BookBarn.Data\\BookBarn.Data.csproj|c:\\users\\sudhanva b\\source\\repos\\bookbarn-backend-repo-userauthentication-sudh\\bookbarn.api\\bookbarn.data\\repositories\\booksrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54B19926-0662-4392-9A68-4A3D05B9607B}|BookBarn.Data\\BookBarn.Data.csproj|solutionrelative:bookbarn.data\\repositories\\booksrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{54B19926-0662-4392-9A68-4A3D05B9607B}|BookBarn.Data\\BookBarn.Data.csproj|c:\\users\\sudhanva b\\source\\repos\\bookbarn-backend-repo-userauthentication-sudh\\bookbarn.api\\bookbarn.data\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54B19926-0662-4392-9A68-4A3D05B9607B}|BookBarn.Data\\BookBarn.Data.csproj|solutionrelative:bookbarn.data\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54B19926-0662-4392-9A68-4A3D05B9607B}|BookBarn.Data\\BookBarn.Data.csproj|c:\\users\\sudhanva b\\source\\repos\\bookbarn-backend-repo-userauthentication-sudh\\bookbarn.api\\bookbarn.data\\bookbarndbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54B19926-0662-4392-9A68-4A3D05B9607B}|BookBarn.Data\\BookBarn.Data.csproj|solutionrelative:bookbarn.data\\bookbarndbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|c:\\users\\sudhanva b\\source\\repos\\bookbarn-backend-repo-userauthentication-sudh\\bookbarn.api\\bookbarn.api\\controllers\\userauthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|solutionrelative:bookbarn.api\\controllers\\userauthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54B19926-0662-4392-9A68-4A3D05B9607B}|BookBarn.Data\\BookBarn.Data.csproj|c:\\users\\sudhanva b\\source\\repos\\bookbarn-backend-repo-userauthentication-sudh\\bookbarn.api\\bookbarn.data\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54B19926-0662-4392-9A68-4A3D05B9607B}|BookBarn.Data\\BookBarn.Data.csproj|solutionrelative:bookbarn.data\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|c:\\users\\sudhanva b\\source\\repos\\bookbarn-backend-repo-userauthentication-sudh\\bookbarn.api\\bookbarn.api\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|solutionrelative:bookbarn.api\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|c:\\users\\sudhanva b\\source\\repos\\bookbarn-backend-repo-userauthentication-sudh\\bookbarn.api\\bookbarn.api\\helpers\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -25,6 +29,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{54B19926-0662-4392-9A68-4A3D05B9607B}|BookBarn.Data\\BookBarn.Data.csproj|c:\\users\\sudhanva b\\source\\repos\\bookbarn-backend-repo-userauthentication-sudh\\bookbarn.api\\bookbarn.data\\migrations\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{54B19926-0662-4392-9A68-4A3D05B9607B}|BookBarn.Data\\BookBarn.Data.csproj|solutionrelative:bookbarn.data\\migrations\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54B19926-0662-4392-9A68-4A3D05B9607B}|BookBarn.Data\\BookBarn.Data.csproj|c:\\users\\sudhanva b\\source\\repos\\bookbarn-backend-repo-userauthentication-sudh\\bookbarn.api\\bookbarn.data\\repositories\\booksrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54B19926-0662-4392-9A68-4A3D05B9607B}|BookBarn.Data\\BookBarn.Data.csproj|solutionrelative:bookbarn.data\\repositories\\booksrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,11 +42,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 8,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BookBarnDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Sudhanva B\\source\\repos\\BookBarn-Backend-Repo-UserAuthentication-Sudh\\BookBarn.API\\BookBarn.Data\\BookBarnDbContext.cs",
+              "RelativeDocumentMoniker": "BookBarn.Data\\BookBarnDbContext.cs",
+              "ToolTip": "C:\\Users\\Sudhanva B\\source\\repos\\BookBarn-Backend-Repo-UserAuthentication-Sudh\\BookBarn.API\\BookBarn.Data\\BookBarnDbContext.cs",
+              "RelativeToolTip": "BookBarn.Data\\BookBarnDbContext.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAqwBMAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T12:57:22.185Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "C:\\Users\\Sudhanva B\\source\\repos\\BookBarn-Backend-Repo-UserAuthentication-Sudh\\BookBarn.API\\BookBarn.API\\Startup.cs",
+              "RelativeDocumentMoniker": "BookBarn.API\\Startup.cs",
+              "ToolTip": "C:\\Users\\Sudhanva B\\source\\repos\\BookBarn-Backend-Repo-UserAuthentication-Sudh\\BookBarn.API\\BookBarn.API\\Startup.cs",
+              "RelativeToolTip": "BookBarn.API\\Startup.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAswCMAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T12:39:44.573Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Configuration.cs",
+              "DocumentMoniker": "C:\\Users\\Sudhanva B\\source\\repos\\BookBarn-Backend-Repo-UserAuthentication-Sudh\\BookBarn.API\\BookBarn.Data\\Migrations\\Configuration.cs",
+              "RelativeDocumentMoniker": "BookBarn.Data\\Migrations\\Configuration.cs",
+              "ToolTip": "C:\\Users\\Sudhanva B\\source\\repos\\BookBarn-Backend-Repo-UserAuthentication-Sudh\\BookBarn.API\\BookBarn.Data\\Migrations\\Configuration.cs",
+              "RelativeToolTip": "BookBarn.Data\\Migrations\\Configuration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T11:23:28.451Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -50,46 +97,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "PasswordHasher.cs",
               "DocumentMoniker": "C:\\Users\\Sudhanva B\\source\\repos\\BookBarn-Backend-Repo-UserAuthentication-Sudh\\BookBarn.API\\BookBarn.API\\Helpers\\PasswordHasher.cs",
               "RelativeDocumentMoniker": "BookBarn.API\\Helpers\\PasswordHasher.cs",
               "ToolTip": "C:\\Users\\Sudhanva B\\source\\repos\\BookBarn-Backend-Repo-UserAuthentication-Sudh\\BookBarn.API\\BookBarn.API\\Helpers\\PasswordHasher.cs",
               "RelativeToolTip": "BookBarn.API\\Helpers\\PasswordHasher.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAADkAAAAFAAAA",
+              "ViewState": "AQIAADMAAAAAAAAAAAAYwDkAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-19T09:39:34.595Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "UserAuthController.cs",
               "DocumentMoniker": "C:\\Users\\Sudhanva B\\source\\repos\\BookBarn-Backend-Repo-UserAuthentication-Sudh\\BookBarn.API\\BookBarn.API\\Controllers\\UserAuthController.cs",
               "RelativeDocumentMoniker": "BookBarn.API\\Controllers\\UserAuthController.cs",
               "ToolTip": "C:\\Users\\Sudhanva B\\source\\repos\\BookBarn-Backend-Repo-UserAuthentication-Sudh\\BookBarn.API\\BookBarn.API\\Controllers\\UserAuthController.cs",
               "RelativeToolTip": "BookBarn.API\\Controllers\\UserAuthController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAKAAAA",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAIwFcAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-19T09:37:20.76Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "C:\\Users\\Sudhanva B\\source\\repos\\BookBarn-Backend-Repo-UserAuthentication-Sudh\\BookBarn.API\\BookBarn.Data\\Repositories\\UserRepository.cs",
               "RelativeDocumentMoniker": "BookBarn.Data\\Repositories\\UserRepository.cs",
               "ToolTip": "C:\\Users\\Sudhanva B\\source\\repos\\BookBarn-Backend-Repo-UserAuthentication-Sudh\\BookBarn.API\\BookBarn.Data\\Repositories\\UserRepository.cs",
               "RelativeToolTip": "BookBarn.Data\\Repositories\\UserRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAABNAAAA",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAkwBAAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-19T09:35:21.923Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "IUserRepository.cs",
               "DocumentMoniker": "C:\\Users\\Sudhanva B\\source\\repos\\BookBarn-Backend-Repo-UserAuthentication-Sudh\\BookBarn.API\\BookBarn.Domain\\Interfaces\\IUserRepository.cs",
               "RelativeDocumentMoniker": "BookBarn.Domain\\Interfaces\\IUserRepository.cs",
@@ -102,7 +149,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "BooksRepository.cs",
               "DocumentMoniker": "C:\\Users\\Sudhanva B\\source\\repos\\BookBarn-Backend-Repo-UserAuthentication-Sudh\\BookBarn.API\\BookBarn.Data\\Repositories\\BooksRepository.cs",
               "RelativeDocumentMoniker": "BookBarn.Data\\Repositories\\BooksRepository.cs",
@@ -111,19 +158,6 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-19T09:33:03.401Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Configuration.cs",
-              "DocumentMoniker": "C:\\Users\\Sudhanva B\\source\\repos\\BookBarn-Backend-Repo-UserAuthentication-Sudh\\BookBarn.API\\BookBarn.Data\\Migrations\\Configuration.cs",
-              "RelativeDocumentMoniker": "BookBarn.Data\\Migrations\\Configuration.cs",
-              "ToolTip": "C:\\Users\\Sudhanva B\\source\\repos\\BookBarn-Backend-Repo-UserAuthentication-Sudh\\BookBarn.API\\BookBarn.Data\\Migrations\\Configuration.cs",
-              "RelativeToolTip": "BookBarn.Data\\Migrations\\Configuration.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-19T09:29:45.399Z",
               "EditorCaption": ""
             }
           ]

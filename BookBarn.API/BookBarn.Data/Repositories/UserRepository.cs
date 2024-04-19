@@ -14,6 +14,8 @@ namespace BookBarn.Data.Repositories
 
         public void AddUser(User user)
         {
+            //user.RegistrationDate = DateTime.Now.Date;
+            user.Role = "User";
             db.Users.Add(user);
             db.SaveChanges();
         }
