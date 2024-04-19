@@ -17,21 +17,33 @@ namespace BookBarn.Data.Repositories
             var allBooks = db.Books.ToList();
             return allBooks;
         }
+        public Book GetBookByID(int id)
+        {
+            return db.Books.Where(b => b.BookID == id).FirstOrDefault();
+        }
 
         public List<Book> GetBooksByAuthor(string author)
         {
-            var booksByAuthor = db.Books.Where(b => b.Author.Contains(author)).ToList();
+            var booksByAuthor = db.Books.Where(b => b.Author.Contains(author) || author ==null).ToList();
             return booksByAuthor;
         }
 
         public List<Book> GetBooksByCategory(string category)
         {
-            throw new NotImplementedException();
+            var booksByCategory = db.Books.Where(b => b.Category.Contains(category) || category == null).ToList();
+            return booksByCategory;
         }
 
         public List<Book> GetBooksByTitle(string title)
         {
-            throw new NotImplementedException();
+            var booksByTitle = db.Books.Where(b => b.Title.Contains(title) || title == null).ToList();
+            return booksByTitle;
+        }
+
+        public List<Book> GetBooksByBias(string title, string author, string category)
+        {
+            var booksByBias = db.Books.Where(b => (b.Author.Contains(author) || author == null) && (b.Title.Contains(title) || title == null) && (b.Category.Contains(category) || category == null)).ToList();
+            return booksByBias;
         }
     }
 }
