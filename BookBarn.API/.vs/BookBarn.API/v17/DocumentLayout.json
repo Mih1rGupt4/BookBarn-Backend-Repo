@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\Sudeep A\\Desktop\\GT\\Book Barn\\BookBarn-Backend-Repo\\BookBarn.API\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|c:\\users\\sudeep a\\desktop\\gt\\book barn\\bookbarn-backend-repo\\bookbarn.api\\bookbarn.api\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|solutionrelative:bookbarn.api\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|c:\\users\\sudeep a\\desktop\\gt\\book barn\\bookbarn-backend-repo\\bookbarn.api\\bookbarn.api\\app_start\\unityconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|solutionrelative:bookbarn.api\\app_start\\unityconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|c:\\users\\sudeep a\\desktop\\gt\\book barn\\bookbarn-backend-repo\\bookbarn.api\\bookbarn.api\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|solutionrelative:bookbarn.api\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FACDE463-2F4E-4E7C-AA9C-7BC134CD8B40}|BookBarn.Domain\\BookBarn.Domain.csproj|c:\\users\\sudeep a\\desktop\\gt\\book barn\\bookbarn-backend-repo\\bookbarn.api\\bookbarn.domain\\entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FACDE463-2F4E-4E7C-AA9C-7BC134CD8B40}|BookBarn.Domain\\BookBarn.Domain.csproj|solutionrelative:bookbarn.domain\\entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -62,7 +74,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -74,7 +86,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
+              "Title": "BooksController.cs",
+              "DocumentMoniker": "C:\\Users\\Sudeep A\\Desktop\\GT\\Book Barn\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.API\\Controllers\\BooksController.cs",
+              "RelativeDocumentMoniker": "BookBarn.API\\Controllers\\BooksController.cs",
+              "ToolTip": "C:\\Users\\Sudeep A\\Desktop\\GT\\Book Barn\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.API\\Controllers\\BooksController.cs",
+              "RelativeToolTip": "BookBarn.API\\Controllers\\BooksController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T09:17:21.39Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UnityConfig.cs",
+              "DocumentMoniker": "C:\\Users\\Sudeep A\\Desktop\\GT\\Book Barn\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.API\\App_Start\\UnityConfig.cs",
+              "RelativeDocumentMoniker": "BookBarn.API\\App_Start\\UnityConfig.cs",
+              "ToolTip": "C:\\Users\\Sudeep A\\Desktop\\GT\\Book Barn\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.API\\App_Start\\UnityConfig.cs",
+              "RelativeToolTip": "BookBarn.API\\App_Start\\UnityConfig.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T09:17:12.869Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "C:\\Users\\Sudeep A\\Desktop\\GT\\Book Barn\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.API\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "BookBarn.API\\Controllers\\OrderController.cs",
+              "ToolTip": "C:\\Users\\Sudeep A\\Desktop\\GT\\Book Barn\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.API\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "BookBarn.API\\Controllers\\OrderController.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAzwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T09:06:15.58Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "OrderStatus.cs",
               "DocumentMoniker": "C:\\Users\\Sudeep A\\Desktop\\GT\\Book Barn\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Domain\\Entities\\OrderStatus.cs",
               "RelativeDocumentMoniker": "BookBarn.Domain\\Entities\\OrderStatus.cs",
@@ -86,7 +137,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "PaymentDetails.cs",
               "DocumentMoniker": "C:\\Users\\Sudeep A\\Desktop\\GT\\Book Barn\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Domain\\Entities\\PaymentDetails.cs",
               "RelativeDocumentMoniker": "BookBarn.Domain\\Entities\\PaymentDetails.cs",
@@ -98,7 +149,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\Sudeep A\\Desktop\\GT\\Book Barn\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Domain\\Entities\\User.cs",
               "RelativeDocumentMoniker": "BookBarn.Domain\\Entities\\User.cs",
@@ -110,7 +161,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "Address.cs",
               "DocumentMoniker": "C:\\Users\\Sudeep A\\Desktop\\GT\\Book Barn\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Domain\\Entities\\Address.cs",
               "RelativeDocumentMoniker": "BookBarn.Domain\\Entities\\Address.cs",
@@ -122,7 +173,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "OrderItem.cs",
               "DocumentMoniker": "C:\\Users\\Sudeep A\\Desktop\\GT\\Book Barn\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Domain\\Entities\\OrderItem.cs",
               "RelativeDocumentMoniker": "BookBarn.Domain\\Entities\\OrderItem.cs",
@@ -134,7 +185,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Order.cs",
               "DocumentMoniker": "C:\\Users\\Sudeep A\\Desktop\\GT\\Book Barn\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Domain\\Entities\\Order.cs",
               "RelativeDocumentMoniker": "BookBarn.Domain\\Entities\\Order.cs",
@@ -147,7 +198,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Book.cs",
               "DocumentMoniker": "C:\\Users\\Sudeep A\\Desktop\\GT\\Book Barn\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Domain\\Entities\\Book.cs",
               "RelativeDocumentMoniker": "BookBarn.Domain\\Entities\\Book.cs",
@@ -159,7 +210,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "BookBarnDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Sudeep A\\Desktop\\GT\\Book Barn\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Data\\BookBarnDbContext.cs",
               "RelativeDocumentMoniker": "BookBarn.Data\\BookBarnDbContext.cs",
@@ -171,7 +222,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "ShoppingCart.cs",
               "DocumentMoniker": "C:\\Users\\Sudeep A\\Desktop\\GT\\Book Barn\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Domain\\Entities\\ShoppingCart.cs",
               "RelativeDocumentMoniker": "BookBarn.Domain\\Entities\\ShoppingCart.cs",
@@ -183,7 +234,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "ReviewCumRating.cs",
               "DocumentMoniker": "C:\\Users\\Sudeep A\\Desktop\\GT\\Book Barn\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Domain\\Entities\\ReviewCumRating.cs",
               "RelativeDocumentMoniker": "BookBarn.Domain\\Entities\\ReviewCumRating.cs",
@@ -195,7 +246,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "CartItem.cs",
               "DocumentMoniker": "C:\\Users\\Sudeep A\\Desktop\\GT\\Book Barn\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Domain\\Entities\\CartItem.cs",
               "RelativeDocumentMoniker": "BookBarn.Domain\\Entities\\CartItem.cs",
@@ -207,7 +258,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\Sudeep A\\Desktop\\GT\\Book Barn\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.API\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "BookBarn.API\\Controllers\\HomeController.cs",
@@ -219,7 +270,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "IdentityConfig.cs",
               "DocumentMoniker": "C:\\Users\\Sudeep A\\Desktop\\GT\\Book Barn\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.API\\App_Start\\IdentityConfig.cs",
               "RelativeDocumentMoniker": "BookBarn.API\\App_Start\\IdentityConfig.cs",
