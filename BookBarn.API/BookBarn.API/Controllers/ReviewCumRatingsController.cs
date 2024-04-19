@@ -9,75 +9,43 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Description;
-using BookBarn.Data;
+
 using BookBarn.Domain.Interfaces;
 
 namespace BookBarn.API.Controllers
 {
     public class ReviewCumRatingsController : ApiController
     {
-       // private BookBarnDbContext db = new BookBarnDbContext();
-        IReviewCumRatingRepo db = null;
+        
+        public IReviewCumRatingRepo repo = null;
+
+        // constructor for DI using Unity IOC
         public ReviewCumRatingsController(IReviewCumRatingRepo repo)
         {
-            db = repo;   
+            this.repo = repo;
         }
 
-
-
-
-        public IQueryable<ReviewCumRating> GetReviewCumRatings()
+        //    // GET: api/ReviewCumRatings
+        //    // sample url format ...
+        //    // https://localhost:44348/api/ReviewCumRatings
+        public IQueryable<ReviewCumRating> GetAllReviewCumRatings()
         {
-           return db.getAllReview() as IQueryable<ReviewCumRating>;
+            return repo.GetAllReviewCumRatings() as IQueryable<ReviewCumRating>;
         }
-            // GET: api/ReviewCumRatings
 
-            // sample url format ...
-            // https://localhost:44348/api/ReviewCumRatings?type=positive
-      /*      public IQueryable<ReviewCumRating> GetReviewCumRatings(string type)
+        //    // GET: api/ReviewCumRatings
+        //    // sample url format ...
+        //    // https://localhost:44348/api/ReviewCumRatings?type=positive
+        public IQueryable<ReviewCumRating> GetReviewCumRatings(string type)
         {
-            if (type == "positive")
-            {
-                return db.ReviewCumRatings.Where(rr=>rr.Rating>3);
-            }
-            else if(type == "negative")
-            {
-                return db.ReviewCumRatings.Where(rr => rr.Rating <3 );
-            }
-            else if(type =="neutral")
-            {
-                return db.ReviewCumRatings.Where(rr => rr.Rating == 3);
-            }
-            else if(type == "one")
-            {
-                return db.ReviewCumRatings.Where(rr => rr.Rating == 1);
-            }
-            else if(type == "two")
-            {
-                return db.ReviewCumRatings.Where(rr => rr.Rating == 2);
-            }
-            else if(type == "three")
-            {
-                return db.ReviewCumRatings.Where(rr => rr.Rating == 3);
-            }
-            else if (type == "four")
-            {
-                return db.ReviewCumRatings.Where(rr => rr.Rating == 4);
-            }
-            else
-            {
-                return db.ReviewCumRatings.Where(rr => rr.Rating == 5);
-            }
-        
-        
-            *//*return db.ReviewCumRatings;*//*
+            return repo.GetReviewCumRatings(type) as IQueryable<ReviewCumRating>;
         }
 
         // GET: api/ReviewCumRatings/5
         [ResponseType(typeof(ReviewCumRating))]
         public IHttpActionResult GetReviewCumRating(int id)
         {
-            ReviewCumRating reviewCumRating = db.ReviewCumRatings.Find(id);
+            ReviewCumRating reviewCumRating = repo.GetReviewCumRating(id); //db.ReviewCumRatings.Find(id);
             if (reviewCumRating == null)
             {
                 return NotFound();
@@ -100,70 +68,45 @@ namespace BookBarn.API.Controllers
                 return BadRequest();
             }
 
-            db.Entry(reviewCumRating).State = EntityState.Modified;
-
-            try
+            //db.Entry(reviewCumRating).State = EntityState.Modified;
+            if(repo.PutReviewCumRating(id, reviewCumRating)) 
             {
-                db.SaveChanges();
+                return StatusCode(HttpStatusCode.NoContent); 
             }
-            catch (DbUpdateConcurrencyException)
+            else
             {
-                if (!ReviewCumRatingExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
+                return BadRequest();
             }
-
-            return StatusCode(HttpStatusCode.NoContent);
+            
         }
 
-        // POST: api/ReviewCumRatings
-        [ResponseType(typeof(ReviewCumRating))]
+        //POST: api/ReviewCumRatings
+       [ResponseType(typeof(ReviewCumRating))]
         public IHttpActionResult PostReviewCumRating(ReviewCumRating reviewCumRating)
         {
+            
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            db.ReviewCumRatings.Add(reviewCumRating);
-            db.SaveChanges();
+            if (repo.PostReviewCumRating(reviewCumRating))
+            {
+                return CreatedAtRoute("DefaultApi", new { id = reviewCumRating.ReviewCumRatingId }, reviewCumRating);
+            }
 
-            return CreatedAtRoute("DefaultApi", new { id = reviewCumRating.ReviewCumRatingId }, reviewCumRating);
+            return BadRequest();
         }
 
         // DELETE: api/ReviewCumRatings/5
         [ResponseType(typeof(ReviewCumRating))]
         public IHttpActionResult DeleteReviewCumRating(int id)
         {
-            ReviewCumRating reviewCumRating = db.ReviewCumRatings.Find(id);
-            if (reviewCumRating == null)
+            if (repo.DeleteReviewCumRating(id))
             {
-                return NotFound();
+                return Ok();
             }
-
-            db.ReviewCumRatings.Remove(reviewCumRating);
-            db.SaveChanges();
-
-            return Ok(reviewCumRating);
-        }
-
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing)
-            {
-                db.Dispose();
-            }
-            base.Dispose(disposing);
-        }
-
-        private bool ReviewCumRatingExists(int id)
-        {
-            return db.ReviewCumRatings.Count(e => e.ReviewCumRatingId == id) > 0;
-        }*/
+            return NotFound();
+        }        
     }
 }

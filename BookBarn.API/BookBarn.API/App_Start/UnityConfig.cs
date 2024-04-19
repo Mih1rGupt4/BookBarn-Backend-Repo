@@ -16,7 +16,7 @@ namespace BookBarn.API
             // it is NOT necessary to register your controllers
 
             // e.g. container.RegisterType<ITestService, TestService>();
-            container.RegisterType<IReviewCumRatingRepo, ReviiewCumRatingRepo>();
+            container.RegisterType<IReviewCumRatingRepo, ReviewCumRatingRepo>();
            // container.RegisterType<IReviewCumRatingRepo, DummyRepo>();
 
             GlobalConfiguration.Configuration.DependencyResolver = new UnityDependencyResolver(container);

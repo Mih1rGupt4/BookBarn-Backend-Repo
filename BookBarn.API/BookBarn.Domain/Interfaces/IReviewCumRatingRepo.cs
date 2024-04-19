@@ -9,6 +9,17 @@ namespace BookBarn.Domain.Interfaces
 {
     public interface IReviewCumRatingRepo
     {
-      List<ReviewCumRating> getAllReview();
+        IQueryable<ReviewCumRating> GetAllReviewCumRatings();
+
+        List<ReviewCumRating> GetReviewCumRatings(string type);
+        
+        ReviewCumRating GetReviewCumRating(int id);
+        
+         bool PutReviewCumRating(int id, ReviewCumRating reviewCumRating);
+        
+        bool PostReviewCumRating(ReviewCumRating reviewCumRating);
+       
+        bool DeleteReviewCumRating(int id);
+
     }
 }
