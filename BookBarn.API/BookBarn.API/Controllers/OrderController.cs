@@ -7,17 +7,26 @@ using System.Linq;
 using System.Net;
 using System.Web.Http;
 using System.Web.Routing;
+using BookBarn.Data.Repositories;
+using BookBarn.Domain.Interfaces;
 
 namespace BookBarn.API.Controllers
 {
     public class OrderController : ApiController
     {
-        BookBarnDbContext db;
+        //BookBarnDbContext db;
+        IOrderRepository repo;
 
         public OrderController()
         {
-            db = new BookBarnDbContext();
+            //repo = new OrderRepository();
+            //db = new BookBarnDbContext();
             //List<Order> orderList = new List<Order>();
+        }
+
+        public OrderController(IOrderRepository repo)
+        {
+            this.repo = repo;
         }
 
 
@@ -27,7 +36,7 @@ namespace BookBarn.API.Controllers
         // get all orders (only for the admin) 
         public IHttpActionResult GetAllOrders()
         {
-            var orders = db.Orders;
+            var orders = repo.GetAllOrders();
             if (orders == null)
             {
                 return NotFound();
@@ -43,7 +52,7 @@ namespace BookBarn.API.Controllers
         [Route("api/order/{id}")]
         public IHttpActionResult GetOrdersById(string id)
         {
-            var userOrders = db.Orders.Where(o => o.UserID == id);
+            var userOrders = repo.GetAllOrdersForUser(id);
             if (userOrders == null)
             {
                 return BadRequest();
@@ -62,8 +71,7 @@ namespace BookBarn.API.Controllers
             {
                 return BadRequest("Missing data to patch");
             }
-            db.Orders.Add(order);
-            db.SaveChanges();
+            repo.AddOrder(order);
             return Created("location", order.OrderID);
         }
 
@@ -81,7 +89,7 @@ namespace BookBarn.API.Controllers
                 return BadRequest("Missing data to patch");
             }
 
-            var existingOrder = db.Orders.FirstOrDefault(o => o.OrderID == id);
+            var existingOrder = repo.GetOrder(id);
 
 
             if (existingOrder == null)
@@ -91,10 +99,7 @@ namespace BookBarn.API.Controllers
 
             }
 
-            existingOrder.Status = order.Status;
-
-            //DB.save changes
-            db.SaveChanges();
+            repo.UpdateOrderStatus(existingOrder, order);
 
             return Ok("order patched");
         }

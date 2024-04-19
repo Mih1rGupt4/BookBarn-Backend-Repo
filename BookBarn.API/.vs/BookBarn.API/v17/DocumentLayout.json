@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Jeferson x\\OneDrive\\Documents\\Notes\\Case-study\\BookBarn-Backend-Repo\\BookBarn.API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|C:\\Users\\Jeferson x\\OneDrive\\Documents\\Notes\\Case-study\\BookBarn-Backend-Repo\\BookBarn.API\\bookbarn.api\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|c:\\users\\jeferson x\\onedrive\\documents\\notes\\case-study\\bookbarn-backend-repo\\bookbarn.api\\bookbarn.api\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|solutionrelative:bookbarn.api\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Jeferson x\\OneDrive\\Documents\\Notes\\Case-study\\BookBarn-Backend-Repo\\BookBarn.API\\packages\\Unity.WebAPI.5.4.0\\Readme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:packages\\Unity.WebAPI.5.4.0\\Readme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|c:\\users\\jeferson x\\onedrive\\documents\\notes\\case-study\\bookbarn-backend-repo\\bookbarn.api\\bookbarn.api\\app_start\\unityconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|solutionrelative:bookbarn.api\\app_start\\unityconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|c:\\users\\jeferson x\\onedrive\\documents\\notes\\case-study\\bookbarn-backend-repo\\bookbarn.api\\bookbarn.api\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|solutionrelative:bookbarn.api\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54B19926-0662-4392-9A68-4A3D05B9607B}|BookBarn.Data\\BookBarn.Data.csproj|c:\\users\\jeferson x\\onedrive\\documents\\notes\\case-study\\bookbarn-backend-repo\\bookbarn.api\\bookbarn.data\\repositories\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54B19926-0662-4392-9A68-4A3D05B9607B}|BookBarn.Data\\BookBarn.Data.csproj|solutionrelative:bookbarn.data\\repositories\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,8 +30,47 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OrderRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Jeferson x\\OneDrive\\Documents\\Notes\\Case-study\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Data\\Repositories\\OrderRepository.cs",
+              "RelativeDocumentMoniker": "BookBarn.Data\\Repositories\\OrderRepository.cs",
+              "ToolTip": "C:\\Users\\Jeferson x\\OneDrive\\Documents\\Notes\\Case-study\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Data\\Repositories\\OrderRepository.cs",
+              "RelativeToolTip": "BookBarn.Data\\Repositories\\OrderRepository.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAYwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T08:17:08.197Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Global.asax.cs",
+              "DocumentMoniker": "C:\\Users\\Jeferson x\\OneDrive\\Documents\\Notes\\Case-study\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.API\\Global.asax.cs",
+              "RelativeDocumentMoniker": "BookBarn.API\\Global.asax.cs",
+              "ToolTip": "C:\\Users\\Jeferson x\\OneDrive\\Documents\\Notes\\Case-study\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.API\\Global.asax.cs",
+              "RelativeToolTip": "BookBarn.API\\Global.asax.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T08:14:46.609Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UnityConfig.cs",
+              "DocumentMoniker": "C:\\Users\\Jeferson x\\OneDrive\\Documents\\Notes\\Case-study\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.API\\App_Start\\UnityConfig.cs",
+              "RelativeDocumentMoniker": "BookBarn.API\\App_Start\\UnityConfig.cs",
+              "ToolTip": "C:\\Users\\Jeferson x\\OneDrive\\Documents\\Notes\\Case-study\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.API\\App_Start\\UnityConfig.cs",
+              "RelativeToolTip": "BookBarn.API\\App_Start\\UnityConfig.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T08:12:49.661Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -28,7 +79,7 @@
               "RelativeDocumentMoniker": "packages\\Unity.WebAPI.5.4.0\\Readme.txt",
               "ToolTip": "C:\\Users\\Jeferson x\\OneDrive\\Documents\\Notes\\Case-study\\BookBarn-Backend-Repo\\BookBarn.API\\packages\\Unity.WebAPI.5.4.0\\Readme.txt",
               "RelativeToolTip": "packages\\Unity.WebAPI.5.4.0\\Readme.txt",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAA5AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
               "WhenOpened": "2024-04-19T06:04:26.433Z",
               "EditorCaption": ""
@@ -41,7 +92,7 @@
               "RelativeDocumentMoniker": "BookBarn.API\\Controllers\\OrderController.cs",
               "ToolTip": "C:\\Users\\Jeferson x\\OneDrive\\Documents\\Notes\\Case-study\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.API\\Controllers\\OrderController.cs",
               "RelativeToolTip": "BookBarn.API\\Controllers\\OrderController.cs",
-              "ViewState": "AQIAAEwAAAAAAAAAAAAkwFwAAAAAAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABUAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-19T04:26:47.628Z",
               "EditorCaption": ""

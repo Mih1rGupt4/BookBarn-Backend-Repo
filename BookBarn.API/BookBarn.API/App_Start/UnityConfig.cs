@@ -1,3 +1,5 @@
+using BookBarn.Data.Repositories;
+using BookBarn.Domain.Interfaces;
 using System.Web.Http;
 using Unity;
 using Unity.WebApi;
@@ -12,6 +14,8 @@ namespace BookBarn.API
             
             // register all your components with the container here
             // it is NOT necessary to register your controllers
+
+            container.RegisterType<IOrderRepository, OrderRepository>();
             
             // e.g. container.RegisterType<ITestService, TestService>();
             
