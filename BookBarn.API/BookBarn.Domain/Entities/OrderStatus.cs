@@ -3,16 +3,16 @@
     public enum OrderStatus
     {
         Ordered,
-        Cancelled,
         Packed,
         Dispatched,
         OnTheWay,
-        Delivered,
         ReturnRequested,
         ReplacedRequested,
         ReturnScheduled,
+        Delivered,
         ReturnCompleted,
-        ReplacedCompleted
+        ReplacedCompleted,
+        Cancelled
     }
 
 }
