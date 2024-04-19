@@ -15,6 +15,7 @@ namespace BookBarn.Data.Repositories
         public void AddUser(User user)
         {
             db.Users.Add(user);
+
         }
 
         public User GetUser(string username)
