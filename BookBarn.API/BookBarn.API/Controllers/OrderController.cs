@@ -9,9 +9,11 @@ using System.Web.Http;
 using System.Web.Routing;
 using BookBarn.Data.Repositories;
 using BookBarn.Domain.Interfaces;
+using System.Web.Http.Cors;
 
 namespace BookBarn.API.Controllers
 {
+    [EnableCors(origins: "*", headers: "*", methods: "*")]
     public class OrderController : ApiController
     {
         //BookBarnDbContext db;
