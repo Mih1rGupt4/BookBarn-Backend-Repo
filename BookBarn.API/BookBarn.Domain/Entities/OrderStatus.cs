@@ -6,10 +6,10 @@
         Packed,
         Dispatched,
         OnTheWay,
+        Delivered,
         ReturnRequested,
         ReplacedRequested,
         ReturnScheduled,
-        Delivered,
         ReturnCompleted,
         ReplacedCompleted,
         Cancelled
