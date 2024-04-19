@@ -3,6 +3,7 @@ using System.Web.Http;
 using System.Web.Routing;
 using BookBarn.Domain.Interfaces;
 using System.Web.Http.Cors;
+using System.Linq;
 
 namespace BookBarn.API.Controllers
 {
@@ -98,5 +99,168 @@ namespace BookBarn.API.Controllers
 
             return Ok("order patched");
         }
+
+
+
+        [HttpGet]
+        [Route("api/order/all")]
+        public IHttpActionResult GetAll()
+        {
+            var orders = repo.GetAllOrders();
+            if (orders == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(orders);
+        }
+
+        // Action method for handling requests with an id parameter
+        [HttpGet]
+        [Route("api/order/all/{id}")]
+        public IHttpActionResult GetAllByUserId(string id)
+        {
+            var orders = repo.GetAllOrders();
+            if (orders == null)
+            {
+                return NotFound();
+            }
+
+            var userlist = orders.Where(o => o.UserID == id);
+            if (userlist == null)
+            {
+                return NotFound();
+            }
+            return Ok(userlist);
+        }
+
+
+        // Action method for handling requests without an id parameter
+        [HttpGet]
+        [Route("api/order/active")]
+        public IHttpActionResult GetAllActive()
+        {
+            var orders = repo.GetAllOrders();
+            if (orders == null)
+            {
+                return NotFound();
+            }
+
+            var activelist = orders.Where(o => o.Status == OrderStatus.Ordered || o.Status == OrderStatus.Packed
+                || o.Status == OrderStatus.Dispatched || o.Status == OrderStatus.OnTheWay);
+            if (activelist == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(activelist);
+        }
+
+        // Action method for handling requests with an id parameter
+        [HttpGet]
+        [Route("api/order/active/{id}")]
+        public IHttpActionResult GetActiveOrdersByUserId(string id)
+        {
+            var orders = repo.GetAllOrders();
+            if (orders == null)
+            {
+                return NotFound();
+            }
+
+            var userActivelist = orders.Where(o => o.UserID == id &&
+                (o.Status == OrderStatus.Ordered || o.Status == OrderStatus.Packed
+                || o.Status == OrderStatus.Dispatched || o.Status == OrderStatus.OnTheWay)
+            );
+            if (userActivelist == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(userActivelist);
+        }
+
+
+        // Action method for handling requests without an id parameter
+        [HttpGet]
+        [Route("api/order/completed")]
+        public IHttpActionResult GetAllCompleted()
+        {
+            var orders = repo.GetAllOrders();
+            if (orders == null)
+            {
+                return NotFound();
+            }
+
+            var completedlist = orders.Where(o => o.Status == OrderStatus.Delivered);
+            if (completedlist == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(completedlist);
+        }
+
+        // Action method for handling requests with an id parameter
+        [HttpGet]
+        [Route("api/order/completed/{id}")]
+        public IHttpActionResult GetCompletedOrdersByUserId(string id)
+        {
+            var orders = repo.GetAllOrders();
+            if (orders == null)
+            {
+                return NotFound();
+            }
+
+            var usercompletedlist = orders.Where(o => o.UserID == id && o.Status == OrderStatus.Delivered);
+            if (usercompletedlist == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(usercompletedlist);
+        }
+
+
+
+        // Action method for handling requests without an id parameter
+        [HttpGet]
+        [Route("api/order/cancelled")]
+        public IHttpActionResult GetAllCancelled()
+        {
+            var orders = repo.GetAllOrders();
+            if (orders == null)
+            {
+                return NotFound();
+            }
+
+            var cancelledlist = orders.Where(o => o.Status == OrderStatus.Cancelled);
+            if (cancelledlist == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(cancelledlist);
+        }
+
+        // Action method for handling requests with an id parameter
+        [HttpGet]
+        [Route("api/order/cancelled/{id}")]
+        public IHttpActionResult GetCancelledOrdersByUserId(string id)
+        {
+            var orders = repo.GetAllOrders();
+            if (orders == null)
+            {
+                return NotFound();
+            }
+
+            var usercancelledlist = orders.Where(o => o.UserID == id && o.Status == OrderStatus.Cancelled);
+            if (usercancelledlist == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(usercancelledlist);
+        }
+
     }
 }
