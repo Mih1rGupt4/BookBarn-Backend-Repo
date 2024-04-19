@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,9 +11,9 @@ namespace BookBarn.Domain.Entities
     {
         [Key]
         public int WishlistId { get; set; } 
-        [Required]
-        public int UserId { get; set; }
-        [Required]
-        public virtual Book Book { get; set; }  
+        public int UserId { get; set; }    
+        public int BookID {  get; set; }
+        public virtual Book TheBook { get; set; }
+
     }
 }
