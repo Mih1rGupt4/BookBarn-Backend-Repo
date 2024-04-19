@@ -10,9 +10,11 @@ namespace BookBarn.Domain.Interfaces
     public interface IBooksRepository
     {
         List<Book> GetAllBooks();
+        Book GetBookByID(int id);
         List<Book> GetBooksByCategory(string category);
         List<Book> GetBooksByTitle(string title);
         List<Book> GetBooksByAuthor(string author);
+        List<Book> GetBooksByBias(string title, string author, string category);
 
     }
 }
