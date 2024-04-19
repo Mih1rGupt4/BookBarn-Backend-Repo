@@ -2,6 +2,7 @@
 using BookBarn.Domain.Interfaces;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,7 +25,18 @@ namespace BookBarn.Data.Repositories
 
         public void UpdateCartItem(CartItem item)
         {
-           
+            var existingItem = db.CartItems.Find(item.CartItemID);
+            if (existingItem != null)
+            {
+                existingItem.Quantity = item.Quantity;
+                db.SaveChanges();
+            }
+            else
+            {
+                throw new InvalidOperationException("Item not found");
+
+            }
+
         }
     }
 }
