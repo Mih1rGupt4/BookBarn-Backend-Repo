@@ -42,6 +42,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Entity" />
     <Reference Include="System.Xml.Linq" />
@@ -53,6 +54,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="Dto\Book\BookCardDto.cs" />
+    <Compile Include="Dto\Book\BookFilterParams.cs" />
     <Compile Include="Dto\Class1.cs" />
     <Compile Include="Entities\Address.cs" />
     <Compile Include="Entities\Book.cs" />
@@ -72,7 +75,6 @@
     <Compile Include="Interfaces\IOrderRepository.cs" />
     <Compile Include="Interfaces\IShoppingCartRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Services\Class1.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
