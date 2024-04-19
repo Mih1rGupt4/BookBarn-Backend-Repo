@@ -1,19 +1,29 @@
 ﻿using BookBarn.Data;
 using BookBarn.Domain.Entities;
-using Microsoft.AspNet.OData;
+using System.Web.Http.OData;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
-using System.Net.Http;
 using System.Web.Http;
+using System.Web.Routing;
 
 namespace BookBarn.API.Controllers
 {
     public class OrderController : ApiController
     {
+        private List<Order> orders = new List<Order>();
         //BookBarnDbContext db = new BookBarnDbContext();
-        //List<Order> orderList = new List<Order>();
+
+        public OrderController()
+        {
+            //BookBarnDbContext db = new BookBarnDbContext();
+            //List<Order> orderList = new List<Order>();
+
+
+        }
+
+
 
         // get
         // api/order/
@@ -36,69 +46,41 @@ namespace BookBarn.API.Controllers
         // get
         // api/order/{id}
         // get all orders by user
-        public IHttpActionResult GetOrdersById(int id)
+        [Route("api/order/{id}")]
+        public IHttpActionResult GetOrdersById(string id)
         {
-            var order = new Order();
-            //var order = db.Orders.Find(id);
-            if (order == null)
+            var alluserorders = new Order(); //orders.Where(o => o.UserID == id).ToList();
+            if (alluserorders == null)// || alluserorders.Count() == 0)
             {
-                // not found
-                // return http status code 404
-                return NotFound();
+                return BadRequest();
             }
-
-            return Ok(order); // if found then return 200 with data
+            return Ok(alluserorders); // if found then return 200 with data
         }
 
 
         // post
         // api/order
         // to post the order
-
-
-
-        /*  empty json body structure for posting order data
-         * 
+        [HttpPost]
+        public IHttpActionResult PostAddOrder(Order order)
         {
-        "OrderID": 0,
-        "UserID": null,
-        "OrderItems": [
+
+            if (order == null)
             {
-                "OrderItemID": 0,
-                "BookID": 0,
-                "Quantity": 0,
-                "Price": 0.0
+                return BadRequest("Missing data to patch");
             }
-        ],
-        "TotalPrice": 0.0,
-        "OrderDate": "0001-01-01T00:00:00",
-        "ShippingAddress": {
-            "AddressID": 0,
-            "AddressLine1": null,
-            "AddressLine2": null,
-            "Street": null,
-            "City": null,
-            "State": null,
-            "PostalCode": null,
-            "Country": null
-        },
-        "PaymentDetails": {
-            "PaymentDetailsID": 0,
-            "Amount": 0.0,
-            "TransactionId": null,
-            "PaymentSource": null
-        },
-        "Status": 0
-    }
-        */
-
-
+            orders.Add(order);
+            return Created("location", orders.Count()); // if found then return 200 with data
+        }
 
         // patch
         // api/order/{id}
         // edit the status for admin to change the status
         //[HttpPatch]
-        public IHttpActionResult PatchEditStatus(int id, [FromBody] Delta<Order>order)
+        // public IHttpActionResult PatchEditStatus(int id, [FromBody]Delta<Order>order)
+        [HttpPatch]
+        [Route("api/order/{id}")]
+        public IHttpActionResult PatchEditStatus(int id, [FromBody] Order order)
         {
 
 
@@ -107,13 +89,28 @@ namespace BookBarn.API.Controllers
                 return BadRequest("Missing data to patch");
             }
 
-            var existingOrder = new Order();
-            order.Patch(existingOrder);
+            var existingOrder = orders.FirstOrDefault(o => o.OrderID == id);
+
+
+            if (existingOrder == null)
+            {
+
+                return BadRequest("canot find the order with this id");
+
+            }
+
+            existingOrder.UserID = order.UserID;
+            existingOrder.OrderItems = order.OrderItems;
+            existingOrder.TotalPrice = order.TotalPrice;
+            existingOrder.OrderDate = order.OrderDate;
+            existingOrder.ShippingAddress = order.ShippingAddress;
+            existingOrder.PaymentDetails = order.PaymentDetails;
+            existingOrder.Status = order.Status;
 
             //DB.save changes
 
 
-            return Ok();
+            return Ok("order patched");
         }
     }
 }
