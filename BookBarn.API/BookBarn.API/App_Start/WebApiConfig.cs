@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net.Http;
 using System.Web.Http;
 using Microsoft.Owin.Security.OAuth;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 
 namespace BookBarn.API
@@ -25,6 +26,12 @@ namespace BookBarn.API
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+
+            var jsonSettings = new JsonSerializerSettings
+            {
+                ReferenceLoopHandling = ReferenceLoopHandling.Ignore
+            };
+            config.Formatters.JsonFormatter.SerializerSettings = jsonSettings;
         }
     }
 }

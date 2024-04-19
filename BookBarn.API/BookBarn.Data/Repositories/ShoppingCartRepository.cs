@@ -11,10 +11,11 @@ namespace BookBarn.Data.Repositories
 {
     public class ShoppingCartRepository : IShoppingCartRepository
     {
-        private BookBarnDbContext _dbContext;
-        ShoppingCartRepository(BookBarnDbContext dbContext)
+        private readonly BookBarnDbContext _dbContext;
+
+        public ShoppingCartRepository()
         {
-            _dbContext = dbContext;
+            _dbContext = new BookBarnDbContext();
         }
         public void AddCartItem(int cartId, CartItem item)
         {

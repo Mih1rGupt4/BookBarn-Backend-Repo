@@ -11,7 +11,7 @@ namespace BookBarn.Data.Repositories
 {
     public class CartItemRepository : ICartItemRepository
     {
-        private BookBarnDbContext db;
+        private readonly BookBarnDbContext db;
         CartItemRepository(BookBarnDbContext dbContext)
         {
             db  = dbContext;
