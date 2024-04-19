@@ -7,20 +7,26 @@ using System.Linq;
 using System.Net;
 using System.Web.Http;
 using System.Web.Routing;
+using BookBarn.Data.Repositories;
+using BookBarn.Domain.Interfaces;
 
 namespace BookBarn.API.Controllers
 {
     public class OrderController : ApiController
     {
-        private List<Order> orders = new List<Order>();
-        //BookBarnDbContext db = new BookBarnDbContext();
+        //BookBarnDbContext db;
+        IOrderRepository repo;
 
         public OrderController()
         {
-            //BookBarnDbContext db = new BookBarnDbContext();
+            //repo = new OrderRepository();
+            //db = new BookBarnDbContext();
             //List<Order> orderList = new List<Order>();
+        }
 
-
+        public OrderController(IOrderRepository repo)
+        {
+            this.repo = repo;
         }
 
 
@@ -30,16 +36,13 @@ namespace BookBarn.API.Controllers
         // get all orders (only for the admin) 
         public IHttpActionResult GetAllOrders()
         {
-            var orders = new List<Order>();
-            //List<Order> orders = db.Orders.ToList();
+            var orders = repo.GetAllOrders();
             if (orders == null)
             {
-                // not found
-                // return http status code 404
                 return NotFound();
             }
 
-            return Ok(orders); // if found then return 200 with data
+            return Ok(orders);
         }
 
 
@@ -49,12 +52,12 @@ namespace BookBarn.API.Controllers
         [Route("api/order/{id}")]
         public IHttpActionResult GetOrdersById(string id)
         {
-            var alluserorders = new Order(); //orders.Where(o => o.UserID == id).ToList();
-            if (alluserorders == null)// || alluserorders.Count() == 0)
+            var userOrders = repo.GetAllOrdersForUser(id);
+            if (userOrders == null)
             {
                 return BadRequest();
             }
-            return Ok(alluserorders); // if found then return 200 with data
+            return Ok(userOrders);
         }
 
 
@@ -64,13 +67,12 @@ namespace BookBarn.API.Controllers
         [HttpPost]
         public IHttpActionResult PostAddOrder(Order order)
         {
-
             if (order == null)
             {
                 return BadRequest("Missing data to patch");
             }
-            orders.Add(order);
-            return Created("location", orders.Count()); // if found then return 200 with data
+            repo.AddOrder(order);
+            return Created("location", order.OrderID);
         }
 
         // patch
@@ -82,14 +84,12 @@ namespace BookBarn.API.Controllers
         [Route("api/order/{id}")]
         public IHttpActionResult PatchEditStatus(int id, [FromBody] Order order)
         {
-
-
             if (order == null)
             {
                 return BadRequest("Missing data to patch");
             }
 
-            var existingOrder = orders.FirstOrDefault(o => o.OrderID == id);
+            var existingOrder = repo.GetOrder(id);
 
 
             if (existingOrder == null)
@@ -99,16 +99,7 @@ namespace BookBarn.API.Controllers
 
             }
 
-            existingOrder.UserID = order.UserID;
-            existingOrder.OrderItems = order.OrderItems;
-            existingOrder.TotalPrice = order.TotalPrice;
-            existingOrder.OrderDate = order.OrderDate;
-            existingOrder.ShippingAddress = order.ShippingAddress;
-            existingOrder.PaymentDetails = order.PaymentDetails;
-            existingOrder.Status = order.Status;
-
-            //DB.save changes
-
+            repo.UpdateOrderStatus(existingOrder, order);
 
             return Ok("order patched");
         }
