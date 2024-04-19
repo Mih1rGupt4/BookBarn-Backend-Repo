@@ -1,14 +1,70 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\S Soujanya\\BookBarn-Backend-Repo\\BookBarn.API\\",
+  "WorkspaceRootPath": "C:\\Users\\Sanjana\\BookBarn-Backend-Repo\\BookBarn.API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{54B19926-0662-4392-9A68-4A3D05B9607B}|BookBarn.Data\\BookBarn.Data.csproj|c:\\users\\s soujanya\\bookbarn-backend-repo\\bookbarn.api\\bookbarn.data\\repositories\\orderitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54B19926-0662-4392-9A68-4A3D05B9607B}|BookBarn.Data\\BookBarn.Data.csproj|solutionrelative:bookbarn.data\\repositories\\orderitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{54B19926-0662-4392-9A68-4A3D05B9607B}|BookBarn.Data\\BookBarn.Data.csproj|c:\\users\\sanjana\\bookbarn-backend-repo\\bookbarn.api\\bookbarn.data\\repositories\\booksrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54B19926-0662-4392-9A68-4A3D05B9607B}|BookBarn.Data\\BookBarn.Data.csproj|solutionrelative:bookbarn.data\\repositories\\booksrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54B19926-0662-4392-9A68-4A3D05B9607B}|BookBarn.Data\\BookBarn.Data.csproj|C:\\Users\\S Soujanya\\BookBarn-Backend-Repo\\BookBarn.API\\bookbarn.data\\repositories\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54B19926-0662-4392-9A68-4A3D05B9607B}|BookBarn.Data\\BookBarn.Data.csproj|solutionrelative:bookbarn.data\\repositories\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{54B19926-0662-4392-9A68-4A3D05B9607B}|BookBarn.Data\\BookBarn.Data.csproj|C:\\Users\\Sanjana\\BookBarn-Backend-Repo\\BookBarn.API\\bookbarn.data\\repositories\\shoppingcartrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54B19926-0662-4392-9A68-4A3D05B9607B}|BookBarn.Data\\BookBarn.Data.csproj|solutionrelative:bookbarn.data\\repositories\\shoppingcartrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54B19926-0662-4392-9A68-4A3D05B9607B}|BookBarn.Data\\BookBarn.Data.csproj|C:\\Users\\Sanjana\\BookBarn-Backend-Repo\\BookBarn.API\\bookbarn.data\\bookbarndbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54B19926-0662-4392-9A68-4A3D05B9607B}|BookBarn.Data\\BookBarn.Data.csproj|solutionrelative:bookbarn.data\\bookbarndbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|C:\\Users\\Sanjana\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.API\\Migrations\\202404190551352_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|solutionrelative:BookBarn.API\\Migrations\\202404190551352_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|C:\\Users\\Sanjana\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.API\\Migrations\\Configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|solutionrelative:BookBarn.API\\Migrations\\Configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54B19926-0662-4392-9A68-4A3D05B9607B}|BookBarn.Data\\BookBarn.Data.csproj|C:\\Users\\Sanjana\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Data\\Migrations\\202404190554075_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54B19926-0662-4392-9A68-4A3D05B9607B}|BookBarn.Data\\BookBarn.Data.csproj|solutionrelative:BookBarn.Data\\Migrations\\202404190554075_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FACDE463-2F4E-4E7C-AA9C-7BC134CD8B40}|BookBarn.Domain\\BookBarn.Domain.csproj|C:\\Users\\Sanjana\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Domain\\Interfaces\\ICartItemRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FACDE463-2F4E-4E7C-AA9C-7BC134CD8B40}|BookBarn.Domain\\BookBarn.Domain.csproj|solutionrelative:BookBarn.Domain\\Interfaces\\ICartItemRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54B19926-0662-4392-9A68-4A3D05B9607B}|BookBarn.Data\\BookBarn.Data.csproj|C:\\Users\\Sanjana\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Data\\Migrations\\Configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54B19926-0662-4392-9A68-4A3D05B9607B}|BookBarn.Data\\BookBarn.Data.csproj|solutionrelative:BookBarn.Data\\Migrations\\Configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54B19926-0662-4392-9A68-4A3D05B9607B}|BookBarn.Data\\BookBarn.Data.csproj|C:\\Users\\Sanjana\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Data\\App.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{54B19926-0662-4392-9A68-4A3D05B9607B}|BookBarn.Data\\BookBarn.Data.csproj|solutionrelative:BookBarn.Data\\App.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FACDE463-2F4E-4E7C-AA9C-7BC134CD8B40}|BookBarn.Domain\\BookBarn.Domain.csproj|C:\\Users\\Sanjana\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Domain\\App.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{FACDE463-2F4E-4E7C-AA9C-7BC134CD8B40}|BookBarn.Domain\\BookBarn.Domain.csproj|solutionrelative:BookBarn.Domain\\App.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FACDE463-2F4E-4E7C-AA9C-7BC134CD8B40}|BookBarn.Domain\\BookBarn.Domain.csproj|C:\\Users\\Sanjana\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Domain\\Interfaces\\IShoppingCartRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FACDE463-2F4E-4E7C-AA9C-7BC134CD8B40}|BookBarn.Domain\\BookBarn.Domain.csproj|solutionrelative:BookBarn.Domain\\Interfaces\\IShoppingCartRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FACDE463-2F4E-4E7C-AA9C-7BC134CD8B40}|BookBarn.Domain\\BookBarn.Domain.csproj|C:\\Users\\Sanjana\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Domain\\Entities\\OrderStatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FACDE463-2F4E-4E7C-AA9C-7BC134CD8B40}|BookBarn.Domain\\BookBarn.Domain.csproj|solutionrelative:BookBarn.Domain\\Entities\\OrderStatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FACDE463-2F4E-4E7C-AA9C-7BC134CD8B40}|BookBarn.Domain\\BookBarn.Domain.csproj|C:\\Users\\Sanjana\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Domain\\Entities\\Order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FACDE463-2F4E-4E7C-AA9C-7BC134CD8B40}|BookBarn.Domain\\BookBarn.Domain.csproj|solutionrelative:BookBarn.Domain\\Entities\\Order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FACDE463-2F4E-4E7C-AA9C-7BC134CD8B40}|BookBarn.Domain\\BookBarn.Domain.csproj|C:\\Users\\Sanjana\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Domain\\Entities\\CartItem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FACDE463-2F4E-4E7C-AA9C-7BC134CD8B40}|BookBarn.Domain\\BookBarn.Domain.csproj|solutionrelative:BookBarn.Domain\\Entities\\CartItem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FACDE463-2F4E-4E7C-AA9C-7BC134CD8B40}|BookBarn.Domain\\BookBarn.Domain.csproj|C:\\Users\\Sanjana\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Domain\\Entities\\OrderItem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FACDE463-2F4E-4E7C-AA9C-7BC134CD8B40}|BookBarn.Domain\\BookBarn.Domain.csproj|solutionrelative:BookBarn.Domain\\Entities\\OrderItem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FACDE463-2F4E-4E7C-AA9C-7BC134CD8B40}|BookBarn.Domain\\BookBarn.Domain.csproj|C:\\Users\\Sanjana\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Domain\\Entities\\ShoppingCart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FACDE463-2F4E-4E7C-AA9C-7BC134CD8B40}|BookBarn.Domain\\BookBarn.Domain.csproj|solutionrelative:BookBarn.Domain\\Entities\\ShoppingCart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,71 +74,204 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 2,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ShoppingCartRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Sanjana\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Data\\Repositories\\ShoppingCartRepository.cs",
+              "RelativeDocumentMoniker": "BookBarn.Data\\Repositories\\ShoppingCartRepository.cs",
+              "ToolTip": "C:\\Users\\Sanjana\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Data\\Repositories\\ShoppingCartRepository.cs",
+              "RelativeToolTip": "BookBarn.Data\\Repositories\\ShoppingCartRepository.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA4AAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T09:28:27.679Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "OrderItemRepository.cs",
-              "DocumentMoniker": "C:\\Users\\S Soujanya\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Data\\Repositories\\OrderItemRepository.cs",
-              "RelativeDocumentMoniker": "BookBarn.Data\\Repositories\\OrderItemRepository.cs",
-              "ToolTip": "C:\\Users\\S Soujanya\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Data\\Repositories\\OrderItemRepository.cs*",
-              "RelativeToolTip": "BookBarn.Data\\Repositories\\OrderItemRepository.cs*",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
+              "Title": "BooksRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Sanjana\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Data\\Repositories\\BooksRepository.cs",
+              "RelativeDocumentMoniker": "BookBarn.Data\\Repositories\\BooksRepository.cs",
+              "ToolTip": "C:\\Users\\Sanjana\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Data\\Repositories\\BooksRepository.cs",
+              "RelativeToolTip": "BookBarn.Data\\Repositories\\BooksRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-19T08:01:35.666Z",
+              "WhenOpened": "2024-04-19T07:25:25.149Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "OrderRepository.cs",
-              "DocumentMoniker": "C:\\Users\\S Soujanya\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Data\\Repositories\\OrderRepository.cs",
-              "RelativeDocumentMoniker": "BookBarn.Data\\Repositories\\OrderRepository.cs",
-              "ToolTip": "C:\\Users\\S Soujanya\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Data\\Repositories\\OrderRepository.cs",
-              "RelativeToolTip": "BookBarn.Data\\Repositories\\OrderRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC8AAAAJAAAA",
+              "DocumentIndex": 5,
+              "Title": "202404190554075_init.cs",
+              "DocumentMoniker": "C:\\Users\\Sanjana\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Data\\Migrations\\202404190554075_init.cs",
+              "RelativeDocumentMoniker": "BookBarn.Data\\Migrations\\202404190554075_init.cs",
+              "ToolTip": "C:\\Users\\Sanjana\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Data\\Migrations\\202404190554075_init.cs",
+              "RelativeToolTip": "BookBarn.Data\\Migrations\\202404190554075_init.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-19T07:45:41.648Z",
-              "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 961,
-          "SelectedChildIndex": -1,
-          "Children": [
+              "WhenOpened": "2024-04-19T05:54:14.496Z"
+            },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "202404190551352_init.cs",
+              "DocumentMoniker": "C:\\Users\\Sanjana\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.API\\Migrations\\202404190551352_init.cs",
+              "RelativeDocumentMoniker": "BookBarn.API\\Migrations\\202404190551352_init.cs",
+              "ToolTip": "C:\\Users\\Sanjana\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.API\\Migrations\\202404190551352_init.cs",
+              "RelativeToolTip": "BookBarn.API\\Migrations\\202404190551352_init.cs",
+              "ViewState": "AQIAACgAAAAAAAAAAAAQwAcAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T05:51:51.803Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Configuration.cs",
+              "DocumentMoniker": "C:\\Users\\Sanjana\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.API\\Migrations\\Configuration.cs",
+              "RelativeDocumentMoniker": "BookBarn.API\\Migrations\\Configuration.cs",
+              "ToolTip": "C:\\Users\\Sanjana\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.API\\Migrations\\Configuration.cs",
+              "RelativeToolTip": "BookBarn.API\\Migrations\\Configuration.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAwAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T05:50:44.85Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BookBarnDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Sanjana\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Data\\BookBarnDbContext.cs",
+              "RelativeDocumentMoniker": "BookBarn.Data\\BookBarnDbContext.cs",
+              "ToolTip": "C:\\Users\\Sanjana\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Data\\BookBarnDbContext.cs",
+              "RelativeToolTip": "BookBarn.Data\\BookBarnDbContext.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAcwBUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T05:46:52.784Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ICartItemRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Sanjana\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Domain\\Interfaces\\ICartItemRepository.cs",
+              "RelativeDocumentMoniker": "BookBarn.Domain\\Interfaces\\ICartItemRepository.cs",
+              "ToolTip": "C:\\Users\\Sanjana\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Domain\\Interfaces\\ICartItemRepository.cs",
+              "RelativeToolTip": "BookBarn.Domain\\Interfaces\\ICartItemRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T04:13:13.494Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Configuration.cs",
+              "DocumentMoniker": "C:\\Users\\Sanjana\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Data\\Migrations\\Configuration.cs",
+              "RelativeDocumentMoniker": "BookBarn.Data\\Migrations\\Configuration.cs",
+              "ToolTip": "C:\\Users\\Sanjana\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Data\\Migrations\\Configuration.cs",
+              "RelativeToolTip": "BookBarn.Data\\Migrations\\Configuration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T05:53:42.769Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\Sanjana\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Data\\App.config",
+              "RelativeDocumentMoniker": "BookBarn.Data\\App.config",
+              "ToolTip": "C:\\Users\\Sanjana\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Data\\App.config",
+              "RelativeToolTip": "BookBarn.Data\\App.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-04-19T05:53:00.335Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\Sanjana\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Domain\\App.config",
+              "RelativeDocumentMoniker": "BookBarn.Domain\\App.config",
+              "ToolTip": "C:\\Users\\Sanjana\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Domain\\App.config",
+              "RelativeToolTip": "BookBarn.Domain\\App.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-04-19T05:52:50.121Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IShoppingCartRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Sanjana\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Domain\\Interfaces\\IShoppingCartRepository.cs",
+              "RelativeDocumentMoniker": "BookBarn.Domain\\Interfaces\\IShoppingCartRepository.cs",
+              "ToolTip": "C:\\Users\\Sanjana\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Domain\\Interfaces\\IShoppingCartRepository.cs",
+              "RelativeToolTip": "BookBarn.Domain\\Interfaces\\IShoppingCartRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T04:28:00.569Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "OrderStatus.cs",
+              "DocumentMoniker": "C:\\Users\\Sanjana\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Domain\\Entities\\OrderStatus.cs",
+              "RelativeDocumentMoniker": "BookBarn.Domain\\Entities\\OrderStatus.cs",
+              "ToolTip": "C:\\Users\\Sanjana\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Domain\\Entities\\OrderStatus.cs",
+              "RelativeToolTip": "BookBarn.Domain\\Entities\\OrderStatus.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T11:43:24.954Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\Sanjana\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Domain\\Entities\\Order.cs",
+              "RelativeDocumentMoniker": "BookBarn.Domain\\Entities\\Order.cs",
+              "ToolTip": "C:\\Users\\Sanjana\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Domain\\Entities\\Order.cs",
+              "RelativeToolTip": "BookBarn.Domain\\Entities\\Order.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAswBIAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T11:39:16.223Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CartItem.cs",
+              "DocumentMoniker": "C:\\Users\\Sanjana\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Domain\\Entities\\CartItem.cs",
+              "RelativeDocumentMoniker": "BookBarn.Domain\\Entities\\CartItem.cs",
+              "ToolTip": "C:\\Users\\Sanjana\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Domain\\Entities\\CartItem.cs",
+              "RelativeToolTip": "BookBarn.Domain\\Entities\\CartItem.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T11:39:04.513Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "OrderItem.cs",
+              "DocumentMoniker": "C:\\Users\\Sanjana\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Domain\\Entities\\OrderItem.cs",
+              "RelativeDocumentMoniker": "BookBarn.Domain\\Entities\\OrderItem.cs",
+              "ToolTip": "C:\\Users\\Sanjana\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Domain\\Entities\\OrderItem.cs",
+              "RelativeToolTip": "BookBarn.Domain\\Entities\\OrderItem.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T11:38:51.12Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ShoppingCart.cs",
+              "DocumentMoniker": "C:\\Users\\Sanjana\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Domain\\Entities\\ShoppingCart.cs",
+              "RelativeDocumentMoniker": "BookBarn.Domain\\Entities\\ShoppingCart.cs",
+              "ToolTip": "C:\\Users\\Sanjana\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Domain\\Entities\\ShoppingCart.cs",
+              "RelativeToolTip": "BookBarn.Domain\\Entities\\ShoppingCart.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T11:38:26.949Z"
             }
           ]
         }
