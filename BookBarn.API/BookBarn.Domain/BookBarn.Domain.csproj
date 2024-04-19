@@ -65,11 +65,9 @@
     <Compile Include="Entities\ShoppingCart.cs" />
     <Compile Include="Entities\User.cs" />
     <Compile Include="Exceptions\Class1.cs" />
-    <Compile Include="Factories\BookRepositoryFactory.cs" />
     <Compile Include="Interfaces\Class1.cs" />
     <Compile Include="Interfaces\IBooksRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Services\BooksService.cs" />
     <Compile Include="Services\Class1.cs" />
   </ItemGroup>
   <ItemGroup />
