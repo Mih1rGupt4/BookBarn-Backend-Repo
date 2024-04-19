@@ -101,7 +101,7 @@ namespace BookBarn.API.Controllers
             ClaimsIdentity identity = new ClaimsIdentity(new Claim[]
             {
                 new Claim(ClaimTypes.Role,user.Role),
-                new Claim(ClaimTypes.Email,user.Email)
+                new Claim(ClaimTypes.Name,user.Username)
             });
             SigningCredentials credentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256);
             SecurityTokenDescriptor tokenDescriptor = new SecurityTokenDescriptor
