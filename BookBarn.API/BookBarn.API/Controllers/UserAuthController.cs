@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BookBarn.Data.Repositories;
+using BookBarn.Domain.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -9,5 +11,10 @@ namespace BookBarn.API.Controllers
 {
     public class UserAuthController : ApiController
     {
+        IUserRepository repo = new UserRepository();
+
+        //[RoutePrefix("api/auth")]
+
+
     }
 }
