@@ -55,6 +55,7 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="Dto\Book\BookCardDto.cs" />
+    <Compile Include="Dto\Book\BookFilterParams.cs" />
     <Compile Include="Dto\Class1.cs" />
     <Compile Include="Entities\Address.cs" />
     <Compile Include="Entities\Book.cs" />
