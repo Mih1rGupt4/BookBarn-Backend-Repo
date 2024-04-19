@@ -1,13 +1,6 @@
-﻿using BookBarn.Data;
-using BookBarn.Domain.Entities;
-using System.Web.Http.OData;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
+﻿using BookBarn.Domain.Entities;
 using System.Web.Http;
 using System.Web.Routing;
-using BookBarn.Data.Repositories;
 using BookBarn.Domain.Interfaces;
 using System.Web.Http.Cors;
 
