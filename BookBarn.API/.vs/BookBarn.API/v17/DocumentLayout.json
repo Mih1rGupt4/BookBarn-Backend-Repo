@@ -1,22 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\AMOGH PATIL\\source\\repos\\BookBarn-Backend-Repo\\BookBarn.API\\",
+  "WorkspaceRootPath": "C:\\Users\\PANDURANGA\\source\\repos\\BookBarn-Backend-Repo\\BookBarn.API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|C:\\Users\\AMOGH PATIL\\source\\repos\\BookBarn-Backend-Repo\\BookBarn.API\\bookbarn.api\\controllers\\reviewcumratingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|solutionrelative:bookbarn.api\\controllers\\reviewcumratingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{54B19926-0662-4392-9A68-4A3D05B9607B}|BookBarn.Data\\BookBarn.Data.csproj|c:\\users\\amogh patil\\source\\repos\\bookbarn-backend-repo\\bookbarn.api\\bookbarn.data\\repositories\\reviiewcumratingrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54B19926-0662-4392-9A68-4A3D05B9607B}|BookBarn.Data\\BookBarn.Data.csproj|solutionrelative:bookbarn.data\\repositories\\reviiewcumratingrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FACDE463-2F4E-4E7C-AA9C-7BC134CD8B40}|BookBarn.Domain\\BookBarn.Domain.csproj|C:\\Users\\AMOGH PATIL\\source\\repos\\BookBarn-Backend-Repo\\BookBarn.API\\bookbarn.domain\\interfaces\\ireviewcumratingrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FACDE463-2F4E-4E7C-AA9C-7BC134CD8B40}|BookBarn.Domain\\BookBarn.Domain.csproj|solutionrelative:bookbarn.domain\\interfaces\\ireviewcumratingrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FACDE463-2F4E-4E7C-AA9C-7BC134CD8B40}|BookBarn.Domain\\BookBarn.Domain.csproj|C:\\Users\\AMOGH PATIL\\source\\repos\\BookBarn-Backend-Repo\\BookBarn.API\\bookbarn.domain\\entities\\reviewcumrating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FACDE463-2F4E-4E7C-AA9C-7BC134CD8B40}|BookBarn.Domain\\BookBarn.Domain.csproj|solutionrelative:bookbarn.domain\\entities\\reviewcumrating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{54B19926-0662-4392-9A68-4A3D05B9607B}|BookBarn.Data\\BookBarn.Data.csproj|c:\\users\\panduranga\\source\\repos\\bookbarn-backend-repo\\bookbarn.api\\bookbarn.data\\migrations\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54B19926-0662-4392-9A68-4A3D05B9607B}|BookBarn.Data\\BookBarn.Data.csproj|solutionrelative:bookbarn.data\\migrations\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,8 +14,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
@@ -38,54 +30,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IReviewCumRatingRepo.cs",
-              "DocumentMoniker": "C:\\Users\\AMOGH PATIL\\source\\repos\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Domain\\Interfaces\\IReviewCumRatingRepo.cs",
-              "RelativeDocumentMoniker": "BookBarn.Domain\\Interfaces\\IReviewCumRatingRepo.cs",
-              "ToolTip": "C:\\Users\\AMOGH PATIL\\source\\repos\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Domain\\Interfaces\\IReviewCumRatingRepo.cs",
-              "RelativeToolTip": "BookBarn.Domain\\Interfaces\\IReviewCumRatingRepo.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T18:41:46.158Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ReviiewCumRatingRepo.cs",
-              "DocumentMoniker": "C:\\Users\\AMOGH PATIL\\source\\repos\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Data\\Repositories\\ReviiewCumRatingRepo.cs",
-              "RelativeDocumentMoniker": "BookBarn.Data\\Repositories\\ReviiewCumRatingRepo.cs",
-              "ToolTip": "C:\\Users\\AMOGH PATIL\\source\\repos\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Data\\Repositories\\ReviiewCumRatingRepo.cs",
-              "RelativeToolTip": "BookBarn.Data\\Repositories\\ReviiewCumRatingRepo.cs",
-              "ViewState": "AQIAAEEAAAAAAAAAAAAqwBQAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T19:58:30.216Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ReviewCumRatingsController.cs",
-              "DocumentMoniker": "C:\\Users\\AMOGH PATIL\\source\\repos\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.API\\Controllers\\ReviewCumRatingsController.cs",
-              "RelativeDocumentMoniker": "BookBarn.API\\Controllers\\ReviewCumRatingsController.cs",
-              "ToolTip": "C:\\Users\\AMOGH PATIL\\source\\repos\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.API\\Controllers\\ReviewCumRatingsController.cs",
-              "RelativeToolTip": "BookBarn.API\\Controllers\\ReviewCumRatingsController.cs",
-              "ViewState": "AQIAAFEAAAAAAAAAAAAowF4AAAAXAAAA",
+              "Title": "Configuration.cs",
+              "DocumentMoniker": "C:\\Users\\PANDURANGA\\source\\repos\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Data\\Migrations\\Configuration.cs",
+              "RelativeDocumentMoniker": "BookBarn.Data\\Migrations\\Configuration.cs",
+              "ToolTip": "C:\\Users\\PANDURANGA\\source\\repos\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Data\\Migrations\\Configuration.cs",
+              "RelativeToolTip": "BookBarn.Data\\Migrations\\Configuration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T18:23:31.643Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ReviewCumRating.cs",
-              "DocumentMoniker": "C:\\Users\\AMOGH PATIL\\source\\repos\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Domain\\Entities\\ReviewCumRating.cs",
-              "RelativeDocumentMoniker": "BookBarn.Domain\\Entities\\ReviewCumRating.cs",
-              "ToolTip": "C:\\Users\\AMOGH PATIL\\source\\repos\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Domain\\Entities\\ReviewCumRating.cs",
-              "RelativeToolTip": "BookBarn.Domain\\Entities\\ReviewCumRating.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T12:43:04.046Z",
+              "WhenOpened": "2024-04-19T17:50:29.698Z",
               "EditorCaption": ""
             }
           ]
