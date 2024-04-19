@@ -91,12 +91,6 @@ namespace BookBarn.API.Controllers
 
             }
 
-            existingOrder.UserID = order.UserID;
-            existingOrder.OrderItems = order.OrderItems;
-            existingOrder.TotalPrice = order.TotalPrice;
-            existingOrder.OrderDate = order.OrderDate;
-            existingOrder.ShippingAddress = order.ShippingAddress;
-            existingOrder.PaymentDetails = order.PaymentDetails;
             existingOrder.Status = order.Status;
 
             //DB.save changes
