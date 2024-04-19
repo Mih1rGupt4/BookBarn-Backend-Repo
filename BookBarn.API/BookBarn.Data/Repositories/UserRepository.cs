@@ -15,12 +15,13 @@ namespace BookBarn.Data.Repositories
         public void AddUser(User user)
         {
             db.Users.Add(user);
+            db.SaveChanges();
         }
 
         public User GetUser(string username)
         {
            
-            return db.Users.Find(username);
+            return db.Users.Where(p=>p.Username == username).FirstOrDefault();
         }
 
         
