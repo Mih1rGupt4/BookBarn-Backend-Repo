@@ -12,15 +12,12 @@ namespace BookBarn.API.Controllers
 {
     public class OrderController : ApiController
     {
-        private List<Order> orders = new List<Order>();
-        //BookBarnDbContext db = new BookBarnDbContext();
+        BookBarnDbContext db;
 
         public OrderController()
         {
-            //BookBarnDbContext db = new BookBarnDbContext();
+            db = new BookBarnDbContext();
             //List<Order> orderList = new List<Order>();
-
-
         }
 
 
@@ -30,16 +27,13 @@ namespace BookBarn.API.Controllers
         // get all orders (only for the admin) 
         public IHttpActionResult GetAllOrders()
         {
-            var orders = new List<Order>();
-            //List<Order> orders = db.Orders.ToList();
+            var orders = db.Orders;
             if (orders == null)
             {
-                // not found
-                // return http status code 404
                 return NotFound();
             }
 
-            return Ok(orders); // if found then return 200 with data
+            return Ok(orders);
         }
 
 
@@ -49,12 +43,12 @@ namespace BookBarn.API.Controllers
         [Route("api/order/{id}")]
         public IHttpActionResult GetOrdersById(string id)
         {
-            var alluserorders = new Order(); //orders.Where(o => o.UserID == id).ToList();
-            if (alluserorders == null)// || alluserorders.Count() == 0)
+            var userOrders = db.Orders.Where(o => o.UserID == id);
+            if (userOrders == null)
             {
                 return BadRequest();
             }
-            return Ok(alluserorders); // if found then return 200 with data
+            return Ok(userOrders);
         }
 
 
@@ -64,13 +58,13 @@ namespace BookBarn.API.Controllers
         [HttpPost]
         public IHttpActionResult PostAddOrder(Order order)
         {
-
             if (order == null)
             {
                 return BadRequest("Missing data to patch");
             }
-            orders.Add(order);
-            return Created("location", orders.Count()); // if found then return 200 with data
+            db.Orders.Add(order);
+            db.SaveChanges();
+            return Created("location", order.OrderID);
         }
 
         // patch
@@ -82,14 +76,12 @@ namespace BookBarn.API.Controllers
         [Route("api/order/{id}")]
         public IHttpActionResult PatchEditStatus(int id, [FromBody] Order order)
         {
-
-
             if (order == null)
             {
                 return BadRequest("Missing data to patch");
             }
 
-            var existingOrder = orders.FirstOrDefault(o => o.OrderID == id);
+            var existingOrder = db.Orders.FirstOrDefault(o => o.OrderID == id);
 
 
             if (existingOrder == null)
@@ -108,7 +100,7 @@ namespace BookBarn.API.Controllers
             existingOrder.Status = order.Status;
 
             //DB.save changes
-
+            db.SaveChanges();
 
             return Ok("order patched");
         }
