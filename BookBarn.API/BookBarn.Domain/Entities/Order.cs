@@ -18,9 +18,9 @@ namespace BookBarn.Domain.Entities
 
         public DateTime OrderDate { get; set; }
        
-        public Address ShippingAddress { get; set; }
+        public virtual Address ShippingAddress { get; set; }
 
-        public PaymentDetails PaymentDetails {  get; set; }
+        public virtual PaymentDetails PaymentDetails {  get; set; }
         public OrderStatus Status { get; set; }
     }
 }

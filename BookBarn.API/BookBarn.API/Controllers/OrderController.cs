@@ -1,4 +1,5 @@
-﻿using BookBarn.Domain.Entities;
+﻿using BookBarn.Data;
+using BookBarn.Domain.Entities;
 using Microsoft.AspNet.OData;
 using System;
 using System.Collections.Generic;
@@ -11,15 +12,16 @@ namespace BookBarn.API.Controllers
 {
     public class OrderController : ApiController
     {
-
-        List<Order> orderList = new List<Order>();
+        //BookBarnDbContext db = new BookBarnDbContext();
+        //List<Order> orderList = new List<Order>();
 
         // get
         // api/order/
         // get all orders (only for the admin) 
         public IHttpActionResult GetAllOrders()
         {
-            var orders = orderList;
+            var orders = new List<Order>();
+            //List<Order> orders = db.Orders.ToList();
             if (orders == null)
             {
                 // not found
@@ -37,6 +39,7 @@ namespace BookBarn.API.Controllers
         public IHttpActionResult GetOrdersById(int id)
         {
             var order = new Order();
+            //var order = db.Orders.Find(id);
             if (order == null)
             {
                 // not found
@@ -64,9 +67,7 @@ namespace BookBarn.API.Controllers
                 "OrderItemID": 0,
                 "BookID": 0,
                 "Quantity": 0,
-                "Price": 0.0,
-                "OrderID": 0,
-                "Order": null
+                "Price": 0.0
             }
         ],
         "TotalPrice": 0.0,
