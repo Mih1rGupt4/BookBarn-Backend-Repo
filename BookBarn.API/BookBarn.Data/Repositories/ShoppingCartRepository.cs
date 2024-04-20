@@ -17,19 +17,28 @@ namespace BookBarn.Data.Repositories
         {
             _dbContext = new BookBarnDbContext();
         }
-        public void AddCartItem(int cartId, CartItem item)
-        {
+        public ShoppingCart AddCartItem(int cartId, CartItem item)
+        {   
             var shoppingCart = _dbContext.ShoppingCarts.Find(cartId);
             if (shoppingCart != null)
             {
                 item.ShoppingCartID = cartId;
                 _dbContext.CartItems.Add(item);
-                _dbContext.SaveChanges();
+               
             }
             else
             {
-                throw new InvalidOperationException($"Shopping cart with ID {cartId} not found.");
+                shoppingCart = new ShoppingCart { ShoppingCartID = cartId };
+                _dbContext.ShoppingCarts.Add(shoppingCart);
+                item.ShoppingCartID = cartId;
+                _dbContext.CartItems.Add(item);
+                //update userid when creating a cart
+                //shoppingCart.UserID = 
+
             }
+            shoppingCart.TotalPrice += item.Price * item.Quantity;
+            _dbContext.SaveChanges();
+            return shoppingCart;
         }
 
         public ShoppingCart GetShoppingCartById(int cartId)
@@ -38,13 +47,16 @@ namespace BookBarn.Data.Repositories
 
         }
 
-        public void RemoveCartItem(int cartId, int itemId)
+        public ShoppingCart RemoveCartItem(int cartId, int itemId)
         {
             var cartItem = _dbContext.CartItems.FirstOrDefault(ci => ci.ShoppingCartID == cartId && ci.CartItemID == itemId);
             if (cartItem != null)
             {
                 _dbContext.CartItems.Remove(cartItem);
+                var shoppingCart = GetShoppingCartById(cartId);
+                shoppingCart.TotalPrice-=cartItem.Price*cartItem.Quantity;
                 _dbContext.SaveChanges();
+                return shoppingCart;
             }
             else
             {
@@ -52,28 +64,23 @@ namespace BookBarn.Data.Repositories
             }
         }
 
-        public ShoppingCart UpdateCartItem(int cartId, CartItem item)
+        public ShoppingCart UpdateCartItemQuantity(int cartItemId, int quantity)
         {
-            var existingCart = _dbContext.ShoppingCarts.Find(cartId);
-            if (existingCart == null)
-            {
-                throw new InvalidOperationException("Shopping cart not found");
-            }
-
-
-            var existingCartItem = existingCart.CartItems.FirstOrDefault(ci => ci.CartItemID == item.CartItemID);
+            var existingCartItem = _dbContext.CartItems.Find(cartItemId);
             if (existingCartItem == null)
             {
-                throw new InvalidOperationException("Cart item not found in the shopping cart");
+                throw new InvalidOperationException("Cart item not found");
             }
+
+            var existingCart = existingCartItem.ShoppingCart;
+
             existingCart.TotalPrice -= existingCartItem.Price * existingCartItem.Quantity;
-            Console.WriteLine("total price before :" + existingCart.TotalPrice);
+            Console.WriteLine("total price before: " + existingCart.TotalPrice);
 
-            existingCartItem.Quantity = item.Quantity;
+            existingCartItem.Quantity = quantity;
 
-          
-            existingCart.TotalPrice += item.Price * existingCartItem.Quantity;
-            Console.WriteLine("total price after :" + existingCart.TotalPrice);
+            existingCart.TotalPrice += existingCartItem.Price * existingCartItem.Quantity;
+            Console.WriteLine("total price after: " + existingCart.TotalPrice);
 
             _dbContext.SaveChanges();
 

@@ -37,14 +37,40 @@ namespace BookBarn.API.Controllers
             return Ok(result);
         }
         [HttpPatch]
-        public IHttpActionResult UpdateCartItem(int id, [FromBody] CartItem cartItem)
+        public IHttpActionResult UpdateCartItem(int id, int quantity)
         {
-            var result = _shoppingCartRepository.UpdateCartItem(id, cartItem);
+            var result = _shoppingCartRepository.UpdateCartItemQuantity(id, quantity);
             if (result == null)
             {
                 return BadRequest();
             }
             return Ok(result);
+        }
+
+
+        [HttpPost]
+        public IHttpActionResult AddToCart(int id, CartItem item) {
+
+            var result = _shoppingCartRepository.AddCartItem(id, item);
+            if (result == null)
+            {
+                return BadRequest();
+            }
+            return Ok(result);
+
+        }
+
+        [HttpDelete]
+        public IHttpActionResult RemoveFromCart(int cartId, int itemId)
+        {
+
+            var result = _shoppingCartRepository.RemoveCartItem(cartId,itemId);
+            if (result == null)
+            {
+                return BadRequest();
+            }
+            return Ok(result);
+
         }
 
     }

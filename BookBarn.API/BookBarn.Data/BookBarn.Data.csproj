@@ -54,9 +54,9 @@
   <ItemGroup>
     <Compile Include="BookBarnDbContext.cs" />
     <Compile Include="Class1.cs" />
-    <Compile Include="Migrations\202404191233016_init.cs" />
-    <Compile Include="Migrations\202404191233016_init.Designer.cs">
-      <DependentUpon>202404191233016_init.cs</DependentUpon>
+    <Compile Include="Migrations\202404200652125_init.cs" />
+    <Compile Include="Migrations\202404200652125_init.Designer.cs">
+      <DependentUpon>202404200652125_init.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -79,8 +79,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202404191233016_init.resx">
-      <DependentUpon>202404191233016_init.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202404200652125_init.resx">
+      <DependentUpon>202404200652125_init.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
