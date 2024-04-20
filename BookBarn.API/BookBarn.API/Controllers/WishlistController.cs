@@ -13,11 +13,28 @@ namespace BookBarn.API.Controllers
     public class WishlistController : ApiController
     {
         private readonly IWishlistRepository wishlistRepository=new WishlistRepository();
-        
-       /* public WishlistController(IWishlistRepository _wishlistRepository)
+
+        /* public WishlistController(IWishlistRepository _wishlistRepository)
+         {
+             wishlistRepository = _wishlistRepository;
+         }*/
+
+
+        [HttpPost]
+        [Route("api/wishlist/add/{userId}/{bookId}")]
+        public IHttpActionResult AddToWishlist(int userId, int bookId)
         {
-            wishlistRepository = _wishlistRepository;
-        }*/
+            try
+            {
+                wishlistRepository.AddToWishList(userId, bookId);
+                return Ok("Book added to wishlist successfully.");
+            }
+            catch (Exception ex)
+            {
+                return InternalServerError(ex);
+            }
+        }
+
         [HttpPost]
         [Route("api/wishlist/add")]
         public IHttpActionResult AddToWishlist(int userId, [FromBody] Book book)
@@ -61,6 +78,15 @@ namespace BookBarn.API.Controllers
             }
         }
 
+        [HttpGet]
+        [Route("api/wishlist/isExisting/{userId}/{bookId}")]
+        public Boolean isExisting(int userId, int bookId)
+        {
+          
+              return wishlistRepository.isExisting(userId, bookId);
+                
+          
+        }
 
     }
 }

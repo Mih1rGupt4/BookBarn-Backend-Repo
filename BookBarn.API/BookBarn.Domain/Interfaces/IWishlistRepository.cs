@@ -12,5 +12,7 @@ namespace BookBarn.Domain.Interfaces
         void AddToWishlist(int userId, Book book);
         void RemoveFromWishlist(int userId, int bookId);
         List<WishList> GetWishlistItems(int userId);
+        void AddToWishList(int userId, int bookId);
+        bool isExisting(int userId, int bookId);
     }
 }

@@ -15,6 +15,7 @@ namespace BookBarn.Domain.Entities
         [Required]
         public int UserId { get; set; }
         [Required]
+        public int BookID {  get; set; }
         public virtual Book Book { get; set; }
     }
 }

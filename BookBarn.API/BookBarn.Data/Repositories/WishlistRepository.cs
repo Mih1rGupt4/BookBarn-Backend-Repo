@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
+using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -11,7 +12,7 @@ namespace BookBarn.Data.Repositories
 {
     public class WishlistRepository : IWishlistRepository
     {
-        private readonly BookBarnDbContext dbContext=new BookBarnDbContext();
+        private readonly BookBarnDbContext dbContext = new BookBarnDbContext();
 
         /*public WishlistRepository(BookBarnDbContext _dbContext)
         {
@@ -50,6 +51,14 @@ namespace BookBarn.Data.Repositories
             }
         }
 
+        public void AddToWishList(int userId, int bookId)
+        {
+            WishList w = new WishList { UserId = userId, BookID = bookId };
+            dbContext.WishLists.Add(w);
+            dbContext.SaveChanges();
+
+        }
+
         public List<WishList> GetWishlistItems(int userId)
         {
             try
@@ -60,7 +69,7 @@ namespace BookBarn.Data.Repositories
             }
             catch (Exception ex)
             {
-                
+
                 throw ex;
             }
         }
@@ -81,9 +90,24 @@ namespace BookBarn.Data.Repositories
             }
             catch (Exception ex)
             {
-               
+
                 throw ex;
             }
         }
+
+        public bool isExisting(int userId, int bookId)
+        {
+
+            var wishlistItem = dbContext.WishLists.FirstOrDefault(w => w.UserId == userId && w.Book.BookID == bookId);
+            if (wishlistItem != null)
+            {
+                return true;
+            }
+            return false;
+
+
+        }
+
+
     }
 }
