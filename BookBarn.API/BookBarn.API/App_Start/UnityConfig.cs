@@ -16,8 +16,6 @@ namespace BookBarn.API
             // it is NOT necessary to register your controllers
 
             container.RegisterType<IOrderRepository, OrderRepository>();
-            container.RegisterType<IBooksRepository, BooksRepository>();
-
             
             // e.g. container.RegisterType<ITestService, TestService>();
             

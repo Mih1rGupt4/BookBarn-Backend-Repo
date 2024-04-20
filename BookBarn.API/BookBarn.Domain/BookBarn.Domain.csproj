@@ -67,12 +67,12 @@
     <Compile Include="Entities\ReviewCumRating.cs" />
     <Compile Include="Entities\ShoppingCart.cs" />
     <Compile Include="Entities\User.cs" />
+    <Compile Include="Entities\Wishlist.cs" />
     <Compile Include="Exceptions\Class1.cs" />
     <Compile Include="Interfaces\IBooksRepository.cs" />
     <Compile Include="Interfaces\ICartItemRepository.cs" />
     <Compile Include="Interfaces\IOrderRepository.cs" />
     <Compile Include="Interfaces\IShoppingCartRepository.cs" />
-    <Compile Include="Interfaces\IUserRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

@@ -14,6 +14,6 @@ namespace BookBarn.Domain.Dto.Book
         public string Author { get; set; }
         public double Price { get; set; }
         public int Stock { get; set; }
-        public string ImageUrlMedium { get; set; }
+        public string ImageUrlSmall { get; set; }
     }
 }

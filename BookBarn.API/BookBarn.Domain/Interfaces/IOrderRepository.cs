@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace BookBarn.Domain.Interfaces
 {
-     public interface IOrderRepository
+    public interface IOrderRepository
     {
-        
+
 
         Order GetOrder(int id);
 
@@ -26,30 +26,30 @@ namespace BookBarn.Domain.Interfaces
 
 
 
-         List<Order> GetAll();
+        List<Order> GetAll();
 
 
-         List<Order> GetAllByUserId(string userId);
+        List<Order> GetAllByUserId(string userId);
 
 
-         List<Order> GetAllActive();
+        List<Order> GetAllActive();
 
 
-         List<Order> GetActiveOrdersByUserId(string userId);
+        List<Order> GetActiveOrdersByUserId(string userId);
 
 
-         List<Order> GetAllCompleted();
+        List<Order> GetAllCompleted();
 
 
-         List<Order> GetCompletedOrdersByUserId(string userId);
+        List<Order> GetCompletedOrdersByUserId(string userId);
 
 
 
-         List<Order> GetAllCancelled();
+        List<Order> GetAllCancelled();
 
 
-         List<Order> GetCancelledOrdersByUserId(string userId);
-       
+        List<Order> GetCancelledOrdersByUserId(string userId);
+
 
     }
 }

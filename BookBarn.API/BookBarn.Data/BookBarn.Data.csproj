@@ -58,7 +58,6 @@
     <Compile Include="Repositories\BooksRepository.cs" />
     <Compile Include="Repositories\deleteme.cs" />
     <Compile Include="Repositories\OrderRepository.cs" />
-    <Compile Include="Repositories\UserRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BookBarn.Domain\BookBarn.Domain.csproj">
