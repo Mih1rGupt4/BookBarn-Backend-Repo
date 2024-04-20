@@ -45,7 +45,7 @@ namespace BookBarn.API.Controllers
             user.Token = CreateJWT(user);
 
 
-            return Ok($"Token : {user.Token}");
+            return Ok($"{user.Token}");
 
 
 
