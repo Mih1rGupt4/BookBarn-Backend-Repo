@@ -11,18 +11,24 @@ using System.Web.Http;
 using System.Web.Http.Description;
 
 using BookBarn.Domain.Interfaces;
+using BookBarn.Data.Repositories;
 
 namespace BookBarn.API.Controllers
 {
     public class ReviewCumRatingsController : ApiController
     {
         
-        public IReviewCumRatingRepo repo = null;
+        public IReviewCumRatingRepo repo =new ReviewCumRatingRepo() ;
 
-        // constructor for DI using Unity IOC
-        public ReviewCumRatingsController(IReviewCumRatingRepo repo)
+        //constructor for DI using Unity IOC
+       /* public ReviewCumRatingsController(IReviewCumRatingRepo repo)
         {
-            this.repo = repo;
+        this.repo = repo;
+        }*/
+
+        public ReviewCumRatingsController()
+        {
+
         }
 
         //    // GET: api/ReviewCumRatings

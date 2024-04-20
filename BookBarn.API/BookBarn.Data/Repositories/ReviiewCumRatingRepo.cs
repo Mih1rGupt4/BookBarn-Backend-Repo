@@ -17,7 +17,8 @@ namespace BookBarn.Data.Repositories
         //public List<ReviewCumRating> GetAllReviewCumRatings()
         public IQueryable<ReviewCumRating> GetAllReviewCumRatings()
         {
-            return db.ReviewCumRatings;
+            return db.ReviewCumRatings.Include(r => r.book)
+                    .Include(r => r.user); ;
         }
 
         public IQueryable<ReviewCumRating> GetReviewCumRatings(string type)
