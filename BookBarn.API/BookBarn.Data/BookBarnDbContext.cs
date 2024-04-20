@@ -17,6 +17,7 @@ namespace BookBarn.Data
         public DbSet<Book> Books { get; set; }
 
         public DbSet<Order> Orders { get; set; }
+        public DbSet<WishList> WishLists { get; set; }
         
     }
 }
