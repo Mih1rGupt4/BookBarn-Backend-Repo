@@ -1,4 +1,5 @@
 ﻿using BookBarn.Data.Repositories;
+using BookBarn.Domain.Entities;
 using BookBarn.Domain.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -35,5 +36,16 @@ namespace BookBarn.API.Controllers
             }
             return Ok(result);
         }
+        [HttpPatch]
+        public IHttpActionResult UpdateCartItem(int id, [FromBody] CartItem cartItem)
+        {
+            var result = _shoppingCartRepository.UpdateCartItem(id, cartItem);
+            if (result == null)
+            {
+                return BadRequest();
+            }
+            return Ok(result);
+        }
+
     }
 }

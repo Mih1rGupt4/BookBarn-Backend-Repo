@@ -51,5 +51,34 @@ namespace BookBarn.Data.Repositories
                 throw new InvalidOperationException($"Cart item with ID {itemId} not found in shopping cart with ID {cartId}.");
             }
         }
+
+        public ShoppingCart UpdateCartItem(int cartId, CartItem item)
+        {
+            var existingCart = _dbContext.ShoppingCarts.Find(cartId);
+            if (existingCart == null)
+            {
+                throw new InvalidOperationException("Shopping cart not found");
+            }
+
+
+            var existingCartItem = existingCart.CartItems.FirstOrDefault(ci => ci.CartItemID == item.CartItemID);
+            if (existingCartItem == null)
+            {
+                throw new InvalidOperationException("Cart item not found in the shopping cart");
+            }
+            existingCart.TotalPrice -= existingCartItem.Price * existingCartItem.Quantity;
+            Console.WriteLine("total price before :" + existingCart.TotalPrice);
+
+            existingCartItem.Quantity = item.Quantity;
+
+          
+            existingCart.TotalPrice += item.Price * existingCartItem.Quantity;
+            Console.WriteLine("total price after :" + existingCart.TotalPrice);
+
+            _dbContext.SaveChanges();
+
+            return existingCart;
+        }
+
     }
 }
