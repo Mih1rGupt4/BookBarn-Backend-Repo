@@ -15,10 +15,16 @@ namespace BookBarn.API.Controllers
     public class BooksController : ApiController
     {
         IBooksRepository repo = null;
-        public BooksController()
+        //public BooksController()
+        //{
+        //    repo = new BooksRepository();
+        //}
+
+        public BooksController(IBooksRepository repo)
         {
-            repo = new BooksRepository();
+            this.repo = repo;
         }
+
         // GET: Books
         [HttpGet]
         [Route("")]
