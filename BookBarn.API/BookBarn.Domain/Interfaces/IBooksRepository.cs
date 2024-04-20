@@ -9,6 +9,9 @@ namespace BookBarn.Domain.Interfaces
 {
     public interface IBooksRepository
     {
+        Book AddBook(Book book);
+        bool DeleteBook(int bookId);
+        Book EditBook(Book book);
         List<Book> GetAllBooks();
         Book GetBookByID(int id);
         List<Book> GetBooksByCategory(string category);

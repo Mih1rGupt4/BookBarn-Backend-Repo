@@ -12,6 +12,7 @@ namespace BookBarn.Data.Repositories
     public class BooksRepository : IBooksRepository
     {
         BookBarnDbContext db = new BookBarnDbContext();
+
         public List<Book> GetAllBooks()
         {
             var allBooks = db.Books.ToList();
@@ -44,6 +45,31 @@ namespace BookBarn.Data.Repositories
         {
             var booksByBias = db.Books.Where(b => (b.Author.Contains(author) || author == null) && (b.Title.Contains(title) || title == null) && (b.Category.Contains(category) || category == null)).ToList();
             return booksByBias;
+        }
+
+        public Book AddBook(Book book)
+        {
+            db.Books.Add(book);
+            db.SaveChanges();
+            return book;
+        }
+
+        public bool DeleteBook(int bookId)
+        {
+            Book book = db.Books.Find(bookId);
+            if(book == null)
+                return false;
+            
+            db.Books.Remove(book);
+            db.SaveChanges();
+            return true;
+        }
+
+        public Book EditBook(Book book)
+        {
+            db.Entry(book).State = System.Data.Entity.EntityState.Modified;
+            db.SaveChanges();
+            return book;
         }
     }
 }
