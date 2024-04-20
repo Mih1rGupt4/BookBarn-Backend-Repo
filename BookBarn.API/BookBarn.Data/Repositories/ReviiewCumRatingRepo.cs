@@ -20,39 +20,39 @@ namespace BookBarn.Data.Repositories
             return db.ReviewCumRatings;
         }
 
-        public List<ReviewCumRating> GetReviewCumRatings(string type)
+        public IQueryable<ReviewCumRating> GetReviewCumRatings(string type)
         {
             if (type == "positive")
             {
-                return db.ReviewCumRatings.Where(rr => rr.Rating > 3).ToList();
+                return db.ReviewCumRatings.Where(rr => rr.Rating > 3);
             }
             else if (type == "negative")
             {
-                return db.ReviewCumRatings.Where(rr => rr.Rating < 3).ToList();
+                return db.ReviewCumRatings.Where(rr => rr.Rating < 3);
             }
             else if (type == "neutral")
             {
-                return db.ReviewCumRatings.Where(rr => rr.Rating == 3).ToList();
+                return db.ReviewCumRatings.Where(rr => rr.Rating == 3);
             }
             else if (type == "one")
             {
-                return db.ReviewCumRatings.Where(rr => rr.Rating == 1).ToList();
+                return db.ReviewCumRatings.Where(rr => rr.Rating == 1);
             }
             else if (type == "two")
             {
-                return db.ReviewCumRatings.Where(rr => rr.Rating == 2).ToList();
+                return db.ReviewCumRatings.Where(rr => rr.Rating == 2);
             }
             else if (type == "three")
             {
-                return db.ReviewCumRatings.Where(rr => rr.Rating == 3).ToList();
+                return db.ReviewCumRatings.Where(rr => rr.Rating == 3);
             }
             else if (type == "four")
             {
-                return db.ReviewCumRatings.Where(rr => rr.Rating == 4).ToList();
+                return db.ReviewCumRatings.Where(rr => rr.Rating == 4);
             }
             else
             {
-                return db.ReviewCumRatings.Where(rr => rr.Rating == 5).ToList();
+                return db.ReviewCumRatings.Where(rr => rr.Rating == 5);
             }
         }
         public ReviewCumRating GetReviewCumRating(int id)

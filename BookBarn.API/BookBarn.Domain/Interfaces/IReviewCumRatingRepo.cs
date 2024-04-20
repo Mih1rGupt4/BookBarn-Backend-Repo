@@ -11,7 +11,7 @@ namespace BookBarn.Domain.Interfaces
     {
         IQueryable<ReviewCumRating> GetAllReviewCumRatings();
 
-        List<ReviewCumRating> GetReviewCumRatings(string type);
+        IQueryable<ReviewCumRating> GetReviewCumRatings(string type);
         
         ReviewCumRating GetReviewCumRating(int id);
         
