@@ -14,10 +14,12 @@ using System.IdentityModel.Tokens.Jwt;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.AspNet.Identity;
 using BookBarn.API.Helpers;
+using System.Web.Http.Cors;
 
 namespace BookBarn.API.Controllers
 {
     [RoutePrefix("api/auth")]
+    [EnableCors(origins: "http://localhost:4200", headers: "", methods: "*")]
     public class UserAuthController : ApiController
     {
         IUserRepository repo = new UserRepository();
