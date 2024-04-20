@@ -100,7 +100,7 @@ namespace BookBarn.API.Controllers
         [Route("api/order/all/{id}")]
         public IHttpActionResult GetAllByUserId(string id)
         {
-           
+
             var userlist = repo.GetAllByUserId(id);
             if (userlist == null)
             {
@@ -115,10 +115,10 @@ namespace BookBarn.API.Controllers
         [Route("api/order/active")]
         public IHttpActionResult GetAllActive()
         {
-           
+
             var activelist = repo.GetAllActive();
 
-             if (activelist == null)
+            if (activelist == null)
             {
                 return NotFound();
             }
@@ -149,7 +149,7 @@ namespace BookBarn.API.Controllers
         {
 
             var completedlist = repo.GetAllCompleted();
-                if (completedlist == null)
+            if (completedlist == null)
             {
                 return NotFound();
             }
@@ -166,7 +166,7 @@ namespace BookBarn.API.Controllers
             var usercompletedlist = repo.GetCompletedOrdersByUserId(id);
 
 
-                if (usercompletedlist == null)
+            if (usercompletedlist == null)
             {
                 return NotFound();
             }
@@ -184,7 +184,7 @@ namespace BookBarn.API.Controllers
 
             var cancelledlist = repo.GetAllCancelled();
 
-                if (cancelledlist == null)
+            if (cancelledlist == null)
             {
                 return NotFound();
             }
@@ -200,7 +200,7 @@ namespace BookBarn.API.Controllers
 
             var usercancelledlist = repo.GetCancelledOrdersByUserId(id);
 
-                if (usercancelledlist == null)
+            if (usercancelledlist == null)
             {
                 return NotFound();
             }
