@@ -1,4 +1,5 @@
-﻿using BookBarn.Domain.Entities;
+﻿using BookBarn.Domain.Dto.Book;
+using BookBarn.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +18,7 @@ namespace BookBarn.Domain.Interfaces
         List<Book> GetBooksByCategory(string category);
         List<Book> GetBooksByTitle(string title);
         List<Book> GetBooksByAuthor(string author);
-        List<Book> GetBooksByBias(string title, string author, string category);
+        List<Book> FilterBooks(BookFilterParams bookFilterParams);
 
     }
 }

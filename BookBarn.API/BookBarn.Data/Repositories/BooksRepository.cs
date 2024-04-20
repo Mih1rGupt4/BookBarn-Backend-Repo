@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using BookBarn.Domain;
+using BookBarn.Domain.Dto.Book;
 using BookBarn.Domain.Entities;
 using BookBarn.Domain.Interfaces;
 
@@ -23,28 +24,12 @@ namespace BookBarn.Data.Repositories
             return db.Books.Where(b => b.BookID == id).FirstOrDefault();
         }
 
-        public List<Book> GetBooksByAuthor(string author)
+        public List<Book> FilterBooks(BookFilterParams bookFilterParams)
         {
-            var booksByAuthor = db.Books.Where(b => b.Author.Contains(author) || author ==null).ToList();
-            return booksByAuthor;
-        }
-
-        public List<Book> GetBooksByCategory(string category)
-        {
-            var booksByCategory = db.Books.Where(b => b.Category.Contains(category) || category == null).ToList();
-            return booksByCategory;
-        }
-
-        public List<Book> GetBooksByTitle(string title)
-        {
-            var booksByTitle = db.Books.Where(b => b.Title.Contains(title) || title == null).ToList();
-            return booksByTitle;
-        }
-
-        public List<Book> GetBooksByBias(string title, string author, string category)
-        {
-            var booksByBias = db.Books.Where(b => (b.Author.Contains(author) || author == null) && (b.Title.Contains(title) || title == null) && (b.Category.Contains(category) || category == null)).ToList();
-            return booksByBias;
+            var filteredBooks = db.Books.Where(b => (b.Author.Contains(bookFilterParams.Author) || bookFilterParams.Author == null) 
+            && (b.Title.Contains(bookFilterParams.Title) || bookFilterParams.Title == null) 
+            && (b.Category.Contains(bookFilterParams.Category) || bookFilterParams.Category == null)).ToList();
+            return filteredBooks;
         }
 
         public Book AddBook(Book book)
@@ -70,6 +55,24 @@ namespace BookBarn.Data.Repositories
             db.Entry(book).State = System.Data.Entity.EntityState.Modified;
             db.SaveChanges();
             return book;
+        }
+
+        public List<Book> GetBooksByAuthor(string author)
+        {
+            var booksByAuthor = db.Books.Where(b => b.Author.Contains(author) || author == null).ToList();
+            return booksByAuthor;
+        }
+
+        public List<Book> GetBooksByCategory(string category)
+        {
+            var booksByCategory = db.Books.Where(b => b.Category.Contains(category) || category == null).ToList();
+            return booksByCategory;
+        }
+
+        public List<Book> GetBooksByTitle(string title)
+        {
+            var booksByTitle = db.Books.Where(b => b.Title.Contains(title) || title == null).ToList();
+            return booksByTitle;
         }
     }
 }

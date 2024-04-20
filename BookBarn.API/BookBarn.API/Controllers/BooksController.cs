@@ -14,113 +14,82 @@ namespace BookBarn.API.Controllers
     [RoutePrefix("api/books")]
     public class BooksController : ApiController
     {
-        IBooksRepository repo = null;
+        private readonly IBooksRepository _repo = null;
 
         public BooksController(IBooksRepository repo)
         {
-            this.repo = repo;
+            this._repo = repo;
         }
 
-        // GET: Books
         [HttpGet]
         [Route("")]
         public IHttpActionResult GetBooks()
         {
-            var books = repo.GetAllBooks();
-            if (books == null)
-            {
-                // not found
-                // return http status code 404
-                return NotFound();
-            }
-
-            return Ok(books); // if found then return 200 with data
+            var books = _repo.GetAllBooks();
+            return OkOrNotFound(books);
         }
 
+        [HttpGet]
         [Route("{id}")]
-        // GET: Books by ID
-        public IHttpActionResult GetBooks(int id)
+        public IHttpActionResult GetBookById(int id)
         {
-            var book = repo.GetBookByID(id);
-            if (book == null)
-            {
-                // not found
-                // return http status code 404
-                return NotFound();
-            }
-
-            return Ok(book); // if found then return 200 with data
+            var book = _repo.GetBookByID(id);
+            return OkOrNotFound(book);
         }
 
+        // GET: Books by Author, Title or Category
         [HttpPost]
         [Route("filter")]
-        // GET: Books by Author, Title or Category
-        public IHttpActionResult GetBooksByAllConditions([FromBody] BookFilterParams filterParams)
+        public IHttpActionResult FilterBooks([FromBody] BookFilterParams filterParams)
         {
-            var book = repo.GetBooksByBias(filterParams.Title, filterParams.Author, filterParams.Category);
-            if (book == null)
-            {
-                // not found
-                // return http status code 404
-                return NotFound();
-            }
-
-            return Ok(book); // if found then return 200 with data
+            var books = _repo.FilterBooks(filterParams);
+            return OkOrNotFound(books);
         }
 
-        [Route("{id}")]
-        // Delete: Book by ID
         [HttpDelete]
+        [Route("{id}")]
         public IHttpActionResult DeleteBook(int id)
         {
-            bool success = repo.DeleteBook(id);
+            bool success = _repo.DeleteBook(id);
             if (!success)
-            {
-                // not found
-                // return http status code 404
                 return NotFound();
-            }
 
-            return Ok($"Book with ID {id} successfully deleted"); // if found then return 200 with data
+            return Ok($"Book with ID {id} successfully deleted");
         }
 
         [HttpPost]
         [Route("")]
-        // POST: Insert Books
-        public IHttpActionResult AddBooks([FromBody] Book book)
+        public IHttpActionResult AddBook([FromBody] Book book)
         {
-            var newbook = repo.AddBook(book);
-            if (newbook == null)
-            {
-                // not found
-                // return http status code 404
-                return NotFound();
-            }
-
-            return Ok(newbook); // if found then return 200 with data
+            var newBook = _repo.AddBook(book);
+            return OkOrNotFound(newBook);
         }
 
         [HttpPut]
         [Route("")]
-        // POST: Edit Books
-        public IHttpActionResult EditBooks([FromBody] Book book)
+        public IHttpActionResult EditBook([FromBody] Book book)
         {
-            var newbook = repo.EditBook(book);
-            if (newbook == null)
-            {
-                // not found
-                // return http status code 404
-                return NotFound();
-            }
-
-            return Ok(newbook); // if found then return 200 with data
+            var updatedBook = _repo.EditBook(book);
+            return OkOrNotFound(updatedBook);
         }
 
-        [Route("filter/author/{author}")]
+        private IHttpActionResult OkOrNotFound(object data)
+        {
+            if (data == null)
+                return NotFound();
+
+            return Ok(data);
+        }
+
+
+
+
         // GET: Books by Author
+
+        [Route("filter/author/{author}")]
         public IHttpActionResult GetBooksByAuthor(string author)
         {
-            var book = repo.GetBooksByAuthor(author);
+            var book = _repo.GetBooksByAuthor(author);
             if (book == null)
             {
                 // not found
@@ -135,7 +104,7 @@ namespace BookBarn.API.Controllers
         // GET: Books by Author
         public IHttpActionResult GetBooksByCategory(string category)
         {
-            var book = repo.GetBooksByCategory(category);
+            var book = _repo.GetBooksByCategory(category);
             if (book == null)
             {
                 // not found
@@ -150,7 +119,7 @@ namespace BookBarn.API.Controllers
         // GET: Books by Author
         public IHttpActionResult GetBooksByTitle(string title)
         {
-            var book = repo.GetBooksByTitle(title);
+            var book = _repo.GetBooksByTitle(title);
             if (book == null)
             {
                 // not found
