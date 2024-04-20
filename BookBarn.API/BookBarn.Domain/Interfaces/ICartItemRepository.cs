@@ -5,13 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 using BookBarn.Domain.Entities;
 
-
 namespace BookBarn.Domain.Interfaces
 {
     public interface ICartItemRepository
     {
         CartItem GetCartItemById(int itemId);
-        void UpdateCartItem(CartItem item);
+        //void UpdateCartItem(CartItem item);
 
     }
 }
