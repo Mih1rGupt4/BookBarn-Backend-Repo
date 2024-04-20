@@ -40,19 +40,146 @@ To set up the project locally, follow these steps:
             Update-Package Microsoft.CodeDom.Providers.DotNetCompilerPlatform -r
             ```
 
+---
+
 ## Usage
 
-To run the backend server locally:
+### API Endpoints
 
-- **Visual Studio:**
-    - Use Visual Studio to debug the application.
+#### User Authentication
 
-- **Command Line:**
-    - Build and run the application from the command line.
+- **POST /api/auth/login**
+    - No documentation available.
+    
+- **POST /api/auth/register**
+    - No documentation available.
+    
+- **GET /api/auth/userdetails/{username}**
+    - No documentation available.
 
-    ```bash
-    dotnet build
-    dotnet run
+---
+
+#### Account
+
+- **GET /api/Account/UserInfo**
+    - No documentation available.
+    
+- **POST /api/Account/Logout**
+    - No documentation available.
+    
+- **GET /api/Account/ManageInfo?returnUrl={returnUrl}&generateState={generateState}**
+    - No documentation available.
+    
+- **POST /api/Account/ChangePassword**
+    - No documentation available.
+    
+- **POST /api/Account/SetPassword**
+    - No documentation available.
+    
+- **POST /api/Account/AddExternalLogin**
+    - No documentation available.
+    
+- **POST /api/Account/RemoveLogin**
+    - No documentation available.
+    
+- **GET /api/Account/ExternalLogin?provider={provider}&error={error}**
+    - No documentation available.
+    
+- **GET /api/Account/ExternalLogins?returnUrl={returnUrl}&generateState={generateState}**
+    - No documentation available.
+    
+- **POST /api/Account/Register**
+    - No documentation available.
+    
+- **POST /api/Account/RegisterExternal**
+    - No documentation available.
+
+---
+
+#### Books
+
+- **GET /api/books**
+    - Get list of books
+    
+- **GET /api/books/{id}**
+    - Get book details based on id
+    - **URL Parameters:**
+        - id: The ID of the book.
+    
+- **POST /api/books/filter**
+    - Get list of books based on filter condition
+    - **Request Body Format:**
+    
+    ```json
+    {
+      "Author": "sample string 1",
+      "Category": "sample string 2",
+      "Title": "sample string 3"
+    }
     ```
+
+- **POST /api/books**
+    - Insert a Book
+    - **Request Body Format:**
+    
+    ```json
+    {
+      "ISBN": "sample string 2",
+      "Title": "sample string 3",
+      "Category": "sample string 4",
+      "Author": "sample string 5",
+      "Publisher": "sample string 6",
+      "Price": 7.1,
+      "Stock": 8,
+      "YearOfPublication": "sample string 9",
+      "ImageUrlSmall": "sample string 10",
+      "ImageUrlMedium": "sample string 11",
+      "ImageUrlLarge": "sample string 12"
+    }
+    ```
+
+- **PUT /api/books**
+    - Update existing Book Details
+    - **Request Body Format:**
+    
+    ```json
+    {
+      "BookID": 1,
+      "ISBN": "sample string 2",
+      "Title": "sample string 3",
+      "Category": "sample string 4",
+      "Author": "sample string 5",
+      "Publisher": "sample string 6",
+      "Price": 7.1,
+      "Stock": 8,
+      "YearOfPublication": "sample string 9",
+      "ImageUrlSmall": "sample string 10",
+      "ImageUrlMedium": "sample string 11",
+      "ImageUrlLarge": "sample string 12"
+    }
+    ```
+
+- **DELETE /api/books/{id}**
+    - Delete a book based on id
+    - **URL Parameters:**
+        - id: The ID of the book.
+
+---
+
+#### Order
+
+- **GET /api/order/{id}**
+    - No documentation available.
+    
+- **PATCH /api/order/{id}**
+    - No documentation available.
+    
+- **GET /api/Order**
+    - No documentation available.
+    
+- **POST /api/Order**
+    - No documentation available.
+---
+For more details on each API endpoint, please refer to the source code comments or the API documentation.
 
 Happy coding!
