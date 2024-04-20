@@ -19,7 +19,7 @@ using System.Web.Http.Cors;
 namespace BookBarn.API.Controllers
 {
     [RoutePrefix("api/auth")]
-    [EnableCors(origins: "http://localhost:4200", headers: "", methods: "*")]
+    [EnableCors(origins: "*", headers: "*", methods: "*")]
     public class UserAuthController : ApiController
     {
         IUserRepository repo = new UserRepository();
@@ -79,7 +79,7 @@ namespace BookBarn.API.Controllers
 
             repo.AddUser(userObj);
 
-            return Created($"api/user/{userObj.Id}", userObj);
+            return Ok("User Registered!");
         }
 
         [Authorize]
