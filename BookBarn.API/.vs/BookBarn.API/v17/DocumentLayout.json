@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Jeferson x\\OneDrive\\Documents\\Notes\\Case-study\\BookBarn-Backend-Repo\\BookBarn.API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|c:\\users\\jeferson x\\onedrive\\documents\\notes\\case-study\\bookbarn-backend-repo\\bookbarn.api\\bookbarn.api\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|solutionrelative:bookbarn.api\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{54B19926-0662-4392-9A68-4A3D05B9607B}|BookBarn.Data\\BookBarn.Data.csproj|C:\\Users\\Jeferson x\\OneDrive\\Documents\\Notes\\Case-study\\BookBarn-Backend-Repo\\BookBarn.API\\bookbarn.data\\repositories\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{54B19926-0662-4392-9A68-4A3D05B9607B}|BookBarn.Data\\BookBarn.Data.csproj|solutionrelative:bookbarn.data\\repositories\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|C:\\Users\\Jeferson x\\OneDrive\\Documents\\Notes\\Case-study\\BookBarn-Backend-Repo\\BookBarn.API\\bookbarn.api\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|solutionrelative:bookbarn.api\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +18,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "OrderRepository.cs",
               "DocumentMoniker": "C:\\Users\\Jeferson x\\OneDrive\\Documents\\Notes\\Case-study\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Data\\Repositories\\OrderRepository.cs",
               "RelativeDocumentMoniker": "BookBarn.Data\\Repositories\\OrderRepository.cs",
               "ToolTip": "C:\\Users\\Jeferson x\\OneDrive\\Documents\\Notes\\Case-study\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Data\\Repositories\\OrderRepository.cs",
               "RelativeToolTip": "BookBarn.Data\\Repositories\\OrderRepository.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAkwAoAAAAjAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T14:17:00.071Z"
+              "WhenOpened": "2024-04-20T16:16:08.414Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "OrderController.cs",
               "DocumentMoniker": "C:\\Users\\Jeferson x\\OneDrive\\Documents\\Notes\\Case-study\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.API\\Controllers\\OrderController.cs",
               "RelativeDocumentMoniker": "BookBarn.API\\Controllers\\OrderController.cs",
               "ToolTip": "C:\\Users\\Jeferson x\\OneDrive\\Documents\\Notes\\Case-study\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.API\\Controllers\\OrderController.cs",
               "RelativeToolTip": "BookBarn.API\\Controllers\\OrderController.cs",
-              "ViewState": "AQIAAGsAAAAAAAAAAAAAACMAAAAeAAAA",
+              "ViewState": "AQIAABMAAAAAAAAAAAAQwH8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-19T08:40:05.532Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-20T16:15:35.201Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             }
           ]
         }
