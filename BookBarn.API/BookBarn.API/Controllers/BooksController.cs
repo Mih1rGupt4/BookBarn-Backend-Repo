@@ -15,10 +15,6 @@ namespace BookBarn.API.Controllers
     public class BooksController : ApiController
     {
         IBooksRepository repo = null;
-        //public BooksController()
-        //{
-        //    repo = new BooksRepository();
-        //}
 
         public BooksController(IBooksRepository repo)
         {
@@ -58,8 +54,8 @@ namespace BookBarn.API.Controllers
 
         [HttpPost]
         [Route("filter")]
-        // GET: Books by Author
-        public IHttpActionResult PostBooksByAllConditions([FromBody] BookFilterParams filterParams)
+        // GET: Books by Author, Title or Category
+        public IHttpActionResult GetBooksByAllConditions([FromBody] BookFilterParams filterParams)
         {
             var book = repo.GetBooksByBias(filterParams.Title, filterParams.Author, filterParams.Category);
             if (book == null)
@@ -73,7 +69,7 @@ namespace BookBarn.API.Controllers
         }
 
         [Route("{id}")]
-        // Delete: Book
+        // Delete: Book by ID
         [HttpDelete]
         public IHttpActionResult DeleteBook(int id)
         {
@@ -90,7 +86,7 @@ namespace BookBarn.API.Controllers
 
         [HttpPost]
         [Route("")]
-        // GET: Books by Author
+        // POST: Insert Books
         public IHttpActionResult AddBooks([FromBody] Book book)
         {
             var newbook = repo.AddBook(book);
@@ -106,7 +102,7 @@ namespace BookBarn.API.Controllers
 
         [HttpPut]
         [Route("")]
-        // GET: Books by Author
+        // POST: Edit Books
         public IHttpActionResult EditBooks([FromBody] Book book)
         {
             var newbook = repo.EditBook(book);
