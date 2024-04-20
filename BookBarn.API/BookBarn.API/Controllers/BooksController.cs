@@ -26,7 +26,29 @@ namespace BookBarn.API.Controllers
         public IHttpActionResult GetBooks()
         {
             var books = _repo.GetAllBooks();
+            var bookCardDtoList = ConvertBookToBookCarDto(books);
             return OkOrNotFound(books);
+        }
+
+        public List<BookCardDto> ConvertBookToBookCarDto(List<Book> books)
+        {
+            List<BookCardDto> bookCardDtos = new List<BookCardDto>();
+
+            foreach(Book book in books)
+            {
+                bookCardDtos.Add(new BookCardDto
+                {
+                    Author = book.Author,
+                    BookID = book.BookID,
+                    Category = book.Category,
+                    ImageUrlMedium = book.ImageUrlMedium,
+                    Price = book.Price,
+                    Stock = book.Stock,
+                    Title = book.Title
+                });
+            }
+
+            return bookCardDtos;
         }
 
         [HttpGet]
