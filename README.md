@@ -1,29 +1,185 @@
 # BookBarn Backend Repository
 
-Welcome to the BookBarn Backend Repository! This repository is part of the BookBarn project, aimed at developing a backend API for managing a virtual book repository.
+Welcome to the BookBarn Backend Repository! This repository contains the codebase for the backend API of BookBarn, a virtual book repository management system.
 
 ## Overview
 
-BookBarn Backend Repository hosts the codebase for the backend of our project. It is responsible for handling various functionalities such as user authentication, book management, search, and more.
+The BookBarn backend is responsible for handling various functionalities such as user authentication, book management, searching, and more.
 
 ## Technologies Used
 
-- Programming Language: C#
-- Frameworks: .Net Framework
-- Database: Microsoft SQL Server
+- **Programming Language:** C#
+- **Framework:** .NET Framework
+- **Database:** Microsoft SQL Server
 
 ## Installation
 
 To set up the project locally, follow these steps:
 
-1. Clone this repository: `git clone https://github.com/Mih1rGupt4/BookBarn-Backend-Repo.git`
-2. Navigate to the project directory: `cd BookBarn-Backend-Repo`
-3. Open the solution file in Visual Studio.
-4. Build the solution to restore NuGet packages.
-5. [Add any additional installation steps if necessary]
+1. **Clone the Repository:** 
+    ```bash
+    git clone https://github.com/Mih1rGupt4/BookBarn-Backend-Repo.git
+    ```
+
+2. **Navigate to the Project Directory:** 
+    ```bash
+    cd BookBarn-Backend-Repo
+    ```
+
+3. **Open the Solution File:**
+    - Open the `BookBarnBackend.sln` file in Visual Studio.
+
+4. **Build the Solution:**
+    - Build the solution to restore NuGet packages.
+
+5. **Resolve Missing Roslyn Compiler:**
+    - If you encounter the error "Could not find a part of the path \bin\roslyn\csc.exe" while running the backend-API application:
+        - Open the NuGet Package Manager Console.
+        - Run:
+            ```bash
+            Update-Package Microsoft.CodeDom.Providers.DotNetCompilerPlatform -r
+            ```
+
+---
 
 ## Usage
 
-To run the backend server locally, you can use Visual Studio to debug the application. Alternatively, you can build and run the application from the command line.
+### API Endpoints
+
+#### User Authentication
+
+- **POST /api/auth/login**
+    - No documentation available.
+    
+- **POST /api/auth/register**
+    - No documentation available.
+    
+- **GET /api/auth/userdetails/{username}**
+    - No documentation available.
+
+---
+
+#### Account
+
+- **GET /api/Account/UserInfo**
+    - No documentation available.
+    
+- **POST /api/Account/Logout**
+    - No documentation available.
+    
+- **GET /api/Account/ManageInfo?returnUrl={returnUrl}&generateState={generateState}**
+    - No documentation available.
+    
+- **POST /api/Account/ChangePassword**
+    - No documentation available.
+    
+- **POST /api/Account/SetPassword**
+    - No documentation available.
+    
+- **POST /api/Account/AddExternalLogin**
+    - No documentation available.
+    
+- **POST /api/Account/RemoveLogin**
+    - No documentation available.
+    
+- **GET /api/Account/ExternalLogin?provider={provider}&error={error}**
+    - No documentation available.
+    
+- **GET /api/Account/ExternalLogins?returnUrl={returnUrl}&generateState={generateState}**
+    - No documentation available.
+    
+- **POST /api/Account/Register**
+    - No documentation available.
+    
+- **POST /api/Account/RegisterExternal**
+    - No documentation available.
+
+---
+
+#### Books
+
+- **GET /api/books**
+    - Get list of books
+    
+- **GET /api/books/{id}**
+    - Get book details based on id
+    - **URL Parameters:**
+        - id: The ID of the book.
+    
+- **POST /api/books/filter**
+    - Get list of books based on filter condition
+    - **Request Body Format:**
+    
+    ```json
+    {
+      "Author": "sample string 1",
+      "Category": "sample string 2",
+      "Title": "sample string 3"
+    }
+    ```
+
+- **POST /api/books**
+    - Insert a Book
+    - **Request Body Format:**
+    
+    ```json
+    {
+      "ISBN": "sample string 2",
+      "Title": "sample string 3",
+      "Category": "sample string 4",
+      "Author": "sample string 5",
+      "Publisher": "sample string 6",
+      "Price": 7.1,
+      "Stock": 8,
+      "YearOfPublication": "sample string 9",
+      "ImageUrlSmall": "sample string 10",
+      "ImageUrlMedium": "sample string 11",
+      "ImageUrlLarge": "sample string 12"
+    }
+    ```
+
+- **PUT /api/books**
+    - Update existing Book Details
+    - **Request Body Format:**
+    
+    ```json
+    {
+      "BookID": 1,
+      "ISBN": "sample string 2",
+      "Title": "sample string 3",
+      "Category": "sample string 4",
+      "Author": "sample string 5",
+      "Publisher": "sample string 6",
+      "Price": 7.1,
+      "Stock": 8,
+      "YearOfPublication": "sample string 9",
+      "ImageUrlSmall": "sample string 10",
+      "ImageUrlMedium": "sample string 11",
+      "ImageUrlLarge": "sample string 12"
+    }
+    ```
+
+- **DELETE /api/books/{id}**
+    - Delete a book based on id
+    - **URL Parameters:**
+        - id: The ID of the book.
+
+---
+
+#### Order
+
+- **GET /api/order/{id}**
+    - No documentation available.
+    
+- **PATCH /api/order/{id}**
+    - No documentation available.
+    
+- **GET /api/Order**
+    - No documentation available.
+    
+- **POST /api/Order**
+    - No documentation available.
+---
+For more details on each API endpoint, please refer to the source code comments or the API documentation.
 
 Happy coding!
