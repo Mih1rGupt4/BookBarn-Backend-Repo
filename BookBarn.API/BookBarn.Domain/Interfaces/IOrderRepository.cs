@@ -9,14 +9,47 @@ namespace BookBarn.Domain.Interfaces
 {
     public interface IOrderRepository
     {
-        List<Order> GetAllOrders();
+
 
         Order GetOrder(int id);
-
-        List<Order> GetAllOrdersForUser(string userId);
 
         void AddOrder(Order order);
 
         void UpdateOrderStatus(Order order, Order newOrder);
+
+
+
+
+        // ---------------------------------------
+        // new methodes
+        // ---------------------------------------
+
+
+
+        List<Order> GetAll();
+
+
+        List<Order> GetAllByUserId(string userId);
+
+
+        List<Order> GetAllActive();
+
+
+        List<Order> GetActiveOrdersByUserId(string userId);
+
+
+        List<Order> GetAllCompleted();
+
+
+        List<Order> GetCompletedOrdersByUserId(string userId);
+
+
+
+        List<Order> GetAllCancelled();
+
+
+        List<Order> GetCancelledOrdersByUserId(string userId);
+
+
     }
 }
