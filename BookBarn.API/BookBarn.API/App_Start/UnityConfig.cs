@@ -17,7 +17,11 @@ namespace BookBarn.API
 
             container.RegisterType<IOrderRepository, OrderRepository>();
 
+            container.RegisterType<IBooksRepository, BooksRepository>();
             container.RegisterType<IWishlistRepository, WishlistRepository>();
+
+
+
 
             // e.g. container.RegisterType<ITestService, TestService>();
 
