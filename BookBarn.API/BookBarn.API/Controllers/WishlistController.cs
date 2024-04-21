@@ -1,4 +1,7 @@
-﻿using BookBarn.Domain.Entities;
+
+﻿using BookBarn.Data.Repositories;
+using BookBarn.Domain.Entities;
+
 using BookBarn.Domain.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -6,6 +9,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+
 using System.Web.Http.Cors;
 
 namespace BookBarn.API.Controllers
@@ -14,11 +18,14 @@ namespace BookBarn.API.Controllers
     public class WishlistController : ApiController
     {
 
+
         //private readonly IWishlistRepository wishlistRepository=new WishlistRepository();
 
         private readonly IWishlistRepository wishlistRepository;
 
+
         public WishlistController(IWishlistRepository _wishlistRepository)
+
         {
             wishlistRepository = _wishlistRepository;
         }
@@ -31,7 +38,9 @@ namespace BookBarn.API.Controllers
             try
             {
 
-                if (wishlistRepository.AddToWishList(userId, bookId))
+                
+                if(wishlistRepository.AddToWishList(userId, bookId))
+
                 {
                     return Ok("Book added to wishlist successfully.");
                 }
@@ -90,6 +99,7 @@ namespace BookBarn.API.Controllers
         [Route("api/wishlist/isExisting/{userId}/{bookId}")]
         public Boolean isExisting(int userId, int bookId)
         {
+
 
             return wishlistRepository.isExisting(userId, bookId);
 
