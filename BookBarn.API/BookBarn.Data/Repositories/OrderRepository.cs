@@ -77,12 +77,12 @@ namespace BookBarn.Data.Repositories
 
         public List<Order> GetAllCompleted()
         {
-            return db.Orders.Where(o => o.Status == OrderStatus.Delivered).ToList();
+            return db.Orders.Where(o => o.Status == OrderStatus.Delivered || o.Status == OrderStatus.ReturnCompleted || o.Status == OrderStatus.ReplacedCompleted).ToList();
         }
 
         public List<Order> GetCompletedOrdersByUserId(string userId)
         {
-            return db.Orders.Where(o => o.UserID == userId && o.Status == OrderStatus.Delivered).ToList();
+            return db.Orders.Where(o => o.UserID == userId && ( o.Status == OrderStatus.Delivered || o.Status==OrderStatus.ReturnCompleted || o.Status==OrderStatus.ReplacedCompleted)).ToList();
         }
 
 
