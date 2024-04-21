@@ -122,11 +122,11 @@ namespace BookBarn.API.Controllers
         {
             if (user == null)
             {
-                return BadRequest("Invalid product details. Thirga try maadi");
+                return BadRequest("No user object posted");
             }
             if (!ModelState.IsValid)
             {
-                return BadRequest("Invalid product details posted. Nodkond thirga maadi");
+                return BadRequest("Invalid product details posted.");
             }
             repo.UpdateUser(user);
 
