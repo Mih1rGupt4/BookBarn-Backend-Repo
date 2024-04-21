@@ -82,7 +82,7 @@ namespace BookBarn.API.Controllers
             return Ok("User Registered!");
         }
 
-        [Authorize(Roles ="User")]
+        [Authorize]
         [HttpGet]
         [Route("userdetails/{username}")]
         public IHttpActionResult GetUserDetails(string username)
