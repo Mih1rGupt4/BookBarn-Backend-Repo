@@ -100,7 +100,7 @@ namespace BookBarn.Data.Repositories
 
         public Dictionary<int, List<int>> GetBookRatings(List<int> bookIds)
         {
-            var bookRatings = db.Reviews
+            var bookRatings = db.ReviewCumRatings
                 .Where(r => bookIds.Contains(r.book.BookID))
                 .GroupBy(r => r.book.BookID)
                 .ToDictionary(
