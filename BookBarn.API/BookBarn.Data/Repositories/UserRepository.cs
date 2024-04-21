@@ -20,10 +20,26 @@ namespace BookBarn.Data.Repositories
             db.SaveChanges();
         }
 
+        public void DeleteUser(User user)
+        {
+            db.Users.Remove(user);
+            db.SaveChanges();
+        }
+
+        public List<User> GetAllUsers()
+        {
+            return db.Users.ToList();
+        }
+
         public User GetUser(string username)
         {
            
             return db.Users.Where(p=>p.Username == username).FirstOrDefault();
+        }
+
+        public User GetUser(int id)
+        {
+            return db.Users.Find(id);
         }
 
         

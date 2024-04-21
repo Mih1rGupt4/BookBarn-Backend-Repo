@@ -13,7 +13,10 @@ namespace BookBarn.Domain.Interfaces
         User GetUser(string username);
         
         void AddUser(User user);    
-        
+        List<User> GetAllUsers();
+        void DeleteUser(User user);
+
+        User GetUser(int id);
 
     }
 }
