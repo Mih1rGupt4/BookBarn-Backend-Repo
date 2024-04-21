@@ -115,6 +115,26 @@ namespace BookBarn.API.Controllers
             return Ok("User Deleted");
         }
 
+        [Authorize(Roles = "Admin")]
+        [HttpPut]
+        [Route("userdetails")]
+        public IHttpActionResult Update([FromBody] User user)
+        {
+            if (user == null)
+            {
+                return BadRequest("Invalid product details. Thirga try maadi");
+            }
+            if (!ModelState.IsValid)
+            {
+                return BadRequest("Invalid product details posted. Nodkond thirga maadi");
+            }
+            repo.UpdateUser(user);
+
+            return Ok(user);
+        }
+
+
+
 
 
         private string CreateJWT(User user)
