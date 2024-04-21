@@ -51,11 +51,16 @@ namespace BookBarn.Data.Repositories
             }
         }
 
-        public void AddToWishList(int userId, int bookId)
+        public bool AddToWishList(int userId, int bookId)
         {
-            WishList w = new WishList { UserId = userId, BookID = bookId };
-            dbContext.WishLists.Add(w);
-            dbContext.SaveChanges();
+            if (!dbContext.WishLists.Any(w => w.UserId == userId && w.BookID == bookId))
+            {
+                WishList w = new WishList { UserId = userId, BookID = bookId };
+                dbContext.WishLists.Add(w);
+                dbContext.SaveChanges();
+                return true;
+            }
+            return false;
 
         }
 

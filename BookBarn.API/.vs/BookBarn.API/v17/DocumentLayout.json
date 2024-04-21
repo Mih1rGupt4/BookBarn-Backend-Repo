@@ -15,24 +15,40 @@
       "RelativeMoniker": "D:0:0:{FACDE463-2F4E-4E7C-AA9C-7BC134CD8B40}|BookBarn.Domain\\BookBarn.Domain.csproj|solutionrelative:bookbarn.domain\\interfaces\\iwishlistrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|c:\\users\\ankita s\\desktop\\trying\\bookbarn-backend-repo\\bookbarn.api\\bookbarn.api\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|solutionrelative:bookbarn.api\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|c:\\users\\ankita s\\desktop\\trying\\bookbarn-backend-repo\\bookbarn.api\\bookbarn.api\\app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|solutionrelative:bookbarn.api\\app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|c:\\users\\ankita s\\desktop\\trying\\bookbarn-backend-repo\\bookbarn.api\\bookbarn.api\\app_start\\unityconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|solutionrelative:bookbarn.api\\app_start\\unityconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FACDE463-2F4E-4E7C-AA9C-7BC134CD8B40}|BookBarn.Domain\\BookBarn.Domain.csproj|C:\\Users\\Ankita S\\Desktop\\trying\\BookBarn-Backend-Repo\\BookBarn.API\\bookbarn.domain\\entities\\wishlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FACDE463-2F4E-4E7C-AA9C-7BC134CD8B40}|BookBarn.Domain\\BookBarn.Domain.csproj|solutionrelative:bookbarn.domain\\entities\\wishlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FACDE463-2F4E-4E7C-AA9C-7BC134CD8B40}|BookBarn.Domain\\BookBarn.Domain.csproj|c:\\users\\ankita s\\desktop\\trying\\bookbarn-backend-repo\\bookbarn.api\\bookbarn.domain\\entities\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FACDE463-2F4E-4E7C-AA9C-7BC134CD8B40}|BookBarn.Domain\\BookBarn.Domain.csproj|solutionrelative:bookbarn.domain\\entities\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|c:\\users\\ankita s\\desktop\\trying\\bookbarn-backend-repo\\bookbarn.api\\bookbarn.api\\app_start\\unityconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|solutionrelative:bookbarn.api\\app_start\\unityconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|c:\\users\\ankita s\\desktop\\trying\\bookbarn-backend-repo\\bookbarn.api\\bookbarn.api\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|solutionrelative:bookbarn.api\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|c:\\users\\ankita s\\desktop\\trying\\bookbarn-backend-repo\\bookbarn.api\\bookbarn.api\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|solutionrelative:bookbarn.api\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|c:\\users\\ankita s\\desktop\\trying\\bookbarn-backend-repo\\bookbarn.api\\bookbarn.api\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|solutionrelative:bookbarn.api\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|c:\\users\\ankita s\\desktop\\trying\\bookbarn-backend-repo\\bookbarn.api\\bookbarn.api\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|solutionrelative:bookbarn.api\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|c:\\users\\ankita s\\desktop\\trying\\bookbarn-backend-repo\\bookbarn.api\\bookbarn.api\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|solutionrelative:bookbarn.api\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|c:\\users\\ankita s\\desktop\\trying\\bookbarn-backend-repo\\bookbarn.api\\bookbarn.api\\app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|solutionrelative:bookbarn.api\\app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{54B19926-0662-4392-9A68-4A3D05B9607B}|BookBarn.Data\\BookBarn.Data.csproj|c:\\users\\ankita s\\desktop\\trying\\bookbarn-backend-repo\\bookbarn.api\\bookbarn.data\\migrations\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,11 +62,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "C:\\Users\\Ankita S\\Desktop\\trying\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.API\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "BookBarn.API\\Controllers\\OrderController.cs",
+              "ToolTip": "C:\\Users\\Ankita S\\Desktop\\trying\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.API\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "BookBarn.API\\Controllers\\OrderController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAB0AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T03:09:24.885Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -60,14 +89,79 @@
               "RelativeDocumentMoniker": "BookBarn.API\\App_Start\\UnityConfig.cs",
               "ToolTip": "C:\\Users\\Ankita S\\Desktop\\trying\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.API\\App_Start\\UnityConfig.cs",
               "RelativeToolTip": "BookBarn.API\\App_Start\\UnityConfig.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-20T11:47:48.992Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WishlistController.cs",
+              "DocumentMoniker": "C:\\Users\\Ankita S\\Desktop\\trying\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.API\\Controllers\\WishlistController.cs",
+              "RelativeDocumentMoniker": "BookBarn.API\\Controllers\\WishlistController.cs",
+              "ToolTip": "C:\\Users\\Ankita S\\Desktop\\trying\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.API\\Controllers\\WishlistController.cs*",
+              "RelativeToolTip": "BookBarn.API\\Controllers\\WishlistController.cs*",
+              "ViewState": "AQIAABMAAAAAAAAAAAAQwCMAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T05:19:10.782Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IWishlistRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Ankita S\\Desktop\\trying\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Domain\\Interfaces\\IWishlistRepository.cs",
+              "RelativeDocumentMoniker": "BookBarn.Domain\\Interfaces\\IWishlistRepository.cs",
+              "ToolTip": "C:\\Users\\Ankita S\\Desktop\\trying\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Domain\\Interfaces\\IWishlistRepository.cs*",
+              "RelativeToolTip": "BookBarn.Domain\\Interfaces\\IWishlistRepository.cs*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T05:18:38.885Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "BooksController.cs",
+              "DocumentMoniker": "C:\\Users\\Ankita S\\Desktop\\trying\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.API\\Controllers\\BooksController.cs",
+              "RelativeDocumentMoniker": "BookBarn.API\\Controllers\\BooksController.cs",
+              "ToolTip": "C:\\Users\\Ankita S\\Desktop\\trying\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.API\\Controllers\\BooksController.cs",
+              "RelativeToolTip": "BookBarn.API\\Controllers\\BooksController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T11:13:26.091Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WishlistRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Ankita S\\Desktop\\trying\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Data\\Repositories\\WishlistRepository.cs",
+              "RelativeDocumentMoniker": "BookBarn.Data\\Repositories\\WishlistRepository.cs",
+              "ToolTip": "C:\\Users\\Ankita S\\Desktop\\trying\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Data\\Repositories\\WishlistRepository.cs*",
+              "RelativeToolTip": "BookBarn.Data\\Repositories\\WishlistRepository.cs*",
+              "ViewState": "AQIAADEAAAAAAAAAAAAQwD4AAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T05:18:58.286Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WishList.cs",
+              "DocumentMoniker": "C:\\Users\\Ankita S\\Desktop\\trying\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Domain\\Entities\\WishList.cs",
+              "RelativeDocumentMoniker": "BookBarn.Domain\\Entities\\WishList.cs",
+              "ToolTip": "C:\\Users\\Ankita S\\Desktop\\trying\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Domain\\Entities\\WishList.cs",
+              "RelativeToolTip": "BookBarn.Domain\\Entities\\WishList.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T05:18:45.231Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Book.cs",
               "DocumentMoniker": "C:\\Users\\Ankita S\\Desktop\\trying\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Domain\\Entities\\Book.cs",
               "RelativeDocumentMoniker": "BookBarn.Domain\\Entities\\Book.cs",
@@ -80,72 +174,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "BooksController.cs",
-              "DocumentMoniker": "C:\\Users\\Ankita S\\Desktop\\trying\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.API\\Controllers\\BooksController.cs",
-              "RelativeDocumentMoniker": "BookBarn.API\\Controllers\\BooksController.cs",
-              "ToolTip": "C:\\Users\\Ankita S\\Desktop\\trying\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.API\\Controllers\\BooksController.cs",
-              "RelativeToolTip": "BookBarn.API\\Controllers\\BooksController.cs",
+              "DocumentIndex": 8,
+              "Title": "packages.config",
+              "DocumentMoniker": "C:\\Users\\Ankita S\\Desktop\\trying\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.API\\packages.config",
+              "RelativeDocumentMoniker": "BookBarn.API\\packages.config",
+              "ToolTip": "C:\\Users\\Ankita S\\Desktop\\trying\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.API\\packages.config",
+              "RelativeToolTip": "BookBarn.API\\packages.config",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T11:13:26.091Z",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-04-21T03:07:32.445Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "C:\\Users\\Ankita S\\Desktop\\trying\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.API\\Startup.cs",
+              "RelativeDocumentMoniker": "BookBarn.API\\Startup.cs",
+              "ToolTip": "C:\\Users\\Ankita S\\Desktop\\trying\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.API\\Startup.cs",
+              "RelativeToolTip": "BookBarn.API\\Startup.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T03:07:24.072Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\Ankita S\\Desktop\\trying\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.API\\Web.config",
+              "RelativeDocumentMoniker": "BookBarn.API\\Web.config",
+              "ToolTip": "C:\\Users\\Ankita S\\Desktop\\trying\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.API\\Web.config",
+              "RelativeToolTip": "BookBarn.API\\Web.config",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-04-21T03:07:17.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "WebApiConfig.cs",
               "DocumentMoniker": "C:\\Users\\Ankita S\\Desktop\\trying\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.API\\App_Start\\WebApiConfig.cs",
               "RelativeDocumentMoniker": "BookBarn.API\\App_Start\\WebApiConfig.cs",
               "ToolTip": "C:\\Users\\Ankita S\\Desktop\\trying\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.API\\App_Start\\WebApiConfig.cs",
               "RelativeToolTip": "BookBarn.API\\App_Start\\WebApiConfig.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAzwBcAAAAkAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-20T10:32:32.84Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "WishlistController.cs",
-              "DocumentMoniker": "C:\\Users\\Ankita S\\Desktop\\trying\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.API\\Controllers\\WishlistController.cs",
-              "RelativeDocumentMoniker": "BookBarn.API\\Controllers\\WishlistController.cs",
-              "ToolTip": "C:\\Users\\Ankita S\\Desktop\\trying\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.API\\Controllers\\WishlistController.cs",
-              "RelativeToolTip": "BookBarn.API\\Controllers\\WishlistController.cs",
-              "ViewState": "AQIAAEoAAAAAAAAAAAAIwFcAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T05:19:10.782Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "WishlistRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Ankita S\\Desktop\\trying\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Data\\Repositories\\WishlistRepository.cs",
-              "RelativeDocumentMoniker": "BookBarn.Data\\Repositories\\WishlistRepository.cs",
-              "ToolTip": "C:\\Users\\Ankita S\\Desktop\\trying\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Data\\Repositories\\WishlistRepository.cs*",
-              "RelativeToolTip": "BookBarn.Data\\Repositories\\WishlistRepository.cs*",
-              "ViewState": "AQIAAHEAAAAAAAAAAAAAAHAAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T05:18:58.286Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IWishlistRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Ankita S\\Desktop\\trying\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Domain\\Interfaces\\IWishlistRepository.cs",
-              "RelativeDocumentMoniker": "BookBarn.Domain\\Interfaces\\IWishlistRepository.cs",
-              "ToolTip": "C:\\Users\\Ankita S\\Desktop\\trying\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Domain\\Interfaces\\IWishlistRepository.cs",
-              "RelativeToolTip": "BookBarn.Domain\\Interfaces\\IWishlistRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T05:18:38.885Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "Configuration.cs",
               "DocumentMoniker": "C:\\Users\\Ankita S\\Desktop\\trying\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Data\\Migrations\\Configuration.cs",
               "RelativeDocumentMoniker": "BookBarn.Data\\Migrations\\Configuration.cs",
@@ -154,19 +235,6 @@
               "ViewState": "AQIAABUAAAAAAAAAAAAYwAsAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-20T05:46:10.738Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "WishList.cs",
-              "DocumentMoniker": "C:\\Users\\Ankita S\\Desktop\\trying\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Domain\\Entities\\WishList.cs",
-              "RelativeDocumentMoniker": "BookBarn.Domain\\Entities\\WishList.cs",
-              "ToolTip": "C:\\Users\\Ankita S\\Desktop\\trying\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Domain\\Entities\\WishList.cs",
-              "RelativeToolTip": "BookBarn.Domain\\Entities\\WishList.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T05:18:45.231Z",
               "EditorCaption": ""
             }
           ]

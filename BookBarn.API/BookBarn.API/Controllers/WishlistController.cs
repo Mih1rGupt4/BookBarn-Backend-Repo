@@ -12,12 +12,14 @@ namespace BookBarn.API.Controllers
 {
     public class WishlistController : ApiController
     {
-        private readonly IWishlistRepository wishlistRepository=new WishlistRepository();
+        //private readonly IWishlistRepository wishlistRepository=new WishlistRepository();
 
-        /* public WishlistController(IWishlistRepository _wishlistRepository)
-         {
-             wishlistRepository = _wishlistRepository;
-         }*/
+        private readonly IWishlistRepository wishlistRepository;
+
+         public WishlistController(IWishlistRepository _wishlistRepository)
+        {
+            wishlistRepository = _wishlistRepository;
+        }
 
 
         [HttpPost]
@@ -26,8 +28,12 @@ namespace BookBarn.API.Controllers
         {
             try
             {
-                wishlistRepository.AddToWishList(userId, bookId);
-                return Ok("Book added to wishlist successfully.");
+                
+                if(wishlistRepository.AddToWishList(userId, bookId))
+                {
+                    return Ok("Book added to wishlist successfully.");
+                }
+                return Ok("Book is already in wishlist");
             }
             catch (Exception ex)
             {
@@ -84,8 +90,7 @@ namespace BookBarn.API.Controllers
         {
           
               return wishlistRepository.isExisting(userId, bookId);
-                
-          
+                         
         }
 
     }
