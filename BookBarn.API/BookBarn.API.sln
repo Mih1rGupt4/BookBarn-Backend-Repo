@@ -15,8 +15,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookBarn.Domain", "BookBarn
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookBarn.Data", "BookBarn.Data\BookBarn.Data.csproj", "{54B19926-0662-4392-9A68-4A3D05B9607B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookBarn.Data.Trial", "BookBarn.Data.Trial\BookBarn.Data.Trial.csproj", "{2DE9C3D1-95F2-4D64-B9F8-659087560C54}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,10 +33,6 @@ Global
 		{54B19926-0662-4392-9A68-4A3D05B9607B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{54B19926-0662-4392-9A68-4A3D05B9607B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{54B19926-0662-4392-9A68-4A3D05B9607B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2DE9C3D1-95F2-4D64-B9F8-659087560C54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2DE9C3D1-95F2-4D64-B9F8-659087560C54}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2DE9C3D1-95F2-4D64-B9F8-659087560C54}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2DE9C3D1-95F2-4D64-B9F8-659087560C54}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -47,7 +41,6 @@ Global
 		{AE405FDD-E153-49ED-8068-1633926A2927} = {34C2107C-2F9E-49DE-919D-057638544341}
 		{FACDE463-2F4E-4E7C-AA9C-7BC134CD8B40} = {A4F5BB34-C6D7-4E39-9CD0-87074839472F}
 		{54B19926-0662-4392-9A68-4A3D05B9607B} = {59891D1C-6A28-4164-9E09-3A465613D351}
-		{2DE9C3D1-95F2-4D64-B9F8-659087560C54} = {59891D1C-6A28-4164-9E09-3A465613D351}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {169175A9-CA2A-47CB-B7F4-E6B71DC32FE9}

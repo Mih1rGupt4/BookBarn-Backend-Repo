@@ -78,4 +78,4 @@ _[Ss]cripts
 **/Migrations/
 /BookBarn.API/.vs/BookBarn.API/config/applicationhost.config
 /BookBarn.API/.vs/BookBarn.API/v17/DocumentLayout.json
-/BookBarn.API/.vs/BookBarn.API/v17/DocumentLayout.json
+*.dtbcache.json
