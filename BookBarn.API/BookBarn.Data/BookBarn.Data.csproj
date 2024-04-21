@@ -59,7 +59,9 @@
     <Compile Include="Repositories\BooksRepository.cs" />
     <Compile Include="Repositories\deleteme.cs" />
     <Compile Include="Repositories\OrderRepository.cs" />
+    <Compile Include="Repositories\RecommenderRepository.cs" />
     <Compile Include="Repositories\UserRepository.cs" />
+
     <Compile Include="Repositories\WishlistRepository.cs" />
   </ItemGroup>
   <ItemGroup>

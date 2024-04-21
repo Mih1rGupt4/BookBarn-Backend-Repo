@@ -12,10 +12,12 @@ namespace BookBarn.Domain.Entities
         [Key]
         public int WishlistId { get; set; }
 
+        
         [Required]
         public int UserId { get; set; }
         [Required]
-        public int BookID { get; set; }
+        public int BookID {  get; set; }
+
         public virtual Book Book { get; set; }
     }
 }
