@@ -328,6 +328,7 @@
     <Compile Include="Controllers\BooksController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\OrderController.cs" />
+    <Compile Include="Controllers\RecommendationController.cs" />
     <Compile Include="Controllers\UserAuthController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Controllers\WishlistController.cs" />
