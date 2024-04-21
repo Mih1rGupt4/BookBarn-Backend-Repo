@@ -3,20 +3,32 @@
   "WorkspaceRootPath": "C:\\Training\\Practice Project\\BookBarn-Backend-Repo\\BookBarn.API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|c:\\training\\practice project\\bookbarn-backend-repo\\bookbarn.api\\bookbarn.api\\app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|c:\\training\\practice project\\bookbarn-backend-repo\\bookbarn.api\\bookbarn.api\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|solutionrelative:bookbarn.api\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|C:\\Training\\Practice Project\\BookBarn-Backend-Repo\\BookBarn.API\\bookbarn.api\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|solutionrelative:bookbarn.api\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|C:\\Training\\Practice Project\\BookBarn-Backend-Repo\\BookBarn.API\\bookbarn.api\\controllers\\userauthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|solutionrelative:bookbarn.api\\controllers\\userauthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|C:\\Training\\Practice Project\\BookBarn-Backend-Repo\\BookBarn.API\\bookbarn.api\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|solutionrelative:bookbarn.api\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|C:\\Training\\Practice Project\\BookBarn-Backend-Repo\\BookBarn.API\\bookbarn.api\\app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|solutionrelative:bookbarn.api\\app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|c:\\training\\practice project\\bookbarn-backend-repo\\bookbarn.api\\bookbarn.api\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|C:\\Training\\Practice Project\\BookBarn-Backend-Repo\\BookBarn.API\\bookbarn.api\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|solutionrelative:bookbarn.api\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|c:\\training\\practice project\\bookbarn-backend-repo\\bookbarn.api\\bookbarn.api\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|C:\\Training\\Practice Project\\BookBarn-Backend-Repo\\BookBarn.API\\bookbarn.api\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|solutionrelative:bookbarn.api\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|c:\\training\\practice project\\bookbarn-backend-repo\\bookbarn.api\\bookbarn.api\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE405FDD-E153-49ED-8068-1633926A2927}|BookBarn.API\\BookBarn.API.csproj|solutionrelative:bookbarn.api\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FACDE463-2F4E-4E7C-AA9C-7BC134CD8B40}|BookBarn.Domain\\BookBarn.Domain.csproj|C:\\Training\\Practice Project\\BookBarn-Backend-Repo\\BookBarn.API\\bookbarn.domain\\dto\\book\\bookcarddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -75,6 +87,55 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "BooksController.cs",
+              "DocumentMoniker": "C:\\Training\\Practice Project\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.API\\Controllers\\BooksController.cs",
+              "RelativeDocumentMoniker": "BookBarn.API\\Controllers\\BooksController.cs",
+              "ToolTip": "C:\\Training\\Practice Project\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.API\\Controllers\\BooksController.cs",
+              "RelativeToolTip": "BookBarn.API\\Controllers\\BooksController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T10:34:56.941Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "C:\\Training\\Practice Project\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.API\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "BookBarn.API\\Controllers\\OrderController.cs",
+              "ToolTip": "C:\\Training\\Practice Project\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.API\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "BookBarn.API\\Controllers\\OrderController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T08:30:51.38Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserAuthController.cs",
+              "DocumentMoniker": "C:\\Training\\Practice Project\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.API\\Controllers\\UserAuthController.cs",
+              "RelativeDocumentMoniker": "BookBarn.API\\Controllers\\UserAuthController.cs",
+              "ToolTip": "C:\\Training\\Practice Project\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.API\\Controllers\\UserAuthController.cs",
+              "RelativeToolTip": "BookBarn.API\\Controllers\\UserAuthController.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T08:30:48.297Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Training\\Practice Project\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.API\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "BookBarn.API\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Training\\Practice Project\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.API\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "BookBarn.API\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T08:30:46.485Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "WebApiConfig.cs",
               "DocumentMoniker": "C:\\Training\\Practice Project\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.API\\App_Start\\WebApiConfig.cs",
               "RelativeDocumentMoniker": "BookBarn.API\\App_Start\\WebApiConfig.cs",
@@ -82,12 +143,11 @@
               "RelativeToolTip": "BookBarn.API\\App_Start\\WebApiConfig.cs",
               "ViewState": "AQIAAAsAAAAAAAAAAAAAwBgAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T08:10:40.532Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-21T08:10:40.532Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "Startup.cs",
               "DocumentMoniker": "C:\\Training\\Practice Project\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.API\\Startup.cs",
               "RelativeDocumentMoniker": "BookBarn.API\\Startup.cs",
@@ -95,12 +155,11 @@
               "RelativeToolTip": "BookBarn.API\\Startup.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAuwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T08:10:28.878Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-21T08:10:28.878Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "Global.asax.cs",
               "DocumentMoniker": "C:\\Training\\Practice Project\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.API\\Global.asax.cs",
               "RelativeDocumentMoniker": "BookBarn.API\\Global.asax.cs",
@@ -108,12 +167,11 @@
               "RelativeToolTip": "BookBarn.API\\Global.asax.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T08:10:22.518Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-21T08:10:22.518Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "BookCardDto.cs",
               "DocumentMoniker": "C:\\Training\\Practice Project\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Domain\\Dto\\Book\\BookCardDto.cs",
               "RelativeDocumentMoniker": "BookBarn.Domain\\Dto\\Book\\BookCardDto.cs",
@@ -121,12 +179,11 @@
               "RelativeToolTip": "BookBarn.Domain\\Dto\\Book\\BookCardDto.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAABAAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T15:01:51.733Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-20T15:01:51.733Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "BooksRepository.cs",
               "DocumentMoniker": "C:\\Training\\Practice Project\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Data\\Repositories\\BooksRepository.cs",
               "RelativeDocumentMoniker": "BookBarn.Data\\Repositories\\BooksRepository.cs",
@@ -134,12 +191,11 @@
               "RelativeToolTip": "BookBarn.Data\\Repositories\\BooksRepository.cs",
               "ViewState": "AQIAADQAAAAAAAAAAAAywDkAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T14:40:21.735Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-20T14:40:21.735Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "IBooksRepository.cs",
               "DocumentMoniker": "C:\\Training\\Practice Project\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.Domain\\Interfaces\\IBooksRepository.cs",
               "RelativeDocumentMoniker": "BookBarn.Domain\\Interfaces\\IBooksRepository.cs",
@@ -147,21 +203,7 @@
               "RelativeToolTip": "BookBarn.Domain\\Interfaces\\IBooksRepository.cs",
               "ViewState": "AQIAAAgAAAAAAAAAAAAAAA8AAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T14:40:06.25Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "BooksController.cs",
-              "DocumentMoniker": "C:\\Training\\Practice Project\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.API\\Controllers\\BooksController.cs",
-              "RelativeDocumentMoniker": "BookBarn.API\\Controllers\\BooksController.cs",
-              "ToolTip": "C:\\Training\\Practice Project\\BookBarn-Backend-Repo\\BookBarn.API\\BookBarn.API\\Controllers\\BooksController.cs",
-              "RelativeToolTip": "BookBarn.API\\Controllers\\BooksController.cs",
-              "ViewState": "AQIAAHoAAAAAAAAAAAAqwIUAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T10:34:56.941Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-20T14:40:06.25Z"
             }
           ]
         },
