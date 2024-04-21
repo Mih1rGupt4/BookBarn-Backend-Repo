@@ -42,7 +42,7 @@ namespace BookBarn.API.Controllers
             }
 
             if (!Helpers.PasswordHasher.VerifyPassword(userObj.Password, user.Password))
-                BadRequest("Password Incorrect");
+                return BadRequest("Password Incorrect");
 
             user.Token = CreateJWT(user);
 
