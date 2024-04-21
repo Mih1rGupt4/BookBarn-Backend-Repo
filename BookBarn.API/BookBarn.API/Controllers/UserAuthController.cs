@@ -82,7 +82,7 @@ namespace BookBarn.API.Controllers
             return Ok("User Registered!");
         }
 
-        [Authorize]
+        [Authorize(Roles ="User")]
         [HttpGet]
         [Route("userdetails/{username}")]
         public IHttpActionResult GetUserDetails(string username)
@@ -93,6 +93,27 @@ namespace BookBarn.API.Controllers
             return Ok(user);
         }
 
+        [Authorize(Roles ="Admin")]
+        [HttpGet]
+        [Route("userdetails")]
+        public IHttpActionResult GetAllUsers()
+        {
+            var users = repo.GetAllUsers();
+            if (users == null) return NotFound();
+            if (users.Count == 0) return BadRequest("No users in db"); 
+            return Ok(users);
+        }
+
+        [Authorize(Roles = "Admin")]
+        [HttpDelete]
+        [Route("userdetails/{id}")]
+        public IHttpActionResult DeleteUser(int id)
+        {
+            var user = repo.GetUser(id);
+            if(user == null) return NotFound();
+            repo.DeleteUser(user);
+            return Ok("User Deleted");
+        }
 
 
 
