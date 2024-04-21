@@ -27,7 +27,10 @@ namespace BookBarn.API.Controllers
         public IHttpActionResult GetRecommendation([FromUri] List<int> bookIds) // Modify action to accept list of book IDs
         {
             var recommendedBooks = repo.Get_recommended_book(bookIds);
-            /*List<Book> books = new List<Book>
+
+            if (recommendedBooks.Count == 0)
+            {
+                List<Book> books = new List<Book>
 {
     new Book
     {
@@ -76,7 +79,9 @@ namespace BookBarn.API.Controllers
     },
     // Add more books as needed
 };
-            return Ok(books);*/
+                return Ok(books);
+            }
+
             return Ok(recommendedBooks);
         }
     }
