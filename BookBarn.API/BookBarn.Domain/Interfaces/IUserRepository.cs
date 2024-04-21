@@ -17,6 +17,7 @@ namespace BookBarn.Domain.Interfaces
         void DeleteUser(User user);
 
         User GetUser(int id);
+        void UpdateUser(User user);
 
     }
 }
