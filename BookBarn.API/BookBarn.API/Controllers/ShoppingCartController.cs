@@ -11,7 +11,7 @@ using System.Web.Http.Cors;
 
 namespace BookBarn.API.Controllers
 {
-    [EnableCors(origins: " http://localhost:4200", headers: "*", methods: "*")]
+    [EnableCors(origins: "*", headers: "*", methods: "*")]
     public class ShoppingCartController : ApiController
     {
 
@@ -19,7 +19,10 @@ namespace BookBarn.API.Controllers
         //Remove from cart
         //Update quantity of the cart
         //View Cart
-
+        public IHttpActionResult Options()
+        {
+            return Ok();
+        }
         private readonly IShoppingCartRepository _shoppingCartRepository;
         public ShoppingCartController() { }
         public ShoppingCartController(IShoppingCartRepository shoppingCartRepository)
@@ -51,9 +54,10 @@ namespace BookBarn.API.Controllers
 
 
         [HttpPost]
-        public IHttpActionResult AddToCart(int id, CartItem item) {
-
-            var result = _shoppingCartRepository.AddCartItem(id, item);
+       // [Route("api/ShoppingCart/{id}")]
+        public IHttpActionResult AddToCart([FromBody] CartItem item) {
+            var id = item.ShoppingCartID;
+            var result = _shoppingCartRepository.AddCartItem(id,item);
             if (result == null)
             {
                 return BadRequest();

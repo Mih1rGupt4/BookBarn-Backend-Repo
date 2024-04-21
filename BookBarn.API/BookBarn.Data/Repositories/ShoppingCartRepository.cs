@@ -32,8 +32,8 @@ namespace BookBarn.Data.Repositories
                 _dbContext.ShoppingCarts.Add(shoppingCart);
                 item.ShoppingCartID = cartId;
                 _dbContext.CartItems.Add(item);
-                //update userid when creating a cart
-                //shoppingCart.UserID = 
+                ////update userid when creating a cart
+                ////shoppingCart.UserID = 
 
             }
             shoppingCart.TotalPrice += item.Price * item.Quantity;

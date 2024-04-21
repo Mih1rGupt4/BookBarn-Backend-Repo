@@ -9,9 +9,12 @@ using System.Web.Http;
 using System.Web.Routing;
 using BookBarn.Data.Repositories;
 using BookBarn.Domain.Interfaces;
+using System.Web.Http.Cors;
 
 namespace BookBarn.API.Controllers
 {
+    [EnableCors(origins: "*", headers: "*", methods: "*")]
+
     public class OrderController : ApiController
     {
         //BookBarnDbContext db;
@@ -71,7 +74,8 @@ namespace BookBarn.API.Controllers
             {
                 return BadRequest("Missing data to patch");
             }
-            repo.AddOrder(order);
+          
+           repo.AddOrder(order);
             return Created("location", order.OrderID);
         }
 

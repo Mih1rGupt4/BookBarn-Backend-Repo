@@ -14,7 +14,8 @@ namespace BookBarn.API
         public void Configuration(IAppBuilder app)
         {
             ConfigureAuth(app);
-           // app.UseCors("AllowFrontend");
+            // app.UseCors("AllowFrontend");
+
 
         }
 

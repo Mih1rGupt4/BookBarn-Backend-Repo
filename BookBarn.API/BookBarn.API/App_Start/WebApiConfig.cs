@@ -18,8 +18,13 @@ namespace BookBarn.API
             // Configure Web API to use only bearer token authentication.
             config.SuppressDefaultHostAuthentication();
             config.Filters.Add(new HostAuthenticationFilter(OAuthDefaults.AuthenticationType));
-            var cors = new EnableCorsAttribute("http://localhost:4200", "*", "*"); 
-            config.EnableCors(cors);
+
+            //var cors = new EnableCorsAttribute("http://localhost:4200", "*", "*")
+            //{
+            //    SupportsCredentials = true
+            //};
+            //config.EnableCors(cors);
+            config.EnableCors();
             // Web API routes
             config.MapHttpAttributeRoutes();
 
@@ -36,4 +41,6 @@ namespace BookBarn.API
             config.Formatters.JsonFormatter.SerializerSettings = jsonSettings;
         }
     }
+
+
 }
