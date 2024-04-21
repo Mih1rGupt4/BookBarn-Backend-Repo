@@ -54,15 +54,16 @@
   <ItemGroup>
     <Compile Include="BookBarnDbContext.cs" />
     <Compile Include="Class1.cs" />
-    <Compile Include="Migrations\202404200652125_init.cs" />
-    <Compile Include="Migrations\202404200652125_init.Designer.cs">
-      <DependentUpon>202404200652125_init.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\BooksRepository.cs" />
     <Compile Include="Repositories\CartItemRepository.cs" />
     <Compile Include="Repositories\deleteme.cs" />
+    <Compile Include="Repositories\OrderRepository.cs" />
+    <Compile Include="Repositories\RecommenderRepository.cs" />
+    <Compile Include="Repositories\UserRepository.cs" />
+
+    <Compile Include="Repositories\WishlistRepository.cs" />
     <Compile Include="Repositories\ShoppingCartRepository.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -79,9 +80,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202404200652125_init.resx">
-      <DependentUpon>202404200652125_init.cs</DependentUpon>
-    </EmbeddedResource>
+    <Folder Include="Migrations\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
