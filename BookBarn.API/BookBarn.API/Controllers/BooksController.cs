@@ -7,11 +7,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Http;
+using System.Web.Http.Cors;
 using System.Web.Routing;
 
 namespace BookBarn.API.Controllers
 {
     [RoutePrefix("api/books")]
+    [EnableCors(origins: "*", headers: "*", methods: "*")]
     public class BooksController : ApiController
     {
         private readonly IBooksRepository _repo = null;
