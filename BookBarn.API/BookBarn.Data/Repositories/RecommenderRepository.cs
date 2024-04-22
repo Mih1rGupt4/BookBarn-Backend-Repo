@@ -68,40 +68,93 @@ namespace BookBarn.Data.Repositories
 
         public List<Book> Get_recommended_book(List<int> bookIds)
         {
+            // Retrieve books based on the provided bookIds
             var books = db.Books.Where(b => bookIds.Contains(b.BookID)).ToList();
+
+            // Extract distinct categories from the retrieved books
             var categories = books.Select(b => b.Category).Distinct().ToList();
 
-            List<Book> res = new List<Book>();
+            // Initialize list to store recommended books
+            List<Book> recommendedBooks = new List<Book>();
+
+            // Iterate over distinct categories
             foreach (var category in categories)
             {
-                res.AddRange(Books.GetBooksByCategory(category));
+                // Retrieve books for the current category and add them to recommendedBooks
+                recommendedBooks.AddRange(Books.GetBooksByCategory(category));
             }
 
-            res = res.Distinct().ToList();
+            // Remove duplicates from the recommendedBooks list
+            recommendedBooks = recommendedBooks.Distinct().ToList();
 
+            // Retrieve book ratings
             Dictionary<int, List<int>> data = GetBookRatings(books.Select(b => b.BookID).ToList());
-            var recommendedBooks = new List<KeyValuePair<Book, double>>();
-            foreach (var b in res)
+
+            // Initialize list to store recommended books along with their correlation values
+            var recommendedBooksCorrelation = new List<KeyValuePair<Book, double>>();
+
+            // Iterate over recommended books
+            foreach (var book in recommendedBooks)
             {
-                if (!bookIds.Contains(b.BookID))
+                // Check if the book is not in the provided bookIds list
+                if (!bookIds.Contains(book.BookID))
                 {
-                    var ratings = data.ContainsKey(b.BookID) ? data[b.BookID] : new List<int>();
-                    double correlation = Get_Correlation(ratings.ToArray(), bookIds.SelectMany(id => data.ContainsKey(id) ? data[id] : new List<int>()).ToArray());
-                    recommendedBooks.Add(new KeyValuePair<Book, double>(b, correlation));
+                    // Get ratings for the current book
+                    var ratings = data.ContainsKey(book.BookID) ? data[book.BookID] : new List<int>();
+
+                    // Calculate correlation if ratings exist, otherwise assign -2
+                    double correlation = ratings.Count > 0 ?
+                        Get_Correlation(ratings.ToArray(), bookIds.SelectMany(id => data.ContainsKey(id) ? data[id] : new List<int>()).ToArray())
+                        : -2;
+
+                    // Add book and correlation to the list
+                    recommendedBooksCorrelation.Add(new KeyValuePair<Book, double>(book, correlation));
                 }
             }
 
-            recommendedBooks = recommendedBooks.OrderByDescending(kv => kv.Value).ToList();
+            // Sort recommended books by correlation in descending order
+            recommendedBooksCorrelation = recommendedBooksCorrelation.OrderByDescending(kv => kv.Value).ToList();
 
-            return recommendedBooks.Take(15).Select(kv => kv.Key).ToList();
+            // Ensure that the list contains at least 15 books
+            while (recommendedBooksCorrelation.Count < 15)
+            {
+                // Check if categories list is not empty before accessing a random category
+                if (categories.Any())
+                {
+                    // Add random book from the same category
+                    var randomCategory = categories[new Random().Next(categories.Count)];
+                    var randomBook = Books.GetBooksByCategory(randomCategory).OrderBy(b => Guid.NewGuid()).FirstOrDefault();
+                    if (randomBook != null)
+                    {
+                        // Assign correlation as 0 for randomly added books
+                        recommendedBooksCorrelation.Add(new KeyValuePair<Book, double>(randomBook, 0));
+                    }
+                    else
+                    {
+                        break; // Break the loop if no more books are available
+                    }
+                }
+                else
+                {
+                    break; // Break the loop if categories list is empty
+                }
+            }
+
+            // Take top 15 recommended books based on correlation
+            var topRecommendedBooks = recommendedBooksCorrelation.Take(15).Select(kv => kv.Key).ToList();
+
+            return topRecommendedBooks;
         }
-
-
 
         public Dictionary<int, List<int>> GetBookRatings(List<int> bookIds)
         {
-            var bookRatings = db.Reviews
+            // Retrieve reviews for the provided bookIds
+            var reviews = db.Reviews
                 .Where(r => bookIds.Contains(r.book.BookID))
+                .ToList();
+
+            // Group reviews by book ID and convert to dictionary
+            var bookRatings = reviews
                 .GroupBy(r => r.book.BookID)
                 .ToDictionary(
                     g => g.Key,
@@ -110,6 +163,5 @@ namespace BookBarn.Data.Repositories
 
             return bookRatings;
         }
-
     }
 }
