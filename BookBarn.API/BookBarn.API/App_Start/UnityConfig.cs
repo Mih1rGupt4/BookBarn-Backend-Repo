@@ -18,6 +18,10 @@ namespace BookBarn.API
             // e.g. container.RegisterType<ITestService, TestService>();
 
             container.RegisterType<IShoppingCartRepository, ShoppingCartRepository>();
+            container.RegisterType<IOrderRepository, OrderRepository>();
+
+            container.RegisterType<IBooksRepository, BooksRepository>();
+            container.RegisterType<IWishlistRepository, WishlistRepository>();
             GlobalConfiguration.Configuration.DependencyResolver = new UnityDependencyResolver(container);
         }
     }

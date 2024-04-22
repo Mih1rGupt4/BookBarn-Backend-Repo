@@ -10,7 +10,7 @@ namespace BookBarn.Domain.Entities
     {
         public int ShoppingCartID { get; set; }
 
-        public string UserID { get; set; }
+        public int UserID { get; set; }
 
         public virtual List<CartItem> CartItems { get; set; }
 

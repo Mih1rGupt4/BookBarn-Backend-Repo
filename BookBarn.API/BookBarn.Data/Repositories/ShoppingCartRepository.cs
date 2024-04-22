@@ -17,50 +17,61 @@ namespace BookBarn.Data.Repositories
         {
             _dbContext = new BookBarnDbContext();
         }
-        public ShoppingCart AddCartItem(int cartId, CartItem item)
-        {   
-            var shoppingCart = _dbContext.ShoppingCarts.Find(cartId);
-            if (shoppingCart != null)
-            {
-                item.ShoppingCartID = cartId;
-                _dbContext.CartItems.Add(item);
-               
-            }
-            else
-            {
-                shoppingCart = new ShoppingCart { ShoppingCartID = cartId };
-                _dbContext.ShoppingCarts.Add(shoppingCart);
-                item.ShoppingCartID = cartId;
-                _dbContext.CartItems.Add(item);
-                ////update userid when creating a cart
-                ////shoppingCart.UserID = 
+        public ShoppingCart AddCartItem(int userId, CartItem item)
+        {
+            ShoppingCart shoppingCart = _dbContext.ShoppingCarts
+                                                   .Include(cart => cart.CartItems)
+                                                   .FirstOrDefault(cart => cart.UserID == userId);
 
+            if (shoppingCart == null)
+            {
+                shoppingCart = new ShoppingCart
+                {
+                    UserID = userId,
+                    CartItems = new List<CartItem>(),
+                    TotalPrice = 0
+                };
+                _dbContext.ShoppingCarts.Add(shoppingCart);
+                _dbContext.SaveChanges(); // Ensure ShoppingCart is saved and has an ID
             }
+
+            item.ShoppingCartID = shoppingCart.ShoppingCartID; // Ensure the ID is assigned after save
+            _dbContext.CartItems.Add(item);
             shoppingCart.TotalPrice += item.Price * item.Quantity;
             _dbContext.SaveChanges();
+
             return shoppingCart;
         }
-
         public ShoppingCart GetShoppingCartById(int cartId)
         {
-            return _dbContext.ShoppingCarts.Find(cartId);
+            return _dbContext.ShoppingCarts.FirstOrDefault(c => c.UserID==cartId);
 
         }
 
         public ShoppingCart RemoveCartItem(int cartId, int itemId)
         {
-            var cartItem = _dbContext.CartItems.FirstOrDefault(ci => ci.ShoppingCartID == cartId && ci.CartItemID == itemId);
+            var shoppingCart = _dbContext.ShoppingCarts
+                                 .Include(cart => cart.CartItems)
+                                 .FirstOrDefault(cart => cart.UserID == cartId);
+
+            if (shoppingCart == null)
+            {
+                throw new InvalidOperationException($"No shopping cart found for User ID {cartId}.");
+            }
+
+            // Find the specific cart item to remove
+            var cartItem = shoppingCart.CartItems.FirstOrDefault(ci => ci.CartItemID == itemId);
+
             if (cartItem != null)
             {
                 _dbContext.CartItems.Remove(cartItem);
-                var shoppingCart = GetShoppingCartById(cartId);
-                shoppingCart.TotalPrice-=cartItem.Price*cartItem.Quantity;
+                shoppingCart.TotalPrice -= cartItem.Price * cartItem.Quantity;
                 _dbContext.SaveChanges();
                 return shoppingCart;
             }
             else
             {
-                throw new InvalidOperationException($"Cart item with ID {itemId} not found in shopping cart with ID {cartId}.");
+                throw new InvalidOperationException($"Cart item with ID {itemId} not found in shopping cart for User ID {cartId}.");
             }
         }
 
@@ -89,9 +100,11 @@ namespace BookBarn.Data.Repositories
 
         public void Clear(int id)
         {
-            var cart = _dbContext.ShoppingCarts.Find(id);
+            var cart= _dbContext.ShoppingCarts.FirstOrDefault(c => c.UserID == id);
+            cart.TotalPrice = 0;
             var cartItemsToRemove = cart.CartItems.ToList();
             _dbContext.CartItems.RemoveRange(cartItemsToRemove);
+            _dbContext.ShoppingCarts.Remove(cart);
             _dbContext.SaveChanges();
         }
 
