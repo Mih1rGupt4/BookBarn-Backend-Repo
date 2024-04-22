@@ -20,7 +20,6 @@ namespace BookBarn.Data
 
         public DbSet<User> Users { get; set; }
         public DbSet<WishList> WishLists { get; set; }
-        public DbSet<ReviewCumRating> Reviews { get; set; }
         public DbSet<ShoppingCart> ShoppingCarts { get; set;}
         public DbSet<CartItem> CartItems { get; set; }
         public DbSet<OrderItem> OrderItems { get; set; }
