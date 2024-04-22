@@ -5,6 +5,7 @@ using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Cors;
 using Microsoft.Owin.Security.OAuth;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 
 namespace BookBarn.API
@@ -24,6 +25,12 @@ namespace BookBarn.API
             var cors = new EnableCorsAttribute("*", "*", "*");
             config.EnableCors(cors);
 
+            //var cors = new EnableCorsAttribute("http://localhost:4200", "*", "*")
+            //{
+            //    SupportsCredentials = true
+            //};
+            //config.EnableCors(cors);
+            config.EnableCors();
             // Web API routes
             config.MapHttpAttributeRoutes();
 
@@ -33,8 +40,13 @@ namespace BookBarn.API
                 defaults: new { id = RouteParameter.Optional }
             );
 
-            config.EnableCors();
-
+            var jsonSettings = new JsonSerializerSettings
+            {
+                ReferenceLoopHandling = ReferenceLoopHandling.Ignore
+            };
+            config.Formatters.JsonFormatter.SerializerSettings = jsonSettings;
         }
     }
+
+
 }

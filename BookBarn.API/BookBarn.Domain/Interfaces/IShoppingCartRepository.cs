@@ -10,7 +10,10 @@ namespace BookBarn.Domain.Interfaces
     public interface IShoppingCartRepository
     {
         ShoppingCart GetShoppingCartById(int cartId);
-        void AddCartItem(int cartId, CartItem item);
-        void RemoveCartItem(int cartId, int itemId);
+        ShoppingCart AddCartItem(int cartId, CartItem item);
+        ShoppingCart RemoveCartItem(int cartId, int itemId);
+        ShoppingCart UpdateCartItemQuantity(int cartId, int quantity);
+        void Clear(int id);
+
     }
 }

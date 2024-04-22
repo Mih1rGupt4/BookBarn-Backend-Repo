@@ -37,7 +37,8 @@ namespace BookBarn.API.Controllers
             {
                 return BadRequest("Missing data to patch");
             }
-            repo.AddOrder(order);
+          
+           repo.AddOrder(order);
             return Created("location", order.OrderID);
         }
 

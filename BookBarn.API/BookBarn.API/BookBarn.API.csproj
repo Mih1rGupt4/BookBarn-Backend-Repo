@@ -220,14 +220,17 @@
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.9\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Abstractions, Version=5.11.1.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
-      <HintPath>..\packages\Unity.5.11.1\lib\net47\Unity.Abstractions.dll</HintPath>
+    <Reference Include="Unity.Abstractions, Version=5.11.7.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.5.11.10\lib\net48\Unity.Abstractions.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Container, Version=5.11.1.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
-      <HintPath>..\packages\Unity.5.11.1\lib\net47\Unity.Container.dll</HintPath>
+    <Reference Include="Unity.Container, Version=5.11.11.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.5.11.10\lib\net48\Unity.Container.dll</HintPath>
     </Reference>
     <Reference Include="Unity.WebApi, Version=5.4.0.0, Culture=neutral, PublicKeyToken=43da31bc42a85347, processorArchitecture=MSIL">
       <HintPath>..\packages\Unity.WebAPI.5.4.0\lib\net45\Unity.WebApi.dll</HintPath>
+    </Reference>
+    <Reference Include="WebActivatorEx, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebActivatorEx.2.2.0\lib\net40\WebActivatorEx.dll</HintPath>
     </Reference>
     <Reference Include="WebGrease">
       <Private>True</Private>
@@ -330,6 +333,7 @@
     <Compile Include="Controllers\OrderController.cs" />
     <Compile Include="Controllers\RecommendationController.cs" />
     <Compile Include="Controllers\ReviewCumRatingsController.cs" />
+    <Compile Include="Controllers\ShoppingCartController.cs" />
     <Compile Include="Controllers\UserAuthController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Controllers\WishlistController.cs" />
@@ -337,9 +341,23 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helpers\PasswordHasher.cs" />
+    <Compile Include="Migrations\202404190551352_init.cs" />
+    <Compile Include="Migrations\202404190551352_init.Designer.cs">
+      <DependentUpon>202404190551352_init.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202404191124032_add.cs" />
+    <Compile Include="Migrations\202404191124032_add.Designer.cs">
+      <DependentUpon>202404191124032_add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202404220613374_add1.cs" />
+    <Compile Include="Migrations\202404220613374_add1.Designer.cs">
+      <DependentUpon>202404220613374_add1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="obj\Debug\.NETFramework,Version=v4.8.AssemblyAttributes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\ApplicationOAuthProvider.cs" />
     <Compile Include="Results\ChallengeResult.cs" />
@@ -347,6 +365,76 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\HelpPage\HelpPage.css" />
+    <Content Include="bin\Antlr3.Runtime.dll" />
+    <Content Include="bin\BookBarn.API.dll" />
+    <Content Include="bin\BookBarn.API.pdb" />
+    <Content Include="bin\BookBarn.Domain.dll" />
+    <Content Include="bin\EntityFramework.dll" />
+    <Content Include="bin\EntityFramework.SqlServer.dll" />
+    <Content Include="bin\Microsoft.AspNet.Identity.Core.dll" />
+    <Content Include="bin\Microsoft.AspNet.Identity.EntityFramework.dll" />
+    <Content Include="bin\Microsoft.AspNet.Identity.Owin.dll" />
+    <Content Include="bin\Microsoft.AspNet.OData.dll" />
+    <Content Include="bin\Microsoft.AspNetCore.Cors.dll" />
+    <Content Include="bin\Microsoft.Bcl.AsyncInterfaces.dll" />
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
+    <Content Include="bin\Microsoft.Data.Edm.dll" />
+    <Content Include="bin\Microsoft.Data.OData.dll" />
+    <Content Include="bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll" />
+    <Content Include="bin\Microsoft.Extensions.DependencyInjection.dll" />
+    <Content Include="bin\Microsoft.Extensions.Options.dll" />
+    <Content Include="bin\Microsoft.IdentityModel.Abstractions.dll" />
+    <Content Include="bin\Microsoft.IdentityModel.JsonWebTokens.dll" />
+    <Content Include="bin\Microsoft.IdentityModel.Logging.dll" />
+    <Content Include="bin\Microsoft.IdentityModel.Tokens.dll" />
+    <Content Include="bin\Microsoft.OData.Core.dll" />
+    <Content Include="bin\Microsoft.OData.Edm.dll" />
+    <Content Include="bin\Microsoft.Owin.dll" />
+    <Content Include="bin\Microsoft.Owin.Host.SystemWeb.dll" />
+    <Content Include="bin\Microsoft.Owin.Security.dll" />
+    <Content Include="bin\Microsoft.Owin.Security.Facebook.dll" />
+    <Content Include="bin\Microsoft.Owin.Security.Google.dll" />
+    <Content Include="bin\Microsoft.Owin.Security.Jwt.dll" />
+    <Content Include="bin\Microsoft.Owin.Security.MicrosoftAccount.dll" />
+    <Content Include="bin\Microsoft.Owin.Security.OAuth.dll" />
+    <Content Include="bin\Microsoft.Owin.Security.Twitter.dll" />
+    <Content Include="bin\Microsoft.Spatial.dll" />
+    <Content Include="bin\Microsoft.Web.Infrastructure.dll" />
+    <Content Include="bin\Newtonsoft.Json.dll" />
+    <Content Include="bin\Owin.dll" />
+    <Content Include="bin\System.Buffers.dll" />
+    <Content Include="bin\System.IdentityModel.Tokens.Jwt.dll" />
+    <Content Include="bin\System.Linq.dll" />
+    <Content Include="bin\System.Linq.Expressions.dll" />
+    <Content Include="bin\System.Memory.dll" />
+    <Content Include="bin\System.Net.Http.Formatting.dll" />
+    <Content Include="bin\System.Numerics.Vectors.dll" />
+    <Content Include="bin\System.Reflection.dll" />
+    <Content Include="bin\System.Runtime.CompilerServices.Unsafe.dll" />
+    <Content Include="bin\System.Runtime.Extensions.dll" />
+    <Content Include="bin\System.Spatial.dll" />
+    <Content Include="bin\System.Text.Encodings.Web.dll" />
+    <Content Include="bin\System.Text.Json.dll" />
+    <Content Include="bin\System.Threading.Tasks.Extensions.dll" />
+    <Content Include="bin\System.ValueTuple.dll" />
+    <Content Include="bin\System.Web.Cors.dll" />
+    <Content Include="bin\System.Web.Helpers.dll" />
+    <Content Include="bin\System.Web.Http.Cors.dll" />
+    <Content Include="bin\System.Web.Http.dll" />
+    <Content Include="bin\System.Web.Http.OData.dll" />
+    <Content Include="bin\System.Web.Http.Owin.dll" />
+    <Content Include="bin\System.Web.Http.WebHost.dll" />
+    <Content Include="bin\System.Web.Mvc.dll" />
+    <Content Include="bin\System.Web.Optimization.dll" />
+    <Content Include="bin\System.Web.Razor.dll" />
+    <Content Include="bin\System.Web.WebPages.Deployment.dll" />
+    <Content Include="bin\System.Web.WebPages.dll" />
+    <Content Include="bin\System.Web.WebPages.Razor.dll" />
+    <Content Include="bin\Unity.Abstractions.dll" />
+    <Content Include="bin\Unity.Container.dll" />
+    <Content Include="bin\Unity.WebApi.dll" />
+    <Content Include="bin\WebActivatorEx.dll" />
+    <Content Include="bin\WebGrease.dll" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-grid.rtl.css" />
@@ -390,6 +478,7 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
+    <Content Include=".vs\BookBarn.API.csproj.dtbcache.json" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -418,6 +507,16 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="bin\de\" />
+    <Folder Include="bin\es\" />
+    <Folder Include="bin\fr\" />
+    <Folder Include="bin\it\" />
+    <Folder Include="bin\ja\" />
+    <Folder Include="bin\ko\" />
+    <Folder Include="bin\roslyn\" />
+    <Folder Include="bin\ru\" />
+    <Folder Include="bin\zh-Hans\" />
+    <Folder Include="bin\zh-Hant\" />
     <Folder Include="Views\Books\" />
   </ItemGroup>
   <ItemGroup>
@@ -500,6 +599,17 @@
       <Project>{facde463-2f4e-4e7c-aa9c-7bc134cd8b40}</Project>
       <Name>BookBarn.Domain</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202404190551352_init.resx">
+      <DependentUpon>202404190551352_init.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202404191124032_add.resx">
+      <DependentUpon>202404191124032_add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202404220613374_add1.resx">
+      <DependentUpon>202404220613374_add1.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

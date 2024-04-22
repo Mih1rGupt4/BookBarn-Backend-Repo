@@ -11,20 +11,17 @@ namespace BookBarn.API
         public static void RegisterComponents()
         {
 			var container = new UnityContainer();
-            
+
             // register all your components with the container here
             // it is NOT necessary to register your controllers
 
+            // e.g. container.RegisterType<ITestService, TestService>();
+
+            container.RegisterType<IShoppingCartRepository, ShoppingCartRepository>();
             container.RegisterType<IOrderRepository, OrderRepository>();
 
             container.RegisterType<IBooksRepository, BooksRepository>();
             container.RegisterType<IWishlistRepository, WishlistRepository>();
-
-
-
-
-            // e.g. container.RegisterType<ITestService, TestService>();
-
             GlobalConfiguration.Configuration.DependencyResolver = new UnityDependencyResolver(container);
         }
     }

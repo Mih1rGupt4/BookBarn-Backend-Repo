@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Owin;
 using Owin;
 using Microsoft.Owin.Security.Jwt;
@@ -39,5 +40,19 @@ namespace BookBarn.API
 
             app.UseJwtBearerAuthentication(options);
         }
+
+        //public void ConfigureServices(IServiceCollection services)
+        //{
+        //    services.AddCors(options =>
+        //    {
+        //        options.AddPolicy("AllowFrontend", builder =>
+        //        {
+        //            builder.WithOrigins("http://localhost:4200")
+        //                   .AllowAnyHeader()
+        //                   .AllowAnyMethod();
+        //        });
+        //    });
+
+        //}
     }
 }
