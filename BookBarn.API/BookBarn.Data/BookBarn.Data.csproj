@@ -79,12 +79,12 @@
   <ItemGroup>
     <Compile Include="BookBarnDbContext.cs" />
     <Compile Include="Class1.cs" />
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\BooksRepository.cs" />
     <Compile Include="Repositories\deleteme.cs" />
     <Compile Include="Repositories\OrderRepository.cs" />
     <Compile Include="Repositories\RecommenderRepository.cs" />
+    <Compile Include="Repositories\ReviewCumRatingRepo.cs" />
     <Compile Include="Repositories\UserRepository.cs" />
     <Compile Include="Repositories\WishlistRepository.cs" />
   </ItemGroup>
