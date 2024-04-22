@@ -24,5 +24,6 @@ namespace BookBarn.Data
         public DbSet<ShoppingCart> ShoppingCarts { get; set;}
         public DbSet<CartItem> CartItems { get; set; }
         public DbSet<OrderItem> OrderItems { get; set; }
+        public DbSet<ReviewCumRating> ReviewCumRatings { get; set; }
     }
 }
