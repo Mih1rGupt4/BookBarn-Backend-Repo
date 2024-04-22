@@ -42,7 +42,7 @@ namespace BookBarn.API.Controllers
             }
 
             if (!Helpers.PasswordHasher.VerifyPassword(userObj.Password, user.Password))
-                BadRequest("Password Incorrect");
+                return BadRequest("Password Incorrect");
 
             user.Token = CreateJWT(user);
 
@@ -82,7 +82,7 @@ namespace BookBarn.API.Controllers
             return Ok("User Registered!");
         }
 
-        [Authorize(Roles ="User")]
+        [Authorize]
         [HttpGet]
         [Route("userdetails/{username}")]
         public IHttpActionResult GetUserDetails(string username)

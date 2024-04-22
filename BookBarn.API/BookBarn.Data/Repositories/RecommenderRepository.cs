@@ -138,7 +138,7 @@ namespace BookBarn.Data.Repositories
                 {
                     break; // Break the loop if categories list is empty
                 }
-            }
+        }
 
             // Take top 15 recommended books based on correlation
             var topRecommendedBooks = recommendedBooksCorrelation.Take(15).Select(kv => kv.Key).ToList();
@@ -163,5 +163,6 @@ namespace BookBarn.Data.Repositories
 
             return bookRatings;
         }
+
     }
 }
