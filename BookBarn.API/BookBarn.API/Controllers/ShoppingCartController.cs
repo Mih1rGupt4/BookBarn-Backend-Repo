@@ -79,5 +79,13 @@ namespace BookBarn.API.Controllers
 
         }
 
+        [Route("api/ShoppingCart/clear-cart/{id}")]
+        [HttpDelete]
+        public IHttpActionResult ClearCart(int id)
+        {
+            _shoppingCartRepository.Clear(id); // Clear the shopping cart items
+            return Ok("Shopping cart cleared successfully");
+        }
+
     }
 }

@@ -87,5 +87,13 @@ namespace BookBarn.Data.Repositories
             return existingCart;
         }
 
+        public void Clear(int id)
+        {
+            var cart = _dbContext.ShoppingCarts.Find(id);
+            var cartItemsToRemove = cart.CartItems.ToList();
+            _dbContext.CartItems.RemoveRange(cartItemsToRemove);
+            _dbContext.SaveChanges();
+        }
+
     }
 }

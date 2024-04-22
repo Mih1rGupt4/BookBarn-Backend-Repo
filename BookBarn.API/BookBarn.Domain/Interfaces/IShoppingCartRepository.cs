@@ -13,6 +13,7 @@ namespace BookBarn.Domain.Interfaces
         ShoppingCart AddCartItem(int cartId, CartItem item);
         ShoppingCart RemoveCartItem(int cartId, int itemId);
         ShoppingCart UpdateCartItemQuantity(int cartId, int quantity);
+        void Clear(int id);
 
     }
 }
