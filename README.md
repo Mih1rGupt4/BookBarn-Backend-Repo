@@ -169,16 +169,16 @@ To set up the project locally, follow these steps:
 #### Order
 
 - **GET /api/order/{id}**
-    - No documentation available.
+    - get orders based on the userid
     
 - **PATCH /api/order/{id}**
-    - No documentation available.
+    - update the status of the order based on the orderid
     
-- **GET /api/Order**
-    - No documentation available.
+- **GET /api/Order/all**
+    - get all orders (only accessible by admin)
     
 - **POST /api/Order**
-    - No documentation available.
+    - insert a new order into the order history
 ---
 For more details on each API endpoint, please refer to the source code comments or the API documentation.
 
