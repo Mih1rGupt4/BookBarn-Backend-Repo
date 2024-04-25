@@ -32,10 +32,10 @@ namespace BookBarn.Data.Repositories
                     TotalPrice = 0
                 };
                 _dbContext.ShoppingCarts.Add(shoppingCart);
-                _dbContext.SaveChanges(); // Ensure ShoppingCart is saved and has an ID
+                _dbContext.SaveChanges(); 
             }
 
-            item.ShoppingCartID = shoppingCart.ShoppingCartID; // Ensure the ID is assigned after save
+            item.ShoppingCartID = shoppingCart.ShoppingCartID; 
             _dbContext.CartItems.Add(item);
             shoppingCart.TotalPrice += item.Price * item.Quantity;
             _dbContext.SaveChanges();
@@ -59,7 +59,7 @@ namespace BookBarn.Data.Repositories
                 throw new InvalidOperationException($"No shopping cart found for User ID {cartId}.");
             }
 
-            // Find the specific cart item to remove
+           
             var cartItem = shoppingCart.CartItems.FirstOrDefault(ci => ci.CartItemID == itemId);
 
             if (cartItem != null)
